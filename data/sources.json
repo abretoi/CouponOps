@@ -1,0 +1,30 @@
+{
+ "note": "Trusted deal-source ecosystem. Fed into the AI refresh prompt and rendered on the Sources tab. Add new sources here — one object each.",
+ "sources": [
+  { "name": "The Krazy Coupon Lady", "type": "site", "url": "https://thekrazycouponlady.com", "focus": "All chains — deal matchups, coupon database, stacking guides", "tier": "essential" },
+  { "name": "Hip2Save", "type": "site", "url": "https://hip2save.com", "focus": "Walgreens/CVS/Target/Walmart weekly ad matchups, verified moneymakers", "tier": "essential" },
+  { "name": "Southern Savers", "type": "site", "url": "https://www.southernsavers.com", "focus": "Publix, Kroger, Harris Teeter, Food Lion, Lowes Foods weekly matchups (best for the Southeast + Carolinas)", "tier": "essential" },
+  { "name": "Money Saving Mom", "type": "site", "url": "https://moneysavingmom.com", "focus": "National deals, freebies, beginner stacking education", "tier": "core" },
+  { "name": "Living Rich With Coupons", "type": "site", "url": "https://www.livingrichwithcoupons.com", "focus": "ShopRite, Stop & Shop, Acme, CVS — Northeast matchups", "tier": "core" },
+  { "name": "I Heart Publix", "type": "site", "url": "https://www.iheartpublix.com", "focus": "Publix ad previews, BOGO lists, penny item alerts", "tier": "core" },
+  { "name": "Passionate Penny Pincher", "type": "site", "url": "https://www.passionatepennypincher.com", "focus": "Kroger + Publix + Walmart meal-deal stacking", "tier": "core" },
+  { "name": "Coupon Mom", "type": "site", "url": "https://www.couponmom.com", "focus": "State-by-state grocery deal databases", "tier": "core" },
+  { "name": "KCL Deals App", "type": "app", "url": "https://thekrazycouponlady.com/app", "focus": "Push alerts for moneymakers and clearance", "tier": "essential" },
+  { "name": "@txfrugalfinds", "type": "instagram", "url": "https://www.instagram.com/txfrugalfinds", "focus": "Texas — H-E-B, Randalls, Dollar General regional finds", "tier": "essential" },
+  { "name": "@couponcowboy", "type": "instagram", "url": "https://www.instagram.com/couponcowboy", "focus": "Drugstore + dollar-store stack walkthroughs", "tier": "essential" },
+  { "name": "@thekrazycouponlady", "type": "instagram", "url": "https://www.instagram.com/thekrazycouponlady", "focus": "Daily national deal drops", "tier": "essential" },
+  { "name": "@torok.coupon.hunter", "type": "instagram", "url": "https://www.instagram.com/torok.coupon.hunter", "focus": "Extreme stacking + moneymaker breakdowns", "tier": "essential" },
+  { "name": "Couponing for Beginners (Learn to Q-pon)", "type": "facebook", "url": "https://www.facebook.com/groups/learntoqpon", "focus": "Beginner-friendly stack explanations, member-verified deals", "tier": "essential" },
+  { "name": "Krazy Coupon Lady Community", "type": "facebook", "url": "https://www.facebook.com/groups/KCLShoppers", "focus": "Member deal reports across all chains", "tier": "core" },
+  { "name": "Hip2Save Community", "type": "facebook", "url": "https://www.facebook.com/groups/Hip2Save", "focus": "Real-time in-store finds and clearance", "tier": "core" },
+  { "name": "r/couponing", "type": "forum", "url": "https://www.reddit.com/r/couponing", "focus": "Policy discussion, glitch alerts, YMMV reports", "tier": "core" },
+  { "name": "r/coupons", "type": "forum", "url": "https://www.reddit.com/r/coupons", "focus": "Coupon trading and national promos", "tier": "extra" },
+  { "name": "Slickdeals — Grocery", "type": "forum", "url": "https://slickdeals.net/deals/grocery", "focus": "Community-voted grocery and gift-card promos", "tier": "core" },
+  { "name": "Ibotta", "type": "app", "url": "https://ibotta.com", "focus": "Rebate layer — stacks on top of store + manufacturer coupons", "tier": "essential" },
+  { "name": "Fetch Rewards", "type": "app", "url": "https://fetch.com", "focus": "Receipt points on every trip — always the last layer", "tier": "essential" },
+  { "name": "Checkout 51", "type": "app", "url": "https://checkout51.com", "focus": "Secondary rebate layer, often duplicates Ibotta offers", "tier": "extra" },
+  { "name": "Shopkick", "type": "app", "url": "https://shopkick.com", "focus": "Walk-in and scan kicks — passive layer", "tier": "extra" },
+  { "name": "Flipp", "type": "app", "url": "https://flipp.com", "focus": "Every weekly ad in one place — plan the trip", "tier": "core" },
+  { "name": "Coupons.com", "type": "site", "url": "https://www.coupons.com", "focus": "Printable manufacturer coupons", "tier": "core" }
+ ]
+}

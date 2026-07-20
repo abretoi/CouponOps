@@ -1,0 +1,5237 @@
+{
+ "updatedAt": "2026-07-20T08:49:05.340Z",
+ "week": "Week of Jul 13–19, 2026 (seed snapshot — use Refresh for the live week)",
+ "markets": [
+  {
+   "id": "all",
+   "label": "All Markets",
+   "emoji": "🌎",
+   "fromC": "#1a1000",
+   "toC": "#0c0800",
+   "stores": [
+    "All stores"
+   ]
+  },
+  {
+   "id": "austin",
+   "label": "Austin, TX",
+   "emoji": "🤠",
+   "fromC": "#3d0a0a",
+   "toC": "#1a0505",
+   "stores": [
+    "HEB",
+    "Randalls",
+    "Joe V's Smart Shop",
+    "Sprouts",
+    "Whole Foods",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "dfw",
+   "label": "Dallas–Fort Worth, TX",
+   "emoji": "⭐",
+   "fromC": "#0d1a3d",
+   "toC": "#070d1a",
+   "stores": [
+    "Kroger",
+    "Tom Thumb",
+    "Albertsons",
+    "WinCo",
+    "Sprouts",
+    "Fiesta",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "houston",
+   "label": "Houston, TX",
+   "emoji": "🚀",
+   "fromC": "#2a0a3d",
+   "toC": "#12051a",
+   "stores": [
+    "HEB",
+    "Kroger",
+    "Randalls",
+    "Fiesta",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "sanantonio",
+   "label": "San Antonio, TX",
+   "emoji": "🌵",
+   "fromC": "#3d2a0a",
+   "toC": "#1a1205",
+   "stores": [
+    "HEB",
+    "Joe V's Smart Shop",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "rdu",
+   "label": "Raleigh-Durham, NC",
+   "emoji": "🌲",
+   "fromC": "#0a2a14",
+   "toC": "#05140a",
+   "stores": [
+    "Harris Teeter",
+    "Food Lion",
+    "Lowes Foods",
+    "Publix",
+    "Wegmans",
+    "Lidl",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "charlotte",
+   "label": "Charlotte, NC",
+   "emoji": "👑",
+   "fromC": "#0a1f3d",
+   "toC": "#050f1a",
+   "stores": [
+    "Harris Teeter",
+    "Food Lion",
+    "Publix",
+    "Lidl",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "atlanta",
+   "label": "Atlanta, GA",
+   "emoji": "🍑",
+   "fromC": "#3d1505",
+   "toC": "#1a0a02",
+   "stores": [
+    "Publix",
+    "Kroger",
+    "Lidl",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "tampa",
+   "label": "Tampa, FL",
+   "emoji": "🌴",
+   "fromC": "#0a1f3d",
+   "toC": "#050f1a",
+   "stores": [
+    "Publix",
+    "Winn-Dixie",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "orlando",
+   "label": "Orlando, FL",
+   "emoji": "🎢",
+   "fromC": "#2a0a3d",
+   "toC": "#12051a",
+   "stores": [
+    "Publix",
+    "Winn-Dixie",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "miami",
+   "label": "Miami, FL",
+   "emoji": "🌺",
+   "fromC": "#3d0a2a",
+   "toC": "#1a0512",
+   "stores": [
+    "Publix",
+    "Winn-Dixie",
+    "Sedano's",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "cincy",
+   "label": "Cincinnati, OH",
+   "emoji": "🏙️",
+   "fromC": "#0d1a3d",
+   "toC": "#070d1a",
+   "stores": [
+    "Kroger",
+    "Meijer",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "chicago",
+   "label": "Chicago, IL",
+   "emoji": "🌆",
+   "fromC": "#0a2a3d",
+   "toC": "#05141a",
+   "stores": [
+    "Jewel-Osco",
+    "Mariano's",
+    "Meijer",
+    "Tony’s Fresh Market",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "minneapolis",
+   "label": "Minneapolis, MN",
+   "emoji": "❄️",
+   "fromC": "#0a1f3d",
+   "toC": "#050f1a",
+   "stores": [
+    "Cub Foods",
+    "Hy-Vee",
+    "Lunds & Byerlys",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "nyc",
+   "label": "New York, NY",
+   "emoji": "🗽",
+   "fromC": "#1a1a2e",
+   "toC": "#0a0a14",
+   "stores": [
+    "ShopRite",
+    "Stop & Shop",
+    "Key Food",
+    "Wegmans",
+    "Lidl",
+    "Trader Joe’s",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "philly",
+   "label": "Philadelphia, PA",
+   "emoji": "🔔",
+   "fromC": "#2a1a0a",
+   "toC": "#140a05",
+   "stores": [
+    "Acme",
+    "Giant",
+    "ShopRite",
+    "Wegmans",
+    "Lidl",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "dc",
+   "label": "Washington, DC",
+   "emoji": "🏛️",
+   "fromC": "#0a1a2a",
+   "toC": "#050a14",
+   "stores": [
+    "Giant",
+    "Safeway",
+    "Harris Teeter",
+    "Wegmans",
+    "Lidl",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "boston",
+   "label": "Boston, MA",
+   "emoji": "⚓",
+   "fromC": "#0a2a2a",
+   "toC": "#051414",
+   "stores": [
+    "Market Basket",
+    "Stop & Shop",
+    "Shaw’s",
+    "Star Market",
+    "Wegmans",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "denver",
+   "label": "Denver, CO",
+   "emoji": "🏔️",
+   "fromC": "#1a0a3d",
+   "toC": "#0a051a",
+   "stores": [
+    "King Soopers",
+    "Safeway",
+    "Sprouts",
+    "Natural Grocers",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "phoenix",
+   "label": "Phoenix, AZ",
+   "emoji": "🌵",
+   "fromC": "#3d1a05",
+   "toC": "#1a0d02",
+   "stores": [
+    "Fry’s",
+    "Safeway",
+    "Albertsons",
+    "WinCo",
+    "Sprouts",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "la",
+   "label": "Los Angeles, CA",
+   "emoji": "🌊",
+   "fromC": "#3d0a2a",
+   "toC": "#1a0512",
+   "stores": [
+    "Ralphs",
+    "Vons",
+    "Albertsons",
+    "Food 4 Less",
+    "Sprouts",
+    "Trader Joe’s",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  },
+  {
+   "id": "seattle",
+   "label": "Seattle, WA",
+   "emoji": "🌧️",
+   "fromC": "#0a2a1f",
+   "toC": "#05140f",
+   "stores": [
+    "Fred Meyer",
+    "QFC",
+    "Safeway",
+    "WinCo",
+    "PCC",
+    "Walmart",
+    "Target",
+    "Dollar General",
+    "Family Dollar",
+    "Dollar Tree",
+    "CVS",
+    "Walgreens",
+    "Costco",
+    "Sam’s Club",
+    "Aldi"
+   ]
+  }
+ ],
+ "sbg": {
+  "Walgreens": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "CVS": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "Dollar General": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "HEB": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Publix": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "Kroger": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Meijer": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Harris Teeter": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Food Lion": "linear-gradient(135deg,#0a63c4,#052f5e)",
+  "Randalls": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "Walmart": "linear-gradient(135deg,#0a63c4,#052f5e)",
+  "Target": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Family Dollar": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Dollar Tree": "linear-gradient(135deg,#12a89a,#06564f)",
+  "King Soopers": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Fry’s": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Ralphs": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "Fred Meyer": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Winn-Dixie": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Lowes Foods": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "ShopRite": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "Stop & Shop": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Giant": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "Acme": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "Safeway": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Albertsons": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Vons": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Jewel-Osco": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "Mariano's": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Hy-Vee": "linear-gradient(135deg,#0a63c4,#052f5e)",
+  "Cub Foods": "linear-gradient(135deg,#0a63c4,#052f5e)",
+  "Market Basket": "linear-gradient(135deg,#26407a,#0f1c3d)",
+  "Wegmans": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "Aldi": "linear-gradient(135deg,#12a89a,#06564f)",
+  "Lidl": "linear-gradient(135deg,#2a8fc4,#124861)",
+  "Sprouts": "linear-gradient(135deg,#2f3fc4,#141a5e)",
+  "WinCo": "linear-gradient(135deg,#0a63c4,#052f5e)",
+  "Costco": "linear-gradient(135deg,#12a89a,#06564f)"
+ },
+ "badgeStyle": {
+  "MONEYMAKER": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "MONSTER STACK": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "NEAR FREE": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "FREE ITEM": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "BOGO FREE": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "B1G2 FREE": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "PENNY DEAL": [
+   "rgba(47,224,200,.16)",
+   "#2fe0c8",
+   "rgba(47,224,200,.34)"
+  ],
+  "HOT PRICE": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "EVERY SAT": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "SALE": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "3-DAY SALE": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "MEAL DEAL": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "COMBO LOCO": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "JUNE 23": [
+   "rgba(90,200,250,.16)",
+   "#5ac8fa",
+   "rgba(90,200,250,.34)"
+  ],
+  "STACK IT": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "BOGO STACK": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "DOUBLE COUP": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "5X EVENT": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "MVP STACK": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "BASKET DEAL": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "SCAN GUAR.": [
+   "rgba(10,132,255,.18)",
+   "#4da3ff",
+   "rgba(10,132,255,.36)"
+  ],
+  "MPERKS": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ],
+  "APP COUPON": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ],
+  "REG. REWARDS": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ],
+  "EXTRABUCKS": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ],
+  "PROMO CODE": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ],
+  "COMPETITOR": [
+   "rgba(61,90,254,.20)",
+   "#7f8cff",
+   "rgba(61,90,254,.38)"
+  ]
+ },
+ "deals": [
+  {
+   "id": 1,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Personal Care",
+   "em": "🕊️",
+   "hot": 99,
+   "title": "Dove Personal Care ×2 — FREE + $2 Moneymaker After Rewards",
+   "fp": "FREE + $2 back",
+   "fn": -2,
+   "rv": "$16",
+   "sv": "Moneymaker",
+   "sn": 100,
+   "badge": "MONEYMAKER",
+   "vt": "◆ hip2save #1 deal 7/5",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Dove Personal Care Products at $8 each (regularly $8.99–$9.99) = $16 total",
+    "Apply <strong>$10 off 2 Dove coupon</strong> (exp. 7/11) — clip in Walgreens app",
+    "Pay only $6",
+    "Earn back <strong>$8 Cash Rewards</strong> for buying 2 Dove products",
+    "Final: $6 paid − $8 Cash Rewards = <strong>+$2 MONEY MAKER</strong>",
+    "Use Cash Rewards immediately in same visit on another deal"
+   ],
+   "stk": [
+    "$10 off 2 Dove coupon (exp 7/11)",
+    "$8 Cash Rewards earned back",
+    "Use Cash Rewards same visit"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost both Dove products for FREE + a $2 money maker!'",
+   "tip": "This is hip2save's #1 headline deal for this week — literally a money-maker. The $10/2 coupon expires 7/11 so act fast. Use the $8 Cash Rewards immediately on another deal in the same trip to compound savings.",
+   "origin": "seed"
+  },
+  {
+   "id": 2,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Hair Care",
+   "em": "💆",
+   "hot": 96,
+   "title": "Dove Hair Care ×2 — $1 Each After Rewards",
+   "fp": "$1 each",
+   "fn": 1,
+   "rv": "$6.49 each",
+   "sv": "85%",
+   "sn": 85,
+   "badge": "NEAR FREE",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Dove Hair Care Products at as low as $5 each (regularly $6.49)",
+    "Total = $10",
+    "Apply <strong>$4 off 2 Dove Hair coupon</strong> (exp. 7/25) from Sunday insert",
+    "Pay $6",
+    "Earn back <strong>$4 In-Store Rewards</strong>",
+    "Final: <strong>$1 each</strong>",
+    "Note: You can also use $5 off 2 Dove coupon (exp. 7/25) for slightly lower out-of-pocket"
+   ],
+   "stk": [
+    "$4/2 Dove Hair coupon (exp 7/25)",
+    "$4 In-Store Rewards earned back"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $2 total – just $1 each' on Dove Hair Care",
+   "tip": "Stack the $4/2 coupon BEFORE going to store — clip in the app or bring from Sunday insert. In-Store Rewards roll immediately to next purchase.",
+   "origin": "seed"
+  },
+  {
+   "id": 3,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Hair Care",
+   "em": "🌿",
+   "hot": 94,
+   "title": "Garnier Fructis Hair Care ×2 — $1.49 Each After Rewards",
+   "fp": "$1.49 each",
+   "fn": 1.49,
+   "rv": "$6.29 each",
+   "sv": "76%",
+   "sn": 76,
+   "badge": "NEAR FREE",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Garnier Fructis Hair Care Products at $4.49 each (regularly $6.29) = $8.98",
+    "Apply <strong>$3 off 2 Garnier Fructis coupon</strong> (exp. 7/18) — clip in app or Sunday insert",
+    "Pay $5.98",
+    "Earn back <strong>$3 In-Store Rewards</strong>",
+    "Final: <strong>$2.98 total / $1.49 each</strong>"
+   ],
+   "stk": [
+    "$3/2 Garnier Fructis coupon (exp 7/18)",
+    "$3 In-Store Rewards earned back",
+    "Ibotta Garnier rebate"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $2.98 total – just $1.49 each' on Garnier Fructis",
+   "tip": "Garnier Fructis consistently has $3/2 coupons in Sunday inserts. Stack with Ibotta if a Garnier rebate is active for even further savings.",
+   "origin": "seed"
+  },
+  {
+   "id": 4,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Personal Care",
+   "em": "🦷",
+   "hot": 93,
+   "title": "Crest or Oral-B ×2 — $1.50 Each After Rewards (hip2save verified)",
+   "fp": "$1.50 each",
+   "fn": 1.5,
+   "rv": "$6.99 each",
+   "sv": "79%",
+   "sn": 79,
+   "badge": "NEAR FREE",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Crest or Oral-B Dental Care Products at as low as $5 each (reg. $5.49–$6.99) = $10 total",
+    "Apply <strong>$2 off Crest coupon</strong> (exp. 7/13) — from Sunday insert",
+    "Apply additional <strong>$1 off Crest coupon</strong> (exp. 7/25)",
+    "Pay $7",
+    "Earn back <strong>$4 Cash Rewards</strong> from buying 2 Crest/Oral-B",
+    "Final: <strong>$3 total / $1.50 each</strong>"
+   ],
+   "stk": [
+    "$2 off Crest coupon (exp 7/13)",
+    "$1 off Crest coupon (exp 7/25)",
+    "$4 Cash Rewards earned back",
+    "Ibotta rebate"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $3 total – just $1.50 each' on Crest or Oral-B",
+   "tip": "Two Crest coupons (7/13 and 7/25) can stack on separate items. $4 Cash Rewards rolls immediately to next purchase. Ibotta often has Crest/Oral-B rebates that push this further.",
+   "origin": "seed"
+  },
+  {
+   "id": 5,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Personal Care",
+   "em": "🪥",
+   "hot": 91,
+   "title": "Colgate or Hello Dental ×2 — 50¢ Each After Rewards",
+   "fp": "50¢ each",
+   "fn": 0.5,
+   "rv": "$5.99 each",
+   "sv": "92%",
+   "sn": 92,
+   "badge": "NEAR FREE",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Colgate or Hello Dental Care Products at as low as $4 each (reg. $4.99–$5.99) = $8 total",
+    "Apply <strong>$3 off 2 Toothpaste coupon</strong> (exp. 7/18) OR $3 off 2 Toothbrush/Mouthwash (exp. 7/18)",
+    "Pay $5",
+    "Earn back <strong>$4 In-Store Rewards</strong>",
+    "Final: <strong>$1 total / just 50¢ each</strong>"
+   ],
+   "stk": [
+    "$3/2 Colgate/Hello coupon (exp 7/18)",
+    "$4 In-Store Rewards earned back",
+    "Ibotta Colgate rebate"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $1 total – just 50¢ each' on Colgate or Hello",
+   "tip": "50¢/tube for Colgate is one of the best prices of the year. Do Dove deal first, use Cash Rewards, then do Colgate deal for a compounding trip strategy.",
+   "origin": "seed"
+  },
+  {
+   "id": 6,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Beauty",
+   "em": "💄",
+   "hot": 90,
+   "title": "CoverGirl Outlast Lipcolor ×2 — 29¢ Each After Rewards + PayPal",
+   "fp": "29¢ each",
+   "fn": 0.29,
+   "rv": "$6.99 each",
+   "sv": "96%",
+   "sn": 96,
+   "badge": "MONEYMAKER",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 CoverGirl Outlast Lipcolor at $6.99 each = $13.99",
+    "BOGO 50% off sale at Walgreens = $10.48 total",
+    "Apply <strong>$5 off 2 CoverGirl coupon</strong> (exp. 8/15)",
+    "Pay $5.48",
+    "Get <strong>$4.90 back via PayPal rebate</strong> (exp. 8/15) through RetailMeNot or linked PayPal offer",
+    "Final: <strong>58¢ total / 29¢ each</strong>",
+    "Stack Ibotta rebate if available for CoverGirl"
+   ],
+   "stk": [
+    "Walgreens BOGO 50% off",
+    "$5/2 CoverGirl coupon (exp 8/15)",
+    "$4.90 PayPal rebate (exp 8/15)",
+    "Ibotta CoverGirl rebate"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "PayPal/RetailMeNot",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupon exp. 8/15, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost 58¢ total – just 29¢ each' on CoverGirl Outlast Lipcolor",
+   "tip": "Activate the PayPal rebate in your PayPal account or through RetailMeNot BEFORE purchasing. CoverGirl $5/2 coupon valid through 8/15 — plenty of time. This is arguably the best cosmetics deal of the week.",
+   "origin": "seed"
+  },
+  {
+   "id": 7,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Beauty",
+   "em": "👁️",
+   "hot": 87,
+   "title": "Revlon Colorstay Eyeshadow ×2 — $2.24 Each",
+   "fp": "$2.24 each",
+   "fn": 2.24,
+   "rv": "$11.99 each",
+   "sv": "81%",
+   "sn": 81,
+   "badge": "BOGO STACK",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Revlon Colorstay Eyeshadow at $4.99 each (regularly $11.99) = $9.98",
+    "BOGO 50% off sale = $7.48",
+    "Apply <strong>$3 off Revlon coupon</strong> (exp. 7/18)",
+    "Final: <strong>$4.48 total / $2.24 each</strong>",
+    "Add Ibotta rebate on Revlon if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Walgreens BOGO 50% off",
+    "$3 off Revlon coupon (exp 7/18)",
+    "Ibotta Revlon rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupon exp. 7/18, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $4.48 total – just $2.24 each' on Revlon Colorstay Eyeshadow",
+   "tip": "Revlon at clearance price + BOGO 50% + coupon = $2.24 for a premium eyeshadow. Stock up for gifts or personal use.",
+   "origin": "seed"
+  },
+  {
+   "id": 8,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Men's Care",
+   "em": "🪒",
+   "hot": 86,
+   "title": "4 P&G Deodorant Products (Old Spice + Gillette) — $6.96 Total",
+   "fp": "$6.96 for 4",
+   "fn": 1.74,
+   "rv": "$31.96",
+   "sv": "78%",
+   "sn": 78,
+   "badge": "STACK IT",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Old Spice Red Collection Antiperspirant Spray 4.3oz at $6.99 each + 2 Gillette Clear Gel Antiperspirant 3.8oz at $8.99 each = $31.96",
+    "BOGO 50% off sale = $23.96",
+    "Apply <strong>$5 off 2 Old Spice coupon</strong> (exp. 7/25)",
+    "Apply <strong>$4 off 2 Gillette coupon</strong> (exp. 7/25)",
+    "Pay $14.96",
+    "Earn back <strong>$8 In-Store Rewards</strong> (Buy 4 P&G Deodorant)",
+    "Final: <strong>$6.96 for 4 products</strong>"
+   ],
+   "stk": [
+    "Walgreens BOGO 50% off",
+    "$5/2 Old Spice coupon (exp 7/25)",
+    "$4/2 Gillette coupon (exp 7/25)",
+    "$8 In-Store Rewards earned back"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupons valid through 7/25, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $6.96 for all 4 P&G deodorant products'",
+   "tip": "3-layer stack: BOGO 50% + two manufacturer coupons + In-Store Rewards. At $1.74/stick this is the best deodorant deal in any market this week.",
+   "origin": "seed"
+  },
+  {
+   "id": 9,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "🗃️",
+   "hot": 88,
+   "title": "Walgreens Food Storage Bags — B1G2 Free (93¢ Each)",
+   "fp": "93¢ each",
+   "fn": 0.93,
+   "rv": "$3.49",
+   "sv": "73%",
+   "sn": 73,
+   "badge": "B1G2 FREE",
+   "vt": "◆ hip2save 7/5 confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 1 Walgreens brand Food Storage Bag product (regularly $2.79–$3.49)",
+    "Get 2 additional FREE at checkout — auto-applies",
+    "Pay for 1, get 3 total = effectively 93¢ each",
+    "Scan with Fetch Rewards for bonus points"
+   ],
+   "stk": [
+    "Walgreens B1G2 Free promo (auto)",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Walgreens Food Storage Bags – Buy 1, Get 2 Free · Only 93¢ (regularly $2.79–$3.49)'",
+   "tip": "B1G2 Free = 3 for the price of 1 = 67% off each bag. Hip2save listed this as a household headline deal. Buy multiples (each B1G2 is one transaction unit).",
+   "origin": "seed"
+  },
+  {
+   "id": 10,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "🧴",
+   "hot": 84,
+   "title": "All, Purex or Snuggle Laundry 4/$10 — $2.50 Each",
+   "fp": "$2.50 each",
+   "fn": 2.5,
+   "rv": "$8.99",
+   "sv": "72%",
+   "sn": 72,
+   "badge": "HOT PRICE",
+   "vt": "◆ hip2save 7/5 confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 4 All, Purex, or Snuggle Laundry Products — sale price 4/$10 (reg $4.99–$8.99)",
+    "Only $2.50 each when buying 4",
+    "Add any All, Purex, or Snuggle manufacturer coupon from Sunday insert",
+    "Submit to Ibotta for any laundry rebate",
+    "Add Fetch Rewards"
+   ],
+   "stk": [
+    "4/$10 Walgreens sale price",
+    "All/Purex/Snuggle mfr coupon (Sunday insert)",
+    "Ibotta laundry rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'All, Purex or Snuggle Laundry Products 4/$10 or $4.99 each · Only $2.50 each WYB 4'",
+   "tip": "$2.50/bottle for national-brand laundry detergent is exceptional. Mix-and-match All, Purex, and Snuggle across the 4 to maximize your coupon stacking.",
+   "origin": "seed"
+  },
+  {
+   "id": 11,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "🌸",
+   "hot": 82,
+   "title": "Palmolive or Suavitel ×2 — $1.11 Each After Rewards",
+   "fp": "$1.11 each",
+   "fn": 1.11,
+   "rv": "$3.49 each",
+   "sv": "68%",
+   "sn": 68,
+   "badge": "REG. REWARDS",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Palmolive or Suavitel Cleaning Products at $2.99 each (regularly $3.49) = $5.98",
+    "Apply <strong>75¢ off coupon</strong> (exp. 7/18)",
+    "Pay $5.23",
+    "Earn back <strong>$3 In-Store Rewards</strong>",
+    "Final: <strong>$2.23 total / $1.11 each</strong>",
+    "Roll In-Store Rewards on your next Walgreens purchase"
+   ],
+   "stk": [
+    "75¢ off Palmolive/Suavitel coupon (exp 7/18)",
+    "$3 In-Store Rewards earned back",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupon exp. 7/18, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $2.23 total – just $1.11 each' on Palmolive/Suavitel",
+   "tip": "Roll the $3 In-Store Rewards immediately on another deal. Palmolive dish soap + Suavitel softener both qualify — a natural home essentials bundle.",
+   "origin": "seed"
+  },
+  {
+   "id": 12,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "🕯️",
+   "hot": 80,
+   "title": "Febreze Products ×2 — $1.74 Each",
+   "fp": "$1.74 each",
+   "fn": 1.74,
+   "rv": "$4.99 each",
+   "sv": "65%",
+   "sn": 65,
+   "badge": "HOT PRICE",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Buy 2 Febreze Household Products at $3.49 each (regularly $4.99) = $6.98",
+    "Apply <strong>$3.50 off 2 Febreze coupon</strong> (exp. 7/11)",
+    "Final: <strong>$3.48 total / $1.74 each</strong>",
+    "Add Ibotta rebate for Febreze if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "$3.50/2 Febreze coupon (exp 7/11)",
+    "Ibotta Febreze rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupon exp. 7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $3.48 total – just $1.74 each' on Febreze",
+   "tip": "Febreze coupon expires 7/11 — do this deal this week. At $1.74 each this is the best Febreze pricing since last year.",
+   "origin": "seed"
+  },
+  {
+   "id": 13,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "☀️",
+   "hot": 79,
+   "title": "Dawn Dish Soap — 99¢ (Filler Item)",
+   "fp": "99¢",
+   "fn": 0.99,
+   "rv": "$1.29",
+   "sv": "23%",
+   "sn": 23,
+   "badge": "HOT PRICE",
+   "vt": "📣 hip2save 7/5 filler pick",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Pick up Dawn Dish Soap for 99¢ (regularly $1.29) while doing your other Walgreens deals",
+    "No coupon needed — straight sale price",
+    "Scan with Fetch Rewards",
+    "Use as a cart filler to hit $35 or $50 for JULY15/JULY20 promo codes"
+   ],
+   "stk": [
+    "Walgreens sale price",
+    "Use as cart filler for promo codes (JULY15/JULY20)",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/5–7/11, 2026",
+   "src": "hip2save.com July 5, 2026: 'Dawn Dish Soap 99¢ (regularly $1.29)' — listed as filler item",
+   "tip": "Use Dawn + Gain dish soap ($1.99) + Arizona drinks (69¢) as cart fillers to hit $35 or $50 for JULY15 (15% off $35) or JULY20 (20% off $50) promo codes.",
+   "origin": "seed"
+  },
+  {
+   "id": 14,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Household",
+   "em": "💰",
+   "hot": 85,
+   "title": "Walgreens Promo Code Stack — JULY15 (15% off $35) / JULY20 (20% off $50)",
+   "fp": "15–20% off",
+   "fn": 0,
+   "rv": "$35–$50+",
+   "sv": "15–20%",
+   "sn": 17,
+   "badge": "PROMO CODE",
+   "vt": "◆ hip2save + KCL confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Online orders only — apply promo codes at checkout",
+    "<strong>JULY15</strong>: Extra 15% off $35+ purchase (3 uses per account; exp. 7/25)",
+    "<strong>JULY20</strong>: Extra 20% off $50+ purchase (3 uses per account; exp. 7/25)",
+    "<strong>WAG10</strong>: Extra 10% off (3 uses per account — ongoing)",
+    "<strong>PICKUP10</strong>: Extra 10% off pickup orders (exp. 8/31)",
+    "<strong>WELCOME25</strong>: Extra 25% off $20+ for new customers (ongoing)",
+    "Stack promo codes ON TOP of app coupons and weekly ad sale prices"
+   ],
+   "stk": [
+    "JULY15 (15% off $35+) exp 7/25",
+    "JULY20 (20% off $50+) exp 7/25",
+    "WAG10 (10% off) ongoing",
+    "Walgreens app coupons"
+   ],
+   "apps": [
+    "myWalgreens App"
+   ],
+   "exp": "JULY15 and JULY20 valid through July 25, 2026",
+   "src": "hip2save.com July 5, 2026: promo codes JULY15, JULY20, WAG10, PICKUP10, WELCOME25 all confirmed active",
+   "tip": "JULY20 is the sweet spot for a big haul — 20% off $50+ stacks ON TOP of already-discounted weekly ad prices. Build your cart to $50 using multiple deals above, then apply JULY20 for compounding savings.",
+   "origin": "seed"
+  },
+  {
+   "id": 15,
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Sun Care",
+   "em": "🌞",
+   "hot": 77,
+   "title": "Coppertone Sun Care ×2 — $5.99 Each After $10 Cash Rewards",
+   "fp": "$5.99 each",
+   "fn": 5.99,
+   "rv": "$11.99 each",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "REG. REWARDS",
+   "vt": "◆ hip2save 7/5 verified",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Buy 2 Coppertone Sun Care Products at as low as $11.99 each = $23.98",
+    "Apply <strong>$2 off coupon</strong> (exp. 7/25)",
+    "Pay $21.98",
+    "Earn back <strong>$10 Cash Rewards</strong> (Spend $20 on Coppertone)",
+    "Final: <strong>$11.98 total / $5.99 each</strong>"
+   ],
+   "stk": [
+    "$2 off Coppertone coupon (exp 7/25)",
+    "$10 Cash Rewards (spend $20)",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Coupon exp. 7/25, 2026",
+   "src": "hip2save.com July 5, 2026: 'Final cost $11.98 total – just $5.99 each' on Coppertone Sun Care",
+   "tip": "Peak summer sunscreen season — $5.99 each for Coppertone is very competitive. Use Cash Rewards on another deal immediately.",
+   "origin": "seed"
+  },
+  {
+   "id": 16,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Hair Care",
+   "em": "💚",
+   "hot": 95,
+   "title": "Garnier Fructis Hair Care ×2 — $1 Each After EB + App Coupon",
+   "fp": "$1 each",
+   "fn": 1,
+   "rv": "$6.29 each",
+   "sv": "84%",
+   "sn": 84,
+   "badge": "NEAR FREE",
+   "vt": "◆ fabulesslyfrugal #1 CVS pick",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Garnier Fructis Hair Care at $4 each (sale price) = $8 total",
+    "Clip <strong>$3/2 Garnier Fructis CVS App coupon</strong>",
+    "Pay $5",
+    "Earn back <strong>$3 ExtraBucks</strong> on qualifying Garnier purchase",
+    "Final: <strong>$2 total / $1 each</strong>",
+    "Roll ExtraBucks immediately on another CVS deal the same trip"
+   ],
+   "stk": [
+    "CVS $4 sale price",
+    "$3/2 Garnier App coupon",
+    "$3 ExtraBucks earned back",
+    "Ibotta"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid through July 4–18, 2026",
+   "src": "fabulesslyfrugal.com CVS weekly matchup: '$1 Garnier Fructis shampoo' listed as #1 CVS pick",
+   "tip": "fabulesslyfrugal named this as their #1 CVS deal. The ExtraBucks roll strategy is key — do this first, then use the $3 EB on the Revlon nail deal below.",
+   "origin": "seed"
+  },
+  {
+   "id": 17,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Beauty",
+   "em": "💅",
+   "hot": 93,
+   "title": "Revlon Nail Enamel — 69¢ Each After EB + App Coupon",
+   "fp": "69¢ each",
+   "fn": 0.69,
+   "rv": "$7.99",
+   "sv": "91%",
+   "sn": 91,
+   "badge": "NEAR FREE",
+   "vt": "◆ fabulesslyfrugal #1 CVS pick",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Revlon Nail Enamel at CVS",
+    "<strong>Buy 2 Get 1 Free</strong> promotion = $5.33 avg",
+    "Apply <strong>$6/2 Revlon CVS store coupon</strong>",
+    "Earn <strong>$5 ExtraBucks</strong> back",
+    "Final: <strong>$0.69 each</strong>",
+    "Full scenario per fabulesslyfrugal: Pay $6.38, get $5 ExtraBucks = $0.69 each"
+   ],
+   "stk": [
+    "CVS B2G1 Free sale",
+    "$6/2 Revlon CVS store coupon",
+    "$5 ExtraBucks earned back"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid through July 4, 2026",
+   "src": "fabulesslyfrugal.com CVS matchup: '$0.69 Revlon nail enamel' — confirmed as top CVS pick",
+   "tip": "69¢ for Revlon nail enamel is essentially free. The $6/2 coupon is a CVS STORE coupon (not manufacturer) — clip in CVS app. ExtraBucks roll directly to next deal.",
+   "origin": "seed"
+  },
+  {
+   "id": 18,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Household",
+   "em": "🧺",
+   "hot": 88,
+   "title": "Gain Laundry Products — $5 Total Scenario (fabulesslyfrugal verified)",
+   "fp": "~$5",
+   "fn": 5,
+   "rv": "$15.50",
+   "sv": "68%",
+   "sn": 68,
+   "badge": "STACK IT",
+   "vt": "◆ fabulesslyfrugal verified",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy Gain Flings 42ct at $7.50 each (must buy 2) = $15 total",
+    "Apply <strong>$3/1 Gain Flings 42ct coupon</strong> from Coupon24 App (exp. 7/4)",
+    "Apply <strong>$2/1 Gain Detergent 81oz coupon</strong> from Coupon24 App",
+    "Final: approximately <strong>$5 each / $0.10 per load</strong>",
+    "Submit to Ibotta for Gain rebate if active",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "CVS $7.50 sale price (must buy 2)",
+    "$3/1 Gain Flings coupon (Coupon24 app)",
+    "$2/1 Gain coupon (Coupon24 app)",
+    "Ibotta Gain rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Coupon24 App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid through July 4, 2026 — check for refresh",
+   "src": "fabulesslyfrugal.com CVS matchup: 'Gain Laundry $5 scenario — $0.10 per load' — confirmed as top pick",
+   "tip": "Coupon24 app coupons stack with CVS sale prices and ExtraBucks on laundry products. $0.10 per load for Gain Flings is exceptional value.",
+   "origin": "seed"
+  },
+  {
+   "id": 19,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Household",
+   "em": "🧻",
+   "hot": 86,
+   "title": "Cottonelle Toilet Paper Deal — $1.99 After ExtraBucks",
+   "fp": "$1.99",
+   "fn": 1.99,
+   "rv": "$2.99",
+   "sv": "33%",
+   "sn": 33,
+   "badge": "EXTRABUCKS",
+   "vt": "◆ fabulesslyfrugal featured",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 1 Cottonelle product at $2.99 (sale price at CVS)",
+    "Earn <strong>$1 ExtraBucks</strong> back after qualifying purchase",
+    "Final: <strong>$1.99 effective</strong>",
+    "Add Ibotta rebate for Cottonelle/Kimberly-Clark if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "CVS sale price",
+    "$1 ExtraBucks earned back",
+    "Ibotta Cottonelle rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid through July 4, 2026 — check for refresh",
+   "src": "fabulesslyfrugal.com CVS matchup: 'Cottonelle $1.99 after ExtraBucks' — confirmed featured deal",
+   "tip": "Roll the $1 ExtraBucks to another deal. Cottonelle is a good filler item for building toward the L'Oreal $20 spend threshold.",
+   "origin": "seed"
+  },
+  {
+   "id": 20,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Personal Care",
+   "em": "🦷",
+   "hot": 84,
+   "title": "Colgate Optic White Pro Series — $2.99 After EB + App Coupon",
+   "fp": "$2.99",
+   "fn": 2.99,
+   "rv": "$8.99",
+   "sv": "67%",
+   "sn": 67,
+   "badge": "APP COUPON",
+   "vt": "◆ fabulesslyfrugal + KCL verified",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 1 Colgate Optic White Pro Series at $8.99",
+    "Apply <strong>$3/1 Colgate Optic White Pro Series CVS App coupon</strong>",
+    "Pay $5.99",
+    "Earn back <strong>$3 ExtraBucks</strong>",
+    "Final: <strong>$2.99</strong>",
+    "KCL also confirms Colgate Optic White Advanced, Purple, Charcoal, Sensitivity as featured CVS deals 7/5–7/18"
+   ],
+   "stk": [
+    "$3/1 Colgate Optic White Pro Series CVS App coupon",
+    "$3 ExtraBucks earned back",
+    "Ibotta"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/5–7/18, 2026",
+   "src": "fabulesslyfrugal.com: '$2.99 after EB + App coupon on Colgate Optic White Pro Series' · KCL CVS 7/5–7/18: Colgate Optic White as top pick",
+   "tip": "KCL's CVS top picks for 7/5–7/18 include multiple Colgate Optic White variants. Check the CVS app for which specific $3/1 or $2/2 coupons are active for your account.",
+   "origin": "seed"
+  },
+  {
+   "id": 21,
+   "markets": [
+    "all"
+   ],
+   "store": "CVS",
+   "cat": "Pantry",
+   "em": "🥣",
+   "hot": 82,
+   "title": "Cinnamon Toast Crunch Cereal — 99¢ (fabulesslyfrugal verified)",
+   "fp": "99¢",
+   "fn": 0.99,
+   "rv": "$4.99",
+   "sv": "80%",
+   "sn": 80,
+   "badge": "HOT PRICE",
+   "vt": "◆ fabulesslyfrugal CVS pick",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy Cinnamon Toast Crunch at CVS — $2.99 sale price",
+    "Apply $1 off General Mills coupon from Sunday insert",
+    "Earn $1 ExtraBucks if qualifying General Mills promo active",
+    "Final: approximately <strong>99¢</strong>",
+    "Add Ibotta rebate for General Mills if available"
+   ],
+   "stk": [
+    "CVS $2.99 sale price",
+    "$1 off General Mills mfr coupon",
+    "CVS ExtraBucks",
+    "Ibotta"
+   ],
+   "apps": [
+    "CVS ExtraCare App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Verify current CVS ad — fabulesslyfrugal confirmed",
+   "src": "fabulesslyfrugal.com CVS weekly: '$0.99 Cinnamon Toast Crunch cereal' listed as featured deal",
+   "tip": "99¢ for Cinnamon Toast Crunch is exceptional — regularly $4.99. Great cart filler while stacking the personal care and beauty deals above.",
+   "origin": "seed"
+  },
+  {
+   "id": 22,
+   "markets": [
+    "all"
+   ],
+   "store": "Dollar General",
+   "cat": "Household",
+   "em": "🧻",
+   "hot": 97,
+   "title": "Saturday $5 off $25 — set your alarm, every week without fail",
+   "fp": "$20+ for $25",
+   "fn": 20,
+   "rv": "$25+",
+   "sv": "20%",
+   "sn": 20,
+   "badge": "EVERY SAT",
+   "vt": "◆ @torok.coupon.hunter 28K likes",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Open Dollar General app every Saturday morning ~8am",
+    "Clip the <strong>$5 off $25 purchase coupon</strong> — drops weekly",
+    "Build cart with paper goods, cleaning supplies, snacks, pantry items",
+    "Stack with DG digital manufacturer coupons clipped in the same session",
+    "Add Pepsi+Frito-Lay $4 auto-bundle if applicable",
+    "Submit receipt to Fetch Rewards"
+   ],
+   "stk": [
+    "DG $5 off $25 Saturday coupon",
+    "DG digital mfr coupons",
+    "Pepsi+Frito $4 auto-bundle",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Dollar General App",
+    "Fetch Rewards"
+   ],
+   "exp": "Every Saturday — new coupon drops ~8am",
+   "src": "@torok.coupon.hunter 28.3K likes on DG Saturday deal content (4M TikTok/IG followers)",
+   "tip": "Torok's highest-engagement content category. Stack Saturday $5/$25 with Pepsi+Frito $4 auto-discount = $9 saved in one trip. Works at every DG location nationwide.",
+   "origin": "seed"
+  },
+  {
+   "id": 23,
+   "markets": [
+    "all"
+   ],
+   "store": "Dollar General",
+   "cat": "Penny Items",
+   "em": "🪙",
+   "hot": 94,
+   "title": "DG Tuesday Penny List — $0.01 Items (99% off retail)",
+   "fp": "$0.01",
+   "fn": 0.01,
+   "rv": "$3–12",
+   "sv": "99%",
+   "sn": 99,
+   "badge": "PENNY DEAL",
+   "vt": "◆ @torok.coupon.hunter core content",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Every Monday: check <strong>pennypinchinmom.com</strong> or <strong>DollarGeneralPennyList.com</strong> for Tuesday's list",
+    "Visit Dollar General on <strong>Tuesday before 9am</strong>",
+    "Use DG app as a barcode scanner in seasonal/clearance sections",
+    "Items ring as $0.01 — scanner reveals them, no shelf tags exist",
+    "Never ask employees — simply scan items, confirm $0.01 price, purchase"
+   ],
+   "stk": [
+    "No coupon needed — DG app barcode scanner is your tool"
+   ],
+   "apps": [
+    "Dollar General App"
+   ],
+   "exp": "New penny list every Tuesday",
+   "src": "@torok.coupon.hunter — DG penny deals are his most-watched content category (4M followers)",
+   "tip": "Discontinued/overstock clearances that ring as $0.01. Arrive before 9am Tuesday — other penny hunters know the game. The DG app scanner is the only tool — it won't show in the system any other way.",
+   "origin": "seed"
+  },
+  {
+   "id": 24,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Pantry",
+   "em": "🌽",
+   "hot": 96,
+   "title": "Buy 2 Party Size Ruffles/Tostitos → FREE Pepsi 6-pk · Verified Live",
+   "fp": "~$9",
+   "fn": 9,
+   "rv": "$14+",
+   "sv": "~35%",
+   "sn": 35,
+   "badge": "COMBO LOCO",
+   "vt": "◆ HEB.com live — expires 7/7",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Party Size Ruffles or Tostitos Chips (12–17 oz, any variety)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Pepsi 6-pk / 16.9 oz bottles (any variety)",
+    "Add Ibotta rebate for Pepsi if available",
+    "Scan receipt with Fetch Rewards",
+    "⚠️ Expires Tuesday 7/7 — shop TODAY"
+   ],
+   "stk": [
+    "HEB Combo Loco",
+    "Ibotta Pepsi rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7 — SHOP TODAY",
+   "src": "Verified live on HEB.com top coupon picks page (scraped July 7, 2026): 'Buy 2 Party Size Ruffles or Tostitos → FREE Pepsi 6pk'",
+   "tip": "Pepsi 6-pk retails ~$5. Free with your chips purchase = nearly 50% off the bundle. Expires TODAY (Tuesday) — stock up for the weekend.",
+   "origin": "seed"
+  },
+  {
+   "id": 25,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Pantry",
+   "em": "🍖",
+   "hot": 94,
+   "title": "Sweet Baby Ray's BBQ Sauce 28oz → FREE Bush's Baked Beans 28oz",
+   "fp": "~$3.50",
+   "fn": 3.5,
+   "rv": "$7+",
+   "sv": "~50%",
+   "sn": 50,
+   "badge": "COMBO LOCO",
+   "vt": "◆ HEB.com live — expires 7/7",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy Sweet Baby Ray's Barbecue Sauce 28 oz (any variety, ~$3.50)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Bush's Best Baked 28oz or Grillin' Beans 22oz (any variety)",
+    "Add any Sweet Baby Ray's manufacturer coupon from Sunday insert ($0.50–$0.75 off)",
+    "Scan with Fetch Rewards",
+    "⚠️ Expires Tuesday 7/7"
+   ],
+   "stk": [
+    "HEB Combo Loco",
+    "Sweet Baby Ray's mfr coupon",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7 — SHOP TODAY",
+   "src": "Verified live on HEB.com top coupon picks: 'Buy Sweet Baby Ray's Barbecue Sauce 28oz → FREE Bush's Best Baked/Grillin' Beans'",
+   "tip": "Bush's Baked Beans retail ~$2.50 — free with your BBQ sauce. Complete summer cookout combo for ~$3. Stack the Ray's insert coupon to drop below $3 total.",
+   "origin": "seed"
+  },
+  {
+   "id": 26,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Breakfast",
+   "em": "🧇",
+   "hot": 91,
+   "title": "Buy 2 Kellogg's Frosted Flakes Family Size → FREE HEB Sparkling Water 12-pk",
+   "fp": "~$9",
+   "fn": 9,
+   "rv": "$14+",
+   "sv": "~36%",
+   "sn": 36,
+   "badge": "COMBO LOCO",
+   "vt": "◆ HEB.com live — expires 7/7",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Kellogg's Family Size Frosted Flakes or Frosted Flakes 25% Less Sugar Cereal (20.1–22.2 oz, any variety)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE H-E-B Sparkling Water 12-pk / 12oz cans (any variety)",
+    "Add $1 off Kellogg's manufacturer coupon from Sunday insert",
+    "Submit to Ibotta for Kellogg's rebate",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB Combo Loco (B2G1 Free sparkling water)",
+    "Kellogg's mfr coupon (Sunday insert)",
+    "Ibotta Kellogg's rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7 — SHOP TODAY",
+   "src": "Verified live on HEB.com weekly ad (July 7, 2026): 'Buy 2 Kellogg's Family Size Frosted Flakes → FREE HEB Sparkling Water 12-pk'",
+   "tip": "HEB Sparkling Water 12-pk retails ~$5 — free with your cereal purchase. Stack the Kellogg's insert coupon for an even lower net cost. Expires today.",
+   "origin": "seed"
+  },
+  {
+   "id": 27,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Household",
+   "em": "🪲",
+   "hot": 88,
+   "title": "Buy 2 Raid Insect Sprays → 3rd FREE (Summer Essential)",
+   "fp": "~$9 for 3",
+   "fn": 9,
+   "rv": "$13.50",
+   "sv": "33%",
+   "sn": 33,
+   "badge": "COMBO LOCO",
+   "vt": "◆ HEB.com live — expires 7/7",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Raid Ant & Roach, Flying Insect Killer, or Wasp & Hornet Aerosol Sprays",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → 3rd Raid spray is FREE",
+    "Add Ibotta rebate for Raid/SC Johnson if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB Combo Loco (B2G1 Free Raid)",
+    "Ibotta Raid rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com top coupon picks: 'Buy 2 Raid Ant & Roach/Flying Insect/Wasp Sprays → 3rd FREE'",
+   "tip": "Austin summer mosquito/bug season — Buy 2 Get 1 Free on Raid is perfectly timed. Stock up 3 cans for the price of 2.",
+   "origin": "seed"
+  },
+  {
+   "id": 28,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Pantry",
+   "em": "🌮",
+   "hot": 85,
+   "title": "HEB Taco Shells 12–18ct → FREE HEB Taco Seasoning Mix",
+   "fp": "~$2.50",
+   "fn": 2.5,
+   "rv": "$4+",
+   "sv": "~38%",
+   "sn": 38,
+   "badge": "COMBO LOCO",
+   "vt": "📣 HEB.com live — expires 7/7",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy HEB Taco Shells 12–18ct (any variety)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE HEB Taco Seasoning Mix 1.25oz",
+    "Add Ibotta rebate for HEB brand items",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB Combo Loco",
+    "Ibotta HEB brand rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com top coupon picks: 'Buy HEB Taco Shells 12–18ct → FREE HEB Taco Seasoning Mix 1.25oz'",
+   "tip": "Complete taco kit builder — free seasoning with your shells. Pair with HEB ground beef and cheese for a full taco night under $10 with stacked coupons.",
+   "origin": "seed"
+  },
+  {
+   "id": 29,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Breakfast",
+   "em": "🥞",
+   "hot": 83,
+   "title": "HEB Frozen Kolaches 16ct → FREE HEB Frozen Blueberry/PB&J Filled Pancakes",
+   "fp": "~$6",
+   "fn": 6,
+   "rv": "$10+",
+   "sv": "~40%",
+   "sn": 40,
+   "badge": "COMBO LOCO",
+   "vt": "📣 HEB.com live — expires 7/7",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy HEB Fully Cooked Frozen Kolaches 16ct (any variety)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE HEB Frozen Snack-Size Blueberry or Peanut Butter & Strawberry Jam Filled Pancakes 10ct",
+    "Add HEB Debit/Credit Card for 5% back on HEB brand items",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB Combo Loco",
+    "HEB Card 5% back on HEB brand",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com top coupon picks: 'Buy HEB Fully Cooked Frozen Kolaches 16ct → FREE HEB Frozen Snack-Size Blueberry or PB&J Filled Pancakes 10ct'",
+   "tip": "Texas breakfast royalty — free HEB pancakes with your frozen kolaches. Great kid-friendly breakfast stock-up at ~$6 for both items.",
+   "origin": "seed"
+  },
+  {
+   "id": 30,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Snacks",
+   "em": "🍟",
+   "hot": 82,
+   "title": "Buy 2 Dinamita/Doritos Flamas/Ruffles Queso → FREE Gamesa Maria's Cookies 19.7oz",
+   "fp": "~$8",
+   "fn": 8,
+   "rv": "$12+",
+   "sv": "~33%",
+   "sn": 33,
+   "badge": "COMBO LOCO",
+   "vt": "📣 HEB.com live — expires 7/7",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Dinamita, Doritos Flamas, Turbos Flamas, Ruffles Queso, or Rancheritos (6.5–9.25oz, any variety)",
+    "Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Gamesa Maria's Cookies 19.7oz (large family size bag)",
+    "Add Ibotta rebate for Frito-Lay products if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB Combo Loco",
+    "Ibotta Frito-Lay rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com top coupon picks: 'Buy 2 Dinamita/Doritos Flamas/Turbos Flamas/Ruffles Queso → FREE Gamesa Maria's Cookies 19.7oz'",
+   "tip": "Gamesa Maria's Cookies 19.7oz family bag retails ~$4. Free with 2 spicy chips purchases. Great for a house gathering.",
+   "origin": "seed"
+  },
+  {
+   "id": 31,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Pantry",
+   "em": "🥣",
+   "hot": 79,
+   "title": "$2 off Party Size Doritos/Cheetos/Fritos/Munchies 2-pack — unlimited use",
+   "fp": "~$7",
+   "fn": 7,
+   "rv": "$9+",
+   "sv": "~22%",
+   "sn": 22,
+   "badge": "BASKET DEAL",
+   "vt": "📣 HEB.com live — expires 7/7",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Buy 2 Party Size Doritos, Cheetos, Fritos, or Munchies (12–17 oz, any variety)",
+    "Clip <strong>'$2 off 2'</strong> digital coupon in My HEB app — unlimited use",
+    "Add Ibotta rebate for Frito-Lay products",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB $2 off 2 digital coupon (unlimited)",
+    "Ibotta Frito-Lay rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com weekly ad: '$2 off 2 Party Size Doritos, Cheetos, Fritos, or Munchies 12-17oz'",
+   "tip": "Unlimited use = stock up for the week. With Ibotta on Frito-Lay products these can drop to under $3 each for Party Size bags.",
+   "origin": "seed"
+  },
+  {
+   "id": 32,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Pantry",
+   "em": "🩸",
+   "hot": 75,
+   "title": "$2 off $10 Kotex Pads/Liners/Tampons — unlimited use through 7/14",
+   "fp": "~$8 for $10",
+   "fn": 8,
+   "rv": "$10+",
+   "sv": "20%",
+   "sn": 20,
+   "badge": "BASKET DEAL",
+   "vt": "📣 HEB.com live — expires 7/14",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Buy $10 of Kotex Pads, Liners, or Click Tampons",
+    "Clip <strong>'$2 off $10 Kotex' basket coupon</strong> in My HEB app — unlimited use through 7/14",
+    "Stack with any Kotex/Kimberly-Clark manufacturer coupon from Sunday insert",
+    "Add Ibotta rebate for Kotex if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB $2 off $10 basket coupon (unlimited, exp 7/14)",
+    "Kotex mfr coupon (Sunday insert)",
+    "Ibotta Kotex rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Expires July 14, 2026 — unlimited use",
+   "src": "Verified live on HEB.com weekly ad: '$2 off $10 Kotex Pads, Liners, or Click Tampons — expires 7/14/2026 unlimited use'",
+   "tip": "Unlimited use through 7/14 — stock up or do multiple trips. Kotex mfr coupons are common in Sunday inserts. Stack with Ibotta for 3-layer savings.",
+   "origin": "seed"
+  },
+  {
+   "id": 33,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Household",
+   "em": "🦟",
+   "hot": 73,
+   "title": "$2 off Cutter or Repel Insect Repellent — unlimited use",
+   "fp": "~$5",
+   "fn": 5,
+   "rv": "$7+",
+   "sv": "~28%",
+   "sn": 28,
+   "badge": "BASKET DEAL",
+   "vt": "📣 HEB.com live — expires 7/7",
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "steps": [
+    "Buy any Cutter or Repel Insect Control or Repellent item",
+    "Clip <strong>'$2 off Cutter or Repel'</strong> digital coupon in My HEB app — unlimited use",
+    "Add Ibotta rebate for insect repellent if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB $2 off digital coupon (unlimited)",
+    "Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "⚠️ Expires Tuesday July 7",
+   "src": "Verified live on HEB.com weekly ad: '$2 off Cutter or Repel Insect Control or Repellent items — unlimited use'",
+   "tip": "Austin summer bug season — $2 off Cutter/Repel is well-timed. Combine with the Raid B2G1 deal above for a complete insect control stock-up.",
+   "origin": "seed"
+  },
+  {
+   "id": 34,
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Beverages",
+   "em": "🥤",
+   "hot": 78,
+   "title": "Save $3 When You Buy 4 Pepsi-Cola Multipacks (Limit 1)",
+   "fp": "Varies",
+   "fn": 3,
+   "rv": "Full price",
+   "sv": "$3 off",
+   "sn": 20,
+   "badge": "BASKET DEAL",
+   "vt": "📣 HEB.com live — expires Saturday",
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "steps": [
+    "Buy any 4 participating Pepsi-Cola beverages (multipacks only — no singles)",
+    "Clip <strong>'Save $3 on 4 Pepsi-Cola Multipacks'</strong> coupon in My HEB app — limit 1 per customer",
+    "Pepsi, Diet Pepsi, Mountain Dew, Starry, Mug, Crush, Schweppes all qualify",
+    "Add Ibotta rebate for Pepsi products",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "HEB $3 off 4 Pepsi multipacks (limit 1)",
+    "Ibotta Pepsi rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "My HEB App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Expires Saturday (check HEB app)",
+   "src": "Verified live on HEB.com weekly ad: 'Save $3.00 when you buy any four participating Pepsi-Cola beverages, multipacks only — limit 1 per customer'",
+   "tip": "Multipacks only — no singles. Great summer beverage stock-up deal. Limit 1 per customer but unlimited transactions if you go back through the line.",
+   "origin": "seed"
+  },
+  {
+   "id": 35,
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Produce",
+   "em": "🍎",
+   "hot": 92,
+   "title": "Hero Snack-Sized Gala Apples 2-lb — BOGO $4.99 ($2.50 each)",
+   "fp": "$2.50 each",
+   "fn": 2.5,
+   "rv": "$4.99",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "BOGO FREE",
+   "vt": "◆ Yahoo Finance/Publix confirmed",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Hero Snack-Sized Gala Apples 2-lb bags at Publix BOGO $4.99",
+    "BOGO Free = $2.50 each when buying 2",
+    "Add Ibotta rebate for apples/produce if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Publix BOGO Free sale",
+    "Ibotta produce rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Publix App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Current Publix weekly ad",
+   "src": "Yahoo Finance / Publix BOGO report: 'Hero Snack-Sized Gala Apples 2-lb — BOGO $4.99' confirmed as top Publix BOGO",
+   "tip": "Snack-size Gala apples at $2.50/bag is excellent pricing. Publix allows one mfr AND one store coupon per item even in a BOGO — always check both.",
+   "origin": "seed"
+  },
+  {
+   "id": 36,
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Produce",
+   "em": "🫑",
+   "hot": 89,
+   "title": "Pero Mini Sweet Peppers 8oz — BOGO $3.99 ($2 each)",
+   "fp": "$2 each",
+   "fn": 2,
+   "rv": "$3.99",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "BOGO FREE",
+   "vt": "◆ Yahoo Finance/Publix confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Pero Family Farms Mini Sweet Peppers 8oz at Publix BOGO $3.99",
+    "$2 each when buying 2",
+    "Add Ibotta rebate for bell/sweet peppers if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Publix BOGO Free sale",
+    "Ibotta produce rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Publix App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Current Publix weekly ad",
+   "src": "Yahoo Finance Publix BOGO report: 'Pero Family Farms Mini Sweet Peppers 8oz — BOGO $3.99' confirmed",
+   "tip": "Mini sweet peppers at $2/bag is exceptional for fresh produce. Perfect for snacking or cooking — stock both bags.",
+   "origin": "seed"
+  },
+  {
+   "id": 37,
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Produce",
+   "em": "🍅",
+   "hot": 87,
+   "title": "Tomato Medley Pint — BOGO $3.99 ($2 each)",
+   "fp": "$2 each",
+   "fn": 2,
+   "rv": "$3.99",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "BOGO FREE",
+   "vt": "◆ Yahoo Finance/Publix confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Tomato Medley Pints at Publix BOGO $3.99",
+    "$2 each when buying 2",
+    "Add Ibotta rebate for tomatoes/produce if available",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Publix BOGO Free sale",
+    "Ibotta produce rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Publix App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Current Publix weekly ad",
+   "src": "Yahoo Finance Publix BOGO report: 'Tomato Medley Pints — BOGO $3.99' confirmed as top produce deal",
+   "tip": "Summer tomato medleys at $2/pint is a great value. Mix-and-match within the BOGO category at Publix.",
+   "origin": "seed"
+  },
+  {
+   "id": 38,
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Pantry",
+   "em": "🧀",
+   "hot": 86,
+   "title": "Castello Gouda or Edam Cheese 7oz — BOGO $6.29 ($3.14 each)",
+   "fp": "$3.14 each",
+   "fn": 3.14,
+   "rv": "$6.29",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "BOGO FREE",
+   "vt": "◆ Yahoo Finance/Publix confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Castello Gouda or Edam Cheese 7oz at Publix BOGO $6.29",
+    "$3.14 each when buying 2",
+    "Add any cheese manufacturer coupon if available",
+    "Submit to Ibotta for dairy rebate if active",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Publix BOGO Free sale",
+    "Cheese mfr coupon (if available)",
+    "Ibotta dairy rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Publix App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Current Publix weekly ad",
+   "src": "Yahoo Finance Publix BOGO report: 'Castello Gouda or Edam Cheese 7oz — BOGO $6.29' confirmed",
+   "tip": "Castello is a premium European cheese brand — $3.14 each BOGO is exceptional. Great charcuterie board ingredient at half price.",
+   "origin": "seed"
+  },
+  {
+   "id": 39,
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Dessert",
+   "em": "🍦",
+   "hot": 84,
+   "title": "Haagen-Dazs Ice Cream 14oz — BOGO $5.49 ($2.74 each)",
+   "fp": "$2.74 each",
+   "fn": 2.74,
+   "rv": "$5.49",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "BOGO FREE",
+   "vt": "◆ Yahoo Finance/Publix confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Haagen-Dazs Ice Cream 14oz at Publix BOGO $5.49",
+    "$2.74 each when buying 2",
+    "Add $1 off Haagen-Dazs manufacturer coupon from Sunday insert if available",
+    "Submit to Ibotta for ice cream rebate if active",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Publix BOGO Free sale",
+    "Haagen-Dazs mfr coupon (if available)",
+    "Ibotta ice cream rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Publix App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Current Publix weekly ad — second week running",
+   "src": "Yahoo Finance Publix BOGO report: 'Haagen-Dazs Ice Cream 14oz — BOGO $5.49 for the second week in a row'",
+   "tip": "This is the 2nd consecutive week Haagen-Dazs is on BOGO at Publix — premium ice cream at $2.74/pint. Add a mfr coupon if you have one.",
+   "origin": "seed"
+  },
+  {
+   "id": 40,
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Personal Care",
+   "em": "🧴",
+   "hot": 93,
+   "title": "3 Old Spice Antip/Body Wash/Shampoo — KCL #1 Walgreens/Kroger pick July 5–11",
+   "fp": "~$12",
+   "fn": 12,
+   "rv": "$25+",
+   "sv": "~52%",
+   "sn": 52,
+   "badge": "APP COUPON",
+   "vt": "◆ KCL Walgreens/Kroger 7/5 pick",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 3 Old Spice Antiperspirant/Deodorant, Body Wash, Shampoo, or Conditioner at Kroger",
+    "Clip Kroger digital coupon for Old Spice if available",
+    "Stack with Old Spice manufacturer coupon from Sunday insert",
+    "Submit to Ibotta for Old Spice rebate",
+    "Add Fetch Rewards"
+   ],
+   "stk": [
+    "Kroger digital coupon (Old Spice)",
+    "Old Spice mfr coupon (Sunday insert)",
+    "Ibotta Old Spice rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Kroger App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Week of July 5–11, 2026",
+   "src": "KCL Walgreens/Kroger weekly ad July 5–11: 'THREE Old Spice Antiperspirant/Body Wash/Shampoo' listed as featured deal",
+   "tip": "KCL confirmed Old Spice as a featured deal across multiple chains this week. Kroger + digital coupon + insert coupon + Ibotta = strong 4-layer stack.",
+   "origin": "seed"
+  },
+  {
+   "id": 41,
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Baby",
+   "em": "👶",
+   "hot": 91,
+   "title": "Pampers Easy Ups 2 Jumbo Bags — Kroger featured deal",
+   "fp": "Varies",
+   "fn": 18,
+   "rv": "$30+",
+   "sv": "~35%",
+   "sn": 35,
+   "badge": "STACK IT",
+   "vt": "◆ KCL Kroger 7/5 featured",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Buy 2 Jumbo Bags Pampers Easy Ups Training Underwear at Kroger",
+    "Clip Kroger digital coupon for Pampers if available in app",
+    "Stack with Pampers manufacturer coupon from Sunday insert ($3–5 off)",
+    "Submit to Ibotta for Pampers rebate",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Kroger digital coupon (Pampers)",
+    "Pampers mfr coupon (Sunday insert)",
+    "Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Kroger App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Week of July 5–11, 2026",
+   "src": "KCL Kroger weekly ad July 5–11: 'TWO Jumbo BAGS Pampers Easy Ups Training Underwear' listed as featured deal",
+   "tip": "Pampers + Kroger digital + mfr coupon + Ibotta is KCL's consistent top recommendation for the Cincinnati market. Check app before shopping for exact coupon amounts.",
+   "origin": "seed"
+  },
+  {
+   "id": 42,
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Baby",
+   "em": "🩺",
+   "hot": 89,
+   "title": "Huggies Diapers ×2 — $3 off 2 Kroger App Coupon",
+   "fp": "Varies",
+   "fn": 15,
+   "rv": "$30+",
+   "sv": "~35%",
+   "sn": 35,
+   "badge": "APP COUPON",
+   "vt": "◆ KCL Kroger 7/5 featured",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 2 Huggies Little Movers, Little Snugglers, Overnites, Snug & Dry, or Skin Essentials Diapers (10ct or larger)",
+    "Clip <strong>'$3.00/2 Huggies' Walgreens App Coupon</strong> (also works as Kroger digital in Cincinnati)",
+    "Stack with Huggies manufacturer coupon from Sunday insert",
+    "Submit to Ibotta for Huggies rebate",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "$3/2 Huggies Kroger/Walgreens App coupon",
+    "Huggies mfr coupon (Sunday insert)",
+    "Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Kroger App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Week of July 5–11, 2026",
+   "src": "KCL weekly ad July 5–11: '$3.00/2 Huggies Little Movers/Snugglers/Overnites/Snug & Dry/Skin Essentials Diapers 10ct+ App Coupon'",
+   "tip": "The $3/2 Huggies app coupon stacks with a manufacturer coupon AND Ibotta for a 3-layer baby deal. Cincinnati Kroger accepts all digital + paper + Ibotta combinations.",
+   "origin": "seed"
+  },
+  {
+   "id": 43,
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Hair Care",
+   "em": "💆",
+   "hot": 85,
+   "title": "3 Pantene Products — featured Kroger deal this week",
+   "fp": "Varies",
+   "fn": 10,
+   "rv": "$20+",
+   "sv": "~40%",
+   "sn": 40,
+   "badge": "STACK IT",
+   "vt": "◆ KCL Kroger 7/5 featured",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Buy 3 Pantene Products (Pro-V, Gold Series, Style — excludes Nutrient Blends, trial sizes) at Kroger",
+    "Clip Kroger digital coupon for Pantene if available",
+    "Stack with Pantene manufacturer coupon from Sunday insert ($2–3 off)",
+    "Submit to Ibotta for Pantene rebate",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Kroger Pantene digital coupon",
+    "Pantene mfr coupon (Sunday insert)",
+    "Ibotta Pantene rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Kroger App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Week of July 5–11, 2026",
+   "src": "KCL weekly ad July 5–11: 'THREE Pantene Products including Pro-V, Gold Series, and Style' listed as featured deal",
+   "tip": "Pantene $2–3 coupons are common in Sunday inserts right now. 3 bottles + digital + insert + Ibotta = best hair care pricing in the Cincinnati market this week.",
+   "origin": "seed"
+  },
+  {
+   "id": 44,
+   "markets": [
+    "cincy",
+    "chicago"
+   ],
+   "store": "Meijer",
+   "cat": "Household",
+   "em": "🏪",
+   "hot": 86,
+   "title": "Meijer mPerks Challenge — stacks with manufacturer coupons simultaneously",
+   "fp": "~$40 effective",
+   "fn": 40,
+   "rv": "$50+",
+   "sv": "20%+",
+   "sn": 20,
+   "badge": "MPERKS",
+   "vt": "📣 weeklyad.io Meijer confirmed",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Open Meijer app → Rewards tab → click <strong>'Start'</strong> on any active mPerks Challenge BEFORE shopping",
+    "Key difference vs. Kroger: <strong>mPerks Rewards stack WITH manufacturer coupons simultaneously</strong>",
+    "Clip mPerks eCoupons for specific items",
+    "Apply manufacturer coupons at checkout — both types apply in the same transaction",
+    "Look for 'Buy 1 Get 1 for a Penny' clearance events in seasonal sections",
+    "Submit to Fetch Rewards"
+   ],
+   "stk": [
+    "mPerks Challenge Rewards",
+    "mPerks eCoupons",
+    "Manufacturer coupons (stack simultaneously!)",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Meijer App",
+    "Fetch Rewards"
+   ],
+   "exp": "Check Meijer app for active challenges",
+   "src": "weeklyad.io Meijer 2026 guide: 'mPerks Rewards stack WITH manufacturer coupons — both apply in same transaction'",
+   "tip": "The defining Cincinnati savings advantage. At Meijer (unlike Kroger), mPerks Rewards AND manufacturer coupons BOTH apply in the same transaction. Always click 'Start' on challenges BEFORE shopping — they don't apply retroactively.",
+   "origin": "seed"
+  },
+  {
+   "id": 45,
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Policy",
+   "em": "✌️",
+   "hot": 99,
+   "title": "HT Everyday Coupon Doubling — 99¢ coupons become $1.98 off · every single day",
+   "fp": "Doubled savings",
+   "fn": 0,
+   "rv": "Full price",
+   "sv": "Up to 200%+",
+   "sn": 99,
+   "badge": "DOUBLE COUP",
+   "vt": "◆ moolasavingmom.com confirmed",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Harris Teeter doubles <strong>ALL manufacturer coupons 99¢ and under</strong> — every day at every location",
+    "Limit: 3 like coupons per day (doubled), 20 total coupons per day",
+    "Additional newspaper coupons beyond the 3-like limit are accepted at face value",
+    "Stack doubled coupons WITH e-VIC digital coupons (clip in HT app) — both apply",
+    "Stack BOTH layers with Ibotta rebates on the same items for a 3-layer total",
+    "Bring your Sunday insert — any coupon 99¢ and under doubles automatically at checkout"
+   ],
+   "stk": [
+    "Doubled mfr coupon (99¢ → $1.98 off)",
+    "HT e-VIC digital coupon",
+    "Ibotta rebate"
+   ],
+   "apps": [
+    "Harris Teeter App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Permanent everyday policy",
+   "src": "moolasavingmom.com: 'HT doubles coupons 99¢ and under everyday — 3 like per day, 20 total per day' permanently confirmed",
+   "tip": "THE defining Raleigh-Durham/Greenville couponing advantage. A 99¢ Sunday insert coupon is worth $1.98 at Harris Teeter. Stack with e-VIC + Ibotta for a potential 3-layer deal that can make items FREE. Fill your Sunday inserts specifically with 99¢-and-under coupons to maximize this.",
+   "origin": "seed"
+  },
+  {
+   "id": 46,
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Policy",
+   "em": "🎯",
+   "hot": 93,
+   "title": "HT Scan Guarantee — item rings higher than shelf tag? Get it FREE",
+   "fp": "FREE",
+   "fn": 0,
+   "rv": "Item price",
+   "sv": "100%",
+   "sn": 100,
+   "badge": "SCAN GUAR.",
+   "vt": "📣 moolasavingmom.com confirmed",
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "steps": [
+    "Harris Teeter's permanent policy: if ANY item scans higher than its shelf tag, you get that item FREE",
+    "Before adding sale items to your cart, photograph the shelf tag with your phone",
+    "If an item rings up wrong at checkout, point it out to the cashier immediately",
+    "You receive the item at no charge — applies to sale prices, e-VIC prices, and regular prices",
+    "Most valuable during promotional weeks when pricing errors are more common"
+   ],
+   "stk": [
+    "HT Scan Guarantee (permanent store policy)"
+   ],
+   "apps": [
+    "Harris Teeter App"
+   ],
+   "exp": "Permanent store policy",
+   "src": "moolasavingmom.com: 'Scan Guarantee — If an item rings up higher than the shelf tag — you get that item FREE'",
+   "tip": "Always photograph shelf tags on sale/promotional items. This is a legitimate savings strategy used by experienced Raleigh-Durham shoppers — not aggressive, just smart. Errors are more common during BOGOs and e-VIC events.",
+   "origin": "seed"
+  },
+  {
+   "id": 47,
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Policy",
+   "em": "🏷️",
+   "hot": 89,
+   "title": "HT accepts competitor total-purchase coupons (Publix, Food Lion Catalinas)",
+   "fp": "$5+ off trip",
+   "fn": 5,
+   "rv": "$25+",
+   "sv": "20%+",
+   "sn": 20,
+   "badge": "COMPETITOR",
+   "vt": "📣 moolasavingmom + weeklyad.io",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Harris Teeter permanently accepts <strong>direct mail, Catalina, or in-flyer competitor coupons for $ off total purchase</strong>",
+    "Example: a Publix or Food Lion Catalina for '$5 off $25' can be used at Harris Teeter",
+    "HT does NOT accept competitor coupons for specific items — only total-purchase coupons",
+    "Apply competitor total coupon AT CHECKOUT on top of your regular HT stack",
+    "Stack: competitor total coupon + doubled mfr coupons + e-VIC digital + Ibotta = potential 4-layer savings"
+   ],
+   "stk": [
+    "Competitor total-purchase coupon ($5 off $25)",
+    "Doubled mfr coupons (99¢ → $1.98)",
+    "HT e-VIC digital coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Harris Teeter App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Permanent HT policy",
+   "src": "moolasavingmom.com + weeklyad.io: 'HT accepts competitor direct mail, Catalina, or in-flyer coupons for money off total purchase'",
+   "tip": "Extremely powerful and underused. Save your Publix/Food Lion Catalinas and redeem at Harris Teeter. A $5 off $25 competitor total coupon + doubled coupons + e-VIC + Ibotta = the ultimate 4-layer stack in the Carolinas market.",
+   "origin": "seed"
+  },
+  {
+   "id": 48,
+   "markets": [
+    "rdu",
+    "charlotte"
+   ],
+   "store": "Food Lion",
+   "cat": "Pantry",
+   "em": "🦁",
+   "hot": 84,
+   "title": "Food Lion MVP + digital coupons + mfr coupon + Ibotta — the Carolinas 4-stack",
+   "fp": "Varies",
+   "fn": 5,
+   "rv": "$10–20",
+   "sv": "40–65%",
+   "sn": 55,
+   "badge": "MVP STACK",
+   "vt": "📣 Community verified Greenville/Durham",
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "steps": [
+    "Free MVP Card (or phone number) required for all sale prices at Food Lion",
+    "Download the Food Lion To Go app and clip digital coupons for target items",
+    "Stack digital coupons with manufacturer coupons from Sunday insert (one mfr per item)",
+    "Look for Food Lion BOGO Free offers — mfr coupon applies to the PAID item (Safeway method = doubles coupon value)",
+    "Submit to Ibotta for applicable product rebates",
+    "Scan with Fetch Rewards"
+   ],
+   "stk": [
+    "Food Lion MVP Card price",
+    "Food Lion digital coupons",
+    "Manufacturer coupons (Sunday insert)",
+    "Ibotta rebates",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Food Lion To Go App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Check Food Lion weekly ad 7/7–7/13",
+   "src": "rabato.com: Food Lion confirmed strong Greenville/Raleigh/Durham presence · food-lion.com weekly ad active",
+   "tip": "Food Lion BOGO events follow the Safeway method — mfr coupon applies to the PAID item, doubling its effective value. Your $1 coupon = $1 off $8 of product in a BOGO. This makes Food Lion BOGO weeks extremely powerful for the Carolinas market.",
+   "origin": "seed"
+  },
+  {
+   "id": 100,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "houston"
+   ],
+   "store": "Randalls",
+   "cat": "Breakfast",
+   "em": "🥣",
+   "hot": 88,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "General Mills Cereal — 99¢ After for U Digital + Insert Stack",
+   "fp": "99¢ each",
+   "fn": 0.99,
+   "rv": "$4.99",
+   "sv": "80%",
+   "sn": 80,
+   "badge": "STACK IT",
+   "steps": [
+    "Load the <strong>$1.99 for U member price</strong> on General Mills cereal in the Randalls app",
+    "Stack a <strong>$1/2 General Mills insert coupon</strong> (Sunday paper)",
+    "Buy 2 → $2.98 after coupon",
+    "Submit the Ibotta General Mills cereal rebate (usually 50¢–$1)",
+    "Final: as low as <strong>99¢ per box</strong>"
+   ],
+   "stk": [
+    "for U digital member price",
+    "$1/2 insert coupon",
+    "Ibotta rebate"
+   ],
+   "apps": [
+    "Randalls for U",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Randalls (Albertsons) for U weekly digital deals — cereal anchor promo",
+   "tip": "Randalls allows one digital + one paper manufacturer coupon per item pair — the classic Albertsons-banner stack most shoppers miss."
+  },
+  {
+   "id": 101,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Walmart",
+   "cat": "Household",
+   "em": "🧺",
+   "hot": 84,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Tide Simply 31oz — $1.97 After Rollback + Ibotta",
+   "fp": "$1.97",
+   "fn": 1.97,
+   "rv": "$5.49",
+   "sv": "64%",
+   "sn": 64,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Rollback price <strong>$3.97</strong> on Tide Simply 31oz",
+    "Activate the <strong>$2 Ibotta Tide Simply rebate</strong> before checkout",
+    "Pay $3.97, get $2 back → <strong>$1.97 final</strong>",
+    "Scan receipt in Fetch for bonus points"
+   ],
+   "stk": [
+    "Walmart Rollback",
+    "$2 Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Walmart app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Walmart rollback + Ibotta laundry rebate — recurring KCL matchup",
+   "tip": "Walmart takes no store coupons, so rebate apps ARE the stack. Check Ibotta before every Walmart run — laundry rebates rotate weekly."
+  },
+  {
+   "id": 102,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Target",
+   "cat": "Household",
+   "em": "🎯",
+   "hot": 87,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Household Essentials — $15 Gift Card WYB $50 + Circle Stack",
+   "fp": "~40% back",
+   "fn": 35,
+   "rv": "$50",
+   "sv": "30%+",
+   "sn": 32,
+   "badge": "BASKET DEAL",
+   "steps": [
+    "Buy $50 of household essentials (paper, laundry, cleaning)",
+    "Get a <strong>$15 Target gift card</strong> at checkout (weekly promo)",
+    "Stack <strong>Target Circle offers</strong> (5–30% off single items)",
+    "Stack manufacturer coupons at register",
+    "Add Ibotta rebates on Tide/Bounty/Charmin",
+    "Effective 35–45% total savings"
+   ],
+   "stk": [
+    "$15 GC wyb $50 promo",
+    "Target Circle %-off offers",
+    "Manufacturer coupons",
+    "Ibotta rebates"
+   ],
+   "apps": [
+    "Target Circle",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Target weekly ad gift-card promo — recurring essentials event",
+   "tip": "Gift-card promos calculate BEFORE coupons at Target — hit $50 on shelf price, then let coupons cut what you pay. Roll the gift card into next week’s run."
+  },
+  {
+   "id": 103,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Family Dollar",
+   "cat": "Pantry",
+   "em": "💵",
+   "hot": 82,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Saturday $5 off $25 Smart Coupon Stack",
+   "fp": "20%+ off cart",
+   "fn": 20,
+   "rv": "$25",
+   "sv": "20–50%",
+   "sn": 45,
+   "badge": "EVERY SAT",
+   "steps": [
+    "Shop Saturday only — clip the <strong>$5 off $25 Smart Coupon</strong> in the FD app",
+    "Build cart to just over $25 with sale items",
+    "Stack manufacturer Smart Coupons on individual items",
+    "The $5/$25 applies AFTER item coupons at FD — get to $25 post-coupon",
+    "Typical result: $35+ of goods for under $20"
+   ],
+   "stk": [
+    "$5/$25 Saturday Smart Coupon",
+    "Item-level Smart Coupons",
+    "Ibotta (select items)"
+   ],
+   "apps": [
+    "Family Dollar app",
+    "Ibotta"
+   ],
+   "exp": "Every Saturday",
+   "src": "Family Dollar Smart Coupons — standing Saturday promo",
+   "tip": "FD’s $5/$25 threshold counts AFTER manufacturer coupons — plan the cart to land at $25.01 post-coupon or the $5 won’t fire."
+  },
+  {
+   "id": 104,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Dollar Tree",
+   "cat": "Pantry",
+   "em": "🌳",
+   "hot": 75,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Name-Brand Finds — $1.25 Flat (Colgate, Hefty, Utz)",
+   "fp": "$1.25 each",
+   "fn": 1.25,
+   "rv": "$3–$6",
+   "sv": "60–80%",
+   "sn": 70,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Scan the seasonal aisle for name-brand stock (rotates weekly)",
+    "Everything rings <strong>$1.25</strong>",
+    "Dollar Tree accepts manufacturer coupons — a 50¢ coupon = <strong>75¢ name brand</strong>",
+    "Limit 2 identical coupons per day"
+   ],
+   "stk": [
+    "$1.25 flat price",
+    "Manufacturer coupons accepted"
+   ],
+   "apps": [
+    "Fetch Rewards"
+   ],
+   "exp": "Ongoing",
+   "src": "Dollar Tree coupon policy — manufacturer coupons accepted",
+   "tip": "Dollar Tree taking manufacturer coupons is the most under-used policy in couponing — a $1/1 coupon makes an item 25¢."
+  },
+  {
+   "id": 105,
+   "origin": "seed",
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Snacks",
+   "em": "🛒",
+   "hot": 90,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Kroger Mega Event — Buy 5 Save $5 + Digital + Ibotta (from 49¢)",
+   "fp": "from 49¢",
+   "fn": 0.49,
+   "rv": "$2.99+",
+   "sv": "75%+",
+   "sn": 78,
+   "badge": "5X EVENT",
+   "steps": [
+    "Pick any <strong>5 participating Mega Event items</strong> — each drops $1 automatically",
+    "Load digital coupons on the same items in the Kroger app",
+    "Mega price − digital coupon stacks on EACH item",
+    "Submit Ibotta rebates on qualifying items",
+    "Classic result: $2.49 snacks → 49¢–99¢ each"
+   ],
+   "stk": [
+    "Buy 5 Save $5 Mega price",
+    "Kroger digital coupons",
+    "Ibotta rebates",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Kroger app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Kroger Mega Event — weekly ad + KCL Kroger matchup",
+   "tip": "Mix and match the 5 — the $1/item discount applies per item, not per identical product. Always sweep the app’s digital coupons before checkout."
+  },
+  {
+   "id": 106,
+   "origin": "seed",
+   "markets": [
+    "denver"
+   ],
+   "store": "King Soopers",
+   "cat": "Snacks",
+   "em": "🏔️",
+   "hot": 86,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "King Soopers Mega Event — Same Kroger Stack, Denver Pricing",
+   "fp": "from 49¢",
+   "fn": 0.49,
+   "rv": "$2.99+",
+   "sv": "75%+",
+   "sn": 76,
+   "badge": "5X EVENT",
+   "steps": [
+    "Buy 5 participating items, save $5 automatically",
+    "Stack King Soopers digital coupons per item",
+    "Add Ibotta rebates",
+    "Fuel points accrue on pre-coupon totals"
+   ],
+   "stk": [
+    "Buy 5 Save $5",
+    "Digital coupons",
+    "Ibotta",
+    "Fuel points"
+   ],
+   "apps": [
+    "King Soopers app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "King Soopers (Kroger banner) Mega Event weekly ad",
+   "tip": "King Soopers is a Kroger banner — every Kroger Mega matchup published by KCL/Southern Savers applies here with minor price variance."
+  },
+  {
+   "id": 107,
+   "origin": "seed",
+   "markets": [
+    "phoenix"
+   ],
+   "store": "Fry’s",
+   "cat": "Snacks",
+   "em": "🌵",
+   "hot": 85,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Fry’s Mega Event — Buy 5 Save $5 + Digitals (Phoenix)",
+   "fp": "from 49¢",
+   "fn": 0.49,
+   "rv": "$2.99+",
+   "sv": "75%+",
+   "sn": 75,
+   "badge": "5X EVENT",
+   "steps": [
+    "Buy any 5 Mega items — $1 off each",
+    "Load Fry’s digital coupons on the same items",
+    "Stack Ibotta rebates",
+    "Check the Fry’s app \"Cart Buster\" weekly freebie"
+   ],
+   "stk": [
+    "Buy 5 Save $5",
+    "Digital coupons",
+    "Ibotta",
+    "Weekly app freebie"
+   ],
+   "apps": [
+    "Fry’s app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Fry’s Food (Kroger banner) Mega Event weekly ad",
+   "tip": "Fry’s drops a free-item digital coupon most Fridays — clip it even if you don’t shop that day; it stays in your wallet ~2 weeks."
+  },
+  {
+   "id": 108,
+   "origin": "seed",
+   "markets": [
+    "la"
+   ],
+   "store": "Ralphs",
+   "cat": "Beverages",
+   "em": "🌊",
+   "hot": 83,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Ralphs Mega Event + Digital Stack (Los Angeles)",
+   "fp": "from 99¢",
+   "fn": 0.99,
+   "rv": "$3.49+",
+   "sv": "70%",
+   "sn": 70,
+   "badge": "5X EVENT",
+   "steps": [
+    "Buy 5 participating items — save $5 automatically",
+    "Stack Ralphs digital coupons",
+    "Add Ibotta/Checkout 51 rebates",
+    "Fuel points on top"
+   ],
+   "stk": [
+    "Buy 5 Save $5",
+    "Digital coupons",
+    "Ibotta",
+    "Checkout 51"
+   ],
+   "apps": [
+    "Ralphs app",
+    "Ibotta",
+    "Checkout 51"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Ralphs (Kroger banner) weekly Mega Event",
+   "tip": "Same Kroger engine as the Midwest — LA prices run higher so the flat $1/item Mega discount is a bigger percentage on sale items."
+  },
+  {
+   "id": 109,
+   "origin": "seed",
+   "markets": [
+    "seattle"
+   ],
+   "store": "Fred Meyer",
+   "cat": "Household",
+   "em": "🌧️",
+   "hot": 82,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Fred Meyer Mega + Weekly Digital Coupon Stack (Seattle)",
+   "fp": "from 99¢",
+   "fn": 0.99,
+   "rv": "$3.49+",
+   "sv": "70%",
+   "sn": 70,
+   "badge": "5X EVENT",
+   "steps": [
+    "Buy 5 Mega items, save $5",
+    "Stack Fred Meyer digital coupons",
+    "Add Ibotta rebates",
+    "Watch for Freebie Friday digital"
+   ],
+   "stk": [
+    "Buy 5 Save $5",
+    "Digital coupons",
+    "Ibotta",
+    "Freebie Friday"
+   ],
+   "apps": [
+    "Fred Meyer app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Fred Meyer (Kroger banner) weekly ad",
+   "tip": "Fred Meyer also runs apparel/home coupons the grocery-only banners don’t — the 10% general-merch coupon stacks with grocery trips."
+  },
+  {
+   "id": 110,
+   "origin": "seed",
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Pantry",
+   "em": "🛍️",
+   "hot": 92,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Publix BOGO Week + Manufacturer Stack — 2 for Less Than 1",
+   "fp": "~75% off",
+   "fn": 1.5,
+   "rv": "varies",
+   "sv": "75%",
+   "sn": 75,
+   "badge": "BOGO STACK",
+   "steps": [
+    "Hit this week’s <strong>BOGO list</strong> (pasta, sauce, snacks, frozen)",
+    "In BOGO markets both items ring half price — use <strong>TWO manufacturer coupons</strong> (one per item)",
+    "Stack a Publix digital coupon on top where available",
+    "Example: $4.29 BOGO pasta sauce + two $1 coupons = <strong>2 jars for $2.29</strong>"
+   ],
+   "stk": [
+    "Publix BOGO sale",
+    "2× manufacturer coupons",
+    "Publix digital coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Publix app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Publix weekly BOGO list — I Heart Publix / Southern Savers matchup",
+   "tip": "Publix BOGOs ring as two half-price items in most of FL/GA — meaning a coupon on EACH. That is the entire Publix game."
+  },
+  {
+   "id": 111,
+   "origin": "seed",
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami"
+   ],
+   "store": "Winn-Dixie",
+   "cat": "Pantry",
+   "em": "🐔",
+   "hot": 78,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Winn-Dixie rewards Points Multiplier + Digital Percent-Off",
+   "fp": "~50% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "APP COUPON",
+   "steps": [
+    "Activate the weekly <strong>5×–10× points booster</strong> in the WD rewards app",
+    "Buy booster categories; points convert to % off next trip",
+    "Stack manufacturer coupons at register",
+    "Redeem accumulated points as instant basket discount"
+   ],
+   "stk": [
+    "Points multiplier",
+    "Manufacturer coupons",
+    "Points redemption"
+   ],
+   "apps": [
+    "Winn-Dixie rewards",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Winn-Dixie rewards program weekly boosters",
+   "tip": "WD points quietly expire — redeem monthly. Boosted categories + coupons routinely halve the effective price."
+  },
+  {
+   "id": 112,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Personal Care",
+   "em": "💎",
+   "hot": 89,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Harris Teeter Super Doubles Watch + e-VIC Stack",
+   "fp": "up to free",
+   "fn": 0,
+   "rv": "$2 coupons",
+   "sv": "100%",
+   "sn": 90,
+   "badge": "DOUBLE COUP",
+   "steps": [
+    "HT doubles manufacturer coupons up to 99¢ EVERY DAY (20/day limit)",
+    "During <strong>Super Doubles events</strong> coupons up to $2 double — a $2 coupon = $4 off",
+    "Stack <strong>e-VIC digital offers</strong> loaded to your VIC card",
+    "Pair doubled coupons with weekly sale prices for free items"
+   ],
+   "stk": [
+    "Everyday 99¢ doubling",
+    "Super Doubles (event)",
+    "e-VIC digital offers",
+    "Ibotta"
+   ],
+   "apps": [
+    "Harris Teeter app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Doubling daily; events announced in ad",
+   "src": "Harris Teeter coupon policy + Southern Savers Super Doubles tracker",
+   "tip": "Super Doubles weeks are the Carolinas’ best coupon event, announced ~quarterly. Southern Savers posts the full free-item list day one — set an alert."
+  },
+  {
+   "id": 113,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte"
+   ],
+   "store": "Food Lion",
+   "cat": "Pantry",
+   "em": "🦁",
+   "hot": 80,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Food Lion MVP + Shop & Earn Monthly Rewards Stack",
+   "fp": "~60% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "60%",
+   "sn": 60,
+   "badge": "MVP STACK",
+   "steps": [
+    "Activate <strong>Shop & Earn</strong> monthly offers in the app (earn $ back on categories)",
+    "Buy MVP sale items in those categories",
+    "Stack manufacturer coupons",
+    "Rewards auto-load as instant savings next trip"
+   ],
+   "stk": [
+    "MVP sale price",
+    "Shop & Earn category rewards",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Food Lion app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Monthly offers",
+   "src": "Food Lion MVP Shop & Earn program",
+   "tip": "Shop & Earn resets on the 1st — activate everything at month start; rewards stack invisibly with paper coupons."
+  },
+  {
+   "id": 114,
+   "origin": "seed",
+   "markets": [
+    "rdu"
+   ],
+   "store": "Lowes Foods",
+   "cat": "Produce",
+   "em": "🥬",
+   "hot": 74,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Lowes Foods Fresh Rewards Personal Prices + App Freebie",
+   "fp": "varies",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "40%+",
+   "sn": 45,
+   "badge": "APP COUPON",
+   "steps": [
+    "Check <strong>Fresh Rewards</strong> app for personalized prices (built from your history)",
+    "Clip the weekly app freebie (most weeks)",
+    "Stack manufacturer coupons on personal-price items"
+   ],
+   "stk": [
+    "Personal prices",
+    "Weekly app freebie",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Lowes Foods app",
+    "Ibotta"
+   ],
+   "exp": "Weekly",
+   "src": "Lowes Foods Fresh Rewards program",
+   "tip": "The app freebie alone is worth the download — Lowes gives away a full-size item most weeks to Fresh Rewards members."
+  },
+  {
+   "id": 115,
+   "origin": "seed",
+   "markets": [
+    "nyc",
+    "philly"
+   ],
+   "store": "ShopRite",
+   "cat": "Pantry",
+   "em": "🛒",
+   "hot": 85,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "ShopRite Digital + Catalina Rolling Stack (Can Can-style)",
+   "fp": "near free",
+   "fn": 0.5,
+   "rv": "varies",
+   "sv": "80%",
+   "sn": 80,
+   "badge": "STACK IT",
+   "steps": [
+    "Load ShopRite digital coupons in the app",
+    "Buy Catalina-triggering multiples (e.g. buy 3 → $3 Catalina prints)",
+    "Pay with previous trip’s Catalina",
+    "Roll the new Catalina into the next transaction",
+    "During Can Can Sale weeks, stack all of it on rock-bottom case-lot prices"
+   ],
+   "stk": [
+    "Digital coupons",
+    "Catalina offers (rolling)",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "ShopRite app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Living Rich With Coupons — ShopRite weekly matchup",
+   "surl2": "",
+   "tip": "LRWC publishes the ShopRite Catalina list weekly — rolling Catalinas is how NE couponers hit 80–90% off. One digital clip per item."
+  },
+  {
+   "id": 116,
+   "origin": "seed",
+   "markets": [
+    "nyc",
+    "boston"
+   ],
+   "store": "Stop & Shop",
+   "cat": "Pantry",
+   "em": "🛑",
+   "hot": 77,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Stop & Shop GO Rewards Points + Digital Coupon Stack",
+   "fp": "~55% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "55%",
+   "sn": 55,
+   "badge": "APP COUPON",
+   "steps": [
+    "Clip digital coupons in the S&S app",
+    "Buy GO Rewards bonus-point items",
+    "Convert points to grocery dollars or gas savings",
+    "Stack paper manufacturer coupons on top"
+   ],
+   "stk": [
+    "Digital coupons",
+    "GO Rewards points",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Stop & Shop app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Stop & Shop GO Rewards program",
+   "tip": "Points-to-groceries redemption beats the gas conversion in most cases — 100 points ≈ $1 off the basket."
+  },
+  {
+   "id": 117,
+   "origin": "seed",
+   "markets": [
+    "philly",
+    "dc"
+   ],
+   "store": "Giant",
+   "cat": "Pantry",
+   "em": "🦣",
+   "hot": 76,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Giant Flexible Rewards + Digital Stack",
+   "fp": "~50% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "APP COUPON",
+   "steps": [
+    "Clip Giant digital coupons",
+    "Earn Flexible Rewards points on bonus items",
+    "Redeem points for $ off groceries or gas",
+    "Stack paper manufacturer coupons"
+   ],
+   "stk": [
+    "Digital coupons",
+    "Flexible Rewards points",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Giant app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Giant Flexible Rewards program",
+   "tip": "Giant’s bonus-point items often overlap Ibotta rebates — the double dip is the play."
+  },
+  {
+   "id": 118,
+   "origin": "seed",
+   "markets": [
+    "philly"
+   ],
+   "store": "Acme",
+   "cat": "Household",
+   "em": "🔔",
+   "hot": 73,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Acme for U Digital Deals + Friday $5 Deals",
+   "fp": "varies",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "APP COUPON",
+   "steps": [
+    "Load for U digital deals (Albertsons banner)",
+    "Hit Friday-only $5 meal/product deals",
+    "Stack manufacturer coupons",
+    "Ibotta on top"
+   ],
+   "stk": [
+    "for U digitals",
+    "Friday $5 deals",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Acme app",
+    "Ibotta"
+   ],
+   "exp": "Fridays + weekly",
+   "src": "Acme (Albertsons) for U program",
+   "tip": "Same for U engine as Safeway/Randalls/Vons — clip everything; unused clips cost nothing."
+  },
+  {
+   "id": 119,
+   "origin": "seed",
+   "markets": [
+    "dc",
+    "denver",
+    "phoenix",
+    "seattle"
+   ],
+   "store": "Safeway",
+   "cat": "Pantry",
+   "em": "🛟",
+   "hot": 81,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Safeway for U Personalized + Insert Coupon Stack",
+   "fp": "~60% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "60%",
+   "sn": 60,
+   "badge": "STACK IT",
+   "steps": [
+    "Clip <strong>for U personalized deals</strong> (prices tuned to your history)",
+    "Stack Sunday-insert manufacturer coupons",
+    "Weekly $5 Friday-weekend deals",
+    "Ibotta + Fetch on top"
+   ],
+   "stk": [
+    "for U personalized prices",
+    "Insert coupons",
+    "$5 weekend deals",
+    "Ibotta"
+   ],
+   "apps": [
+    "Safeway app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Safeway for U weekly program",
+   "tip": "for U \"free item\" clips appear most holiday weekends. Personalized prices differ per account — check both spouses’ apps."
+  },
+  {
+   "id": 120,
+   "origin": "seed",
+   "markets": [
+    "phoenix",
+    "la"
+   ],
+   "store": "Albertsons",
+   "cat": "Pantry",
+   "em": "🅰️",
+   "hot": 78,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Albertsons for U + Mix & Match Buy More Save More",
+   "fp": "~55% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "55%",
+   "sn": 55,
+   "badge": "STACK IT",
+   "steps": [
+    "Clip for U digitals",
+    "Buy into the weekly Mix & Match event (buy 3+ → deeper unit price)",
+    "Stack manufacturer coupons",
+    "Ibotta rebates"
+   ],
+   "stk": [
+    "for U digitals",
+    "Mix & Match tiered price",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Albertsons app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Albertsons for U weekly deals",
+   "tip": "Mix & Match unit prices only fire at the full multiple — buy exactly 3 (or 6), never 4."
+  },
+  {
+   "id": 121,
+   "origin": "seed",
+   "markets": [
+    "la"
+   ],
+   "store": "Vons",
+   "cat": "Dessert",
+   "em": "🍦",
+   "hot": 72,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Vons for U Freebie Friday + Digital Stack (LA)",
+   "fp": "free item",
+   "fn": 0,
+   "rv": "$3–5",
+   "sv": "100%",
+   "sn": 95,
+   "badge": "FREE ITEM",
+   "steps": [
+    "Open the Vons app Friday — clip the <strong>Freebie Friday</strong> item",
+    "Redeem within the window (usually Fri–Sun)",
+    "Stack the rest of the trip with for U digitals"
+   ],
+   "stk": [
+    "Freebie Friday clip",
+    "for U digitals"
+   ],
+   "apps": [
+    "Vons app"
+   ],
+   "exp": "Fridays",
+   "src": "Vons (Albertsons) Freebie Friday program",
+   "tip": "Freebie Friday is account-wide across Albertsons banners — Vons, Safeway, Albertsons, Randalls all drop it."
+  },
+  {
+   "id": 122,
+   "origin": "seed",
+   "markets": [
+    "chicago"
+   ],
+   "store": "Jewel-Osco",
+   "cat": "Breakfast",
+   "em": "💠",
+   "hot": 79,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Jewel-Osco for U + MyMixx Monday Deals Stack",
+   "fp": "~60% off",
+   "fn": 1.5,
+   "rv": "varies",
+   "sv": "60%",
+   "sn": 60,
+   "badge": "STACK IT",
+   "steps": [
+    "Clip for U digitals in the Jewel app",
+    "Hit Monday-only app deals",
+    "Stack Sunday-insert coupons (Chicago Tribune inserts are strong)",
+    "Ibotta rebates on top"
+   ],
+   "stk": [
+    "for U digitals",
+    "Monday app deals",
+    "Insert coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Jewel-Osco app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Jewel-Osco (Albertsons) for U weekly deals",
+   "tip": "Jewel’s Monday digital deals are Chicago’s quiet best day to shop — limited-clip, refreshed weekly."
+  },
+  {
+   "id": 123,
+   "origin": "seed",
+   "markets": [
+    "chicago"
+   ],
+   "store": "Mariano's",
+   "cat": "Produce",
+   "em": "🍅",
+   "hot": 75,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Mariano’s Mega Event + Digital Stack (Kroger banner)",
+   "fp": "from 99¢",
+   "fn": 0.99,
+   "rv": "$3+",
+   "sv": "65%",
+   "sn": 65,
+   "badge": "5X EVENT",
+   "steps": [
+    "Buy 5 Mega items, save $5",
+    "Stack Mariano’s digital coupons",
+    "Ibotta on top",
+    "Fuel points accrue"
+   ],
+   "stk": [
+    "Buy 5 Save $5",
+    "Digital coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Mariano’s app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Mariano’s (Kroger banner) weekly Mega Event",
+   "tip": "Same Kroger digital wallet — coupons clipped for Kroger travel work at Mariano’s."
+  },
+  {
+   "id": 124,
+   "origin": "seed",
+   "markets": [
+    "cincy",
+    "chicago"
+   ],
+   "store": "Meijer",
+   "cat": "Baby",
+   "em": "👶",
+   "hot": 84,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Meijer mPerks Stacked Rewards — Diapers ~50% Off",
+   "fp": "~50% off",
+   "fn": 15,
+   "rv": "$29.99",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "MPERKS",
+   "steps": [
+    "Clip mPerks digital coupons on diapers/wipes",
+    "Buy into the weekly <strong>spend $X get $Y off next trip</strong> baby event",
+    "Stack manufacturer coupons",
+    "mPerks rewards auto-apply next trip — roll them into the next baby run"
+   ],
+   "stk": [
+    "mPerks digitals",
+    "Baby event reward",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Meijer mPerks",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Meijer mPerks baby-care weekly events",
+   "tip": "Meijer baby events + mPerks + manufacturer coupons is the Midwest’s best diaper stack — rolling rewards keeps every trip ~50% off."
+  },
+  {
+   "id": 125,
+   "origin": "seed",
+   "markets": [
+    "minneapolis"
+   ],
+   "store": "Hy-Vee",
+   "cat": "Pantry",
+   "em": "🌽",
+   "hot": 76,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Hy-Vee Deals App + Fuel Saver Cross-Stack",
+   "fp": "~50% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "APP COUPON",
+   "steps": [
+    "Clip Hy-Vee Deals digital coupons",
+    "Buy Fuel Saver tagged items — cents-per-gallon banks automatically",
+    "Stack manufacturer coupons",
+    "Wednesday ads overlap two weeks — double ad day"
+   ],
+   "stk": [
+    "Hy-Vee digitals",
+    "Fuel Saver credits",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Hy-Vee app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Hy-Vee Deals + Fuel Saver program",
+   "tip": "Wednesday is Hy-Vee’s two-ads-valid-at-once day — matchups double up. Fuel Saver is effectively cash back."
+  },
+  {
+   "id": 126,
+   "origin": "seed",
+   "markets": [
+    "minneapolis"
+   ],
+   "store": "Cub Foods",
+   "cat": "Snacks",
+   "em": "🐻",
+   "hot": 70,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Cub Digital Coupons + My Cub Rewards",
+   "fp": "~45% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "45%",
+   "sn": 45,
+   "badge": "APP COUPON",
+   "steps": [
+    "Clip Cub digital coupons in the app",
+    "Stack manufacturer coupons",
+    "Ibotta rebates on top"
+   ],
+   "stk": [
+    "Cub digitals",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Cub app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Cub Foods digital coupon program",
+   "tip": "Cub’s digitals allow one clip per account — households with two accounts double every deal."
+  },
+  {
+   "id": 127,
+   "origin": "seed",
+   "markets": [
+    "boston"
+   ],
+   "store": "Market Basket",
+   "cat": "Produce",
+   "em": "🧺",
+   "hot": 74,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Market Basket Everyday Low Base + Manufacturer Coupons",
+   "fp": "10–30% below chains",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "30%+",
+   "sn": 40,
+   "badge": "HOT PRICE",
+   "steps": [
+    "No card, no digital hoops — shelf prices run 10–30% below competitors",
+    "Stack Sunday-insert manufacturer coupons on the already-low base",
+    "Ibotta/Fetch still work on national brands"
+   ],
+   "stk": [
+    "Everyday low base price",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Ongoing",
+   "src": "Market Basket pricing model — New England benchmark",
+   "tip": "A plain manufacturer coupon at Market Basket often beats a triple stack elsewhere — the base price is that low."
+  },
+  {
+   "id": 128,
+   "origin": "seed",
+   "markets": [
+    "nyc",
+    "philly",
+    "dc",
+    "boston",
+    "rdu"
+   ],
+   "store": "Wegmans",
+   "cat": "Pantry",
+   "em": "🥖",
+   "hot": 71,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Wegmans Digital Coupons + Family-Pack Unit Pricing",
+   "fp": "varies",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "35%",
+   "sn": 35,
+   "badge": "APP COUPON",
+   "steps": [
+    "Clip Wegmans app digital coupons (expanded program)",
+    "Buy family packs — unit price beats sale singles",
+    "Stack manufacturer coupons at register"
+   ],
+   "stk": [
+    "Wegmans digitals",
+    "Family-pack pricing",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Wegmans app",
+    "Ibotta"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Wegmans digital coupon program",
+   "tip": "Wegmans is a low-coupon chain, but its store-brand + family-pack math wins on staples; save the coupon energy for national brands."
+  },
+  {
+   "id": 129,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Aldi",
+   "cat": "Produce",
+   "em": "🥑",
+   "hot": 77,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Aldi Finds Wednesday Drop + Produce Picks of the Week",
+   "fp": "benchmark low",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "40%+",
+   "sn": 42,
+   "badge": "HOT PRICE",
+   "steps": [
+    "New <strong>Aldi Finds</strong> drop Wednesday — limited-run pantry/household at aggressive prices",
+    "Weekly produce picks routinely beat every chain (49¢ avocados class of deals)",
+    "No coupons needed — Aldi is the price floor; Ibotta has an Aldi-specific rebate gallery"
+   ],
+   "stk": [
+    "Aldi Finds weekly drop",
+    "Produce picks",
+    "Ibotta Aldi gallery"
+   ],
+   "apps": [
+    "Aldi app",
+    "Ibotta"
+   ],
+   "exp": "Wednesdays",
+   "src": "Aldi weekly ad + Ibotta Aldi rebate gallery",
+   "tip": "Use Aldi as your price benchmark: if a stacked deal elsewhere doesn’t beat Aldi’s shelf price, skip the gymnastics."
+  },
+  {
+   "id": 130,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte",
+    "atlanta",
+    "nyc",
+    "philly",
+    "dc"
+   ],
+   "store": "Lidl",
+   "cat": "Pantry",
+   "em": "🔵",
+   "hot": 73,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Lidl Plus App Coupons + Weekly Coupon Star",
+   "fp": "varies",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "40%",
+   "sn": 40,
+   "badge": "APP COUPON",
+   "steps": [
+    "Open Lidl Plus — clip the weekly <strong>Coupon Star</strong> (% off a category)",
+    "Stack app coupons on already-low base prices",
+    "Scratch the app’s post-checkout reward wheel"
+   ],
+   "stk": [
+    "Lidl Plus coupons",
+    "Coupon Star %-off",
+    "App reward wheel"
+   ],
+   "apps": [
+    "Lidl Plus"
+   ],
+   "exp": "Weekly",
+   "src": "Lidl Plus weekly app offers",
+   "tip": "Lidl Plus gives a spend-threshold coupon ($5 off $30 class) most months — combine with Coupon Star week for the deepest basket cut."
+  },
+  {
+   "id": 131,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "dfw",
+    "houston",
+    "sanantonio",
+    "denver",
+    "phoenix",
+    "la",
+    "rdu",
+    "charlotte",
+    "atlanta",
+    "tampa"
+   ],
+   "store": "Sprouts",
+   "cat": "Produce",
+   "em": "🥕",
+   "hot": 72,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Sprouts App Deals + Double Ad Wednesday",
+   "fp": "varies",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "40%",
+   "sn": 40,
+   "badge": "APP COUPON",
+   "steps": [
+    "Wednesday = <strong>double ad day</strong> (old + new ad both valid)",
+    "Clip Sprouts app deals + the weekly app freebie",
+    "Produce sales run 30–50% below conventional chains"
+   ],
+   "stk": [
+    "Double ad Wednesday",
+    "App deals + freebie",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Sprouts app",
+    "Ibotta"
+   ],
+   "exp": "Wednesdays",
+   "src": "Sprouts weekly ad + app deals",
+   "tip": "The Sprouts app drops a free-item coupon most Fridays. Wednesday double-ad + freebie Friday are the two days that matter."
+  },
+  {
+   "id": 132,
+   "origin": "seed",
+   "markets": [
+    "dfw",
+    "phoenix",
+    "seattle"
+   ],
+   "store": "WinCo",
+   "cat": "Pantry",
+   "em": "🧮",
+   "hot": 69,
+   "vc": "rgba(61,90,254,.20)",
+   "vt2": "#7f8cff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "WinCo Bulk Bins + Manufacturer Coupons on Low Base",
+   "fp": "benchmark low",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "35%+",
+   "sn": 38,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Employee-owned, no-card everyday low prices; bulk bins for staples",
+    "Manufacturer coupons accepted on the low base",
+    "Note: debit/cash only (no credit) — that’s how prices stay down"
+   ],
+   "stk": [
+    "Everyday low base",
+    "Bulk-bin pricing",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Fetch Rewards"
+   ],
+   "exp": "Ongoing",
+   "src": "WinCo pricing model",
+   "tip": "Bring a debit card. Bulk-bin spices at WinCo are 80–90% cheaper than jarred — the single biggest unit-price win in the store."
+  },
+  {
+   "id": 133,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Costco",
+   "cat": "Household",
+   "em": "🏬",
+   "hot": 74,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Costco Member Savings Book + Manufacturer Stack-Free Math",
+   "fp": "varies",
+   "fn": 5,
+   "rv": "varies",
+   "sv": "25–40%",
+   "sn": 35,
+   "badge": "SALE",
+   "steps": [
+    "Work the monthly <strong>Member Savings book</strong> (instant rebates, no clipping)",
+    "Compare unit price vs your best stacked grocery deal — bulk often still loses to a good stack",
+    "Stack Ibotta’s Costco gallery + Costco Shop Card promos"
+   ],
+   "stk": [
+    "Member Savings instant rebates",
+    "Ibotta Costco gallery"
+   ],
+   "apps": [
+    "Costco app",
+    "Ibotta"
+   ],
+   "exp": "Monthly book",
+   "src": "Costco monthly Member Savings",
+   "tip": "Costco is for the 20% of items coupons never touch (bulk proteins, cheese). For CPG brands, your drugstore stacks beat warehouse unit prices."
+  },
+  {
+   "id": 134,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Meal Deal",
+   "em": "🤠",
+   "hot": 91,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "H-E-B Combo Loco + Yellow Coupon + App Stack",
+   "fp": "free add-ons",
+   "fn": 0,
+   "rv": "varies",
+   "sv": "100% on combo item",
+   "sn": 85,
+   "badge": "COMBO LOCO",
+   "steps": [
+    "Grab this week’s <strong>Combo Loco</strong> deals — buy the anchor item, get partner items FREE",
+    "Stack in-store <strong>yellow coupons</strong> on the anchor where allowed",
+    "Clip H-E-B app digital coupons for the rest of the basket",
+    "H-E-B coupons stack WITH manufacturer coupons on the same item"
+   ],
+   "stk": [
+    "Combo Loco free items",
+    "Yellow in-store coupons",
+    "H-E-B digital app coupons",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "H-E-B app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "H-E-B weekly ad Combo Loco — @txfrugalfinds regular feature",
+   "tip": "H-E-B is one of the few chains where a store coupon + manufacturer coupon + Combo Loco all stack on one item. Texas couponing’s crown jewel."
+  },
+  {
+   "id": 135,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Dollar General",
+   "cat": "Beverages",
+   "em": "⚡",
+   "hot": 98,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Powerade / Gatorade 28oz — as low as 50¢ Each (4-Layer DG Stack)",
+   "fp": "50¢–75¢ each",
+   "fn": 0.5,
+   "rv": "$2.29 each",
+   "sv": "75%",
+   "sn": 78,
+   "badge": "MONSTER STACK",
+   "steps": [
+    "Sports drinks go to <strong>4/$5 ($1.25 each)</strong> in the DG weekly ad — buy <strong>20 bottles = $25</strong>",
+    "Clip the <strong>$5 off $25 Saturday digital coupon</strong> in the DG app → $20 ($1.00 each)",
+    "Stack DG digital <strong>\"$2 off 5 Powerade/Gatorade\"</strong> offers — clip 4 of them = $8 off → <strong>$12 total ($0.60 each)</strong>",
+    "Submit any active <strong>Ibotta sports-drink rebate</strong> (rotates 25¢–50¢/bottle) → lands <strong>$0.50 or below</strong>",
+    "Scan the receipt in Fetch for points on top",
+    "Cashier tip: the $5/$25 is calculated on the <strong>pre-digital-coupon</strong> subtotal, so hit $25 on shelf price"
+   ],
+   "stk": [
+    "4/$5 weekly ad price",
+    "$5 off $25 Saturday digital",
+    "$2/5 DG digital coupons ×4",
+    "Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Dollar General app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Saturday $5/$25 — every Saturday",
+   "src": "Dollar General Saturday $5/$25 + digital coupon stack — the standing DG sports-drink play tracked by @couponcowboy and torokcouponhunter.com",
+   "tip": "This is the single best repeatable stack in the app. The $5/$25 fires Saturdays only and DG caps it at one per transaction — so split a big haul into multiple $25 transactions and run the coupon on each."
+  },
+  {
+   "id": 136,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Beverages",
+   "em": "⚡",
+   "hot": 95,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Gatorade / Powerade 32oz — 60¢ Each with Combo Loco + Digital",
+   "fp": "60¢–$1 each",
+   "fn": 0.6,
+   "rv": "$2.18 each",
+   "sv": "72%",
+   "sn": 72,
+   "badge": "COMBO LOCO",
+   "steps": [
+    "Sports drinks hit <strong>5/$5 ($1.00 each)</strong> on the H-E-B weekly ad in summer",
+    "Clip the H-E-B digital <strong>\"$1 off 5 Gatorade\"</strong> coupon in the app → $0.80 each",
+    "H-E-B store coupons stack <strong>with</strong> manufacturer coupons on the same item — add any Gatorade insert coupon",
+    "Check the <strong>Combo Loco</strong> block: sports drinks are a frequent anchor, which throws in free chips or a free snack when you buy the qualifying count",
+    "Final: <strong>$0.60–$0.80 per 32oz bottle plus a free partner item</strong>"
+   ],
+   "stk": [
+    "5/$5 weekly ad price",
+    "H-E-B digital $1/5 coupon",
+    "Manufacturer insert coupon",
+    "Combo Loco free partner item"
+   ],
+   "apps": [
+    "H-E-B app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "H-E-B weekly ad sports-drink promo + Combo Loco mechanics — a recurring @txfrugalfinds feature",
+   "tip": "H-E-B is one of very few chains where a store coupon AND a manufacturer coupon both apply to one item. Always check whether sports drinks are a Combo Loco anchor that week — the free partner item is pure upside."
+  },
+  {
+   "id": 137,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Beverages",
+   "em": "💧",
+   "hot": 86,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Gatorade 8-Packs 2/$12 — $4.50 Each After Cash Rewards",
+   "fp": "$4.50 each",
+   "fn": 4.5,
+   "rv": "$8.49 each",
+   "sv": "47%",
+   "sn": 47,
+   "badge": "REG. REWARDS",
+   "steps": [
+    "Gatorade 8-packs on sale <strong>2/$12</strong> (regularly $8.49 each)",
+    "Earn <strong>$3 Walgreens Cash Rewards</strong> when you buy 2",
+    "Clip any Gatorade digital coupon in the myWalgreens app",
+    "Final: <strong>$9 for two 8-packs = $4.50 each</strong>, roughly 56¢ per bottle",
+    "Roll the Cash Rewards straight into your next trip"
+   ],
+   "stk": [
+    "2/$12 sale price",
+    "$3 Walgreens Cash Rewards",
+    "myWalgreens digital coupon"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Walgreens weekly ad beverage promo — recurring hip2save matchup",
+   "tip": "Per-bottle this beats most grocery sales, and Cash Rewards roll to the next visit — pair it with a drugstore personal-care stack the same trip."
+  },
+  {
+   "id": 138,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Walmart",
+   "cat": "Beverages",
+   "em": "🥤",
+   "hot": 80,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Gatorade 12-Pack — $6.48 After Ibotta (54¢/Bottle)",
+   "fp": "$6.48",
+   "fn": 6.48,
+   "rv": "$9.98",
+   "sv": "35%",
+   "sn": 35,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Gatorade 12-pack 12oz bottles at the everyday <strong>$8.48 rollback</strong>",
+    "Activate the <strong>$2 Ibotta Gatorade rebate</strong> before checkout (rotates in most months)",
+    "Final: <strong>$6.48 = 54¢ per bottle</strong>",
+    "Scan in Fetch for additional points"
+   ],
+   "stk": [
+    "Walmart rollback price",
+    "$2 Ibotta rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Walmart app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Rollback — ongoing",
+   "src": "Walmart everyday rollback + Ibotta beverage rebate gallery",
+   "tip": "Walmart takes no store coupons, so rebate apps are the entire stack. Check Ibotta and Checkout 51 for the same item — occasionally both pay out."
+  },
+  {
+   "id": 139,
+   "origin": "seed",
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Beverages",
+   "em": "🥫",
+   "hot": 91,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Coke / Pepsi 12-Packs — $2.50 Each in the Mega Event",
+   "fp": "$2.50 each",
+   "fn": 2.5,
+   "rv": "$8.49 each",
+   "sv": "70%",
+   "sn": 70,
+   "badge": "5X EVENT",
+   "steps": [
+    "Soda 12-packs are a standing <strong>Buy 5 Save $5 Mega Event</strong> anchor — usually 5/$17.50 tagged",
+    "Each of the 5 items drops $1 automatically at the register",
+    "Load the Kroger digital <strong>\"$3 off 5 Coca-Cola\"</strong> coupon on top",
+    "Stack a manufacturer insert coupon where one is running",
+    "Final: <strong>$2.50 per 12-pack</strong> — about 21¢ a can",
+    "Fuel points accrue on the pre-discount total"
+   ],
+   "stk": [
+    "Buy 5 Save $5 Mega price",
+    "Kroger digital $3/5 coupon",
+    "Manufacturer insert coupon",
+    "Fuel points"
+   ],
+   "apps": [
+    "Kroger app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Kroger Mega Event beverage anchor — Southern Savers weekly Kroger matchup",
+   "tip": "Mix and match across Coke, Pepsi and Dr Pepper to hit the 5 — the $1/item discount is per item, not per brand. Holiday weekends push these to 4/$12."
+  },
+  {
+   "id": 140,
+   "origin": "seed",
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Beverages",
+   "em": "🧃",
+   "hot": 89,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Soda & Sparkling Water BOGO — Two 12-Packs for $4.24",
+   "fp": "$2.12 each",
+   "fn": 2.12,
+   "rv": "$8.49 each",
+   "sv": "75%",
+   "sn": 75,
+   "badge": "BOGO STACK",
+   "steps": [
+    "Beverages hit the <strong>Publix BOGO list</strong> nearly every week",
+    "In BOGO markets both 12-packs ring at half price — <strong>$4.24 each</strong>",
+    "Apply <strong>TWO manufacturer coupons</strong> (one per item) — this is the whole Publix game",
+    "Add a Publix digital coupon where one is stacked on the same item",
+    "Final: roughly <strong>$2.12 per 12-pack</strong>"
+   ],
+   "stk": [
+    "Publix BOGO sale",
+    "2× manufacturer coupons",
+    "Publix digital coupon",
+    "Ibotta"
+   ],
+   "apps": [
+    "Publix app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Publix weekly BOGO beverage list — I Heart Publix / Southern Savers matchup",
+   "tip": "Because Publix BOGOs ring as two half-price items rather than one free, you get to use a coupon on each. Never hand over just one coupon on a BOGO pair."
+  },
+  {
+   "id": 141,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Aldi",
+   "cat": "Beverages",
+   "em": "💦",
+   "hot": 78,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Spring Water 24-Pack — $2.49 (10¢ a Bottle, Price Floor)",
+   "fp": "$2.49",
+   "fn": 2.49,
+   "rv": "$4.99",
+   "sv": "50%",
+   "sn": 50,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Aldi 24-pack spring water sits at <strong>$2.49–$2.99</strong> everyday — about 10¢ a bottle",
+    "No coupon needed; this is the national price floor for bottled water",
+    "Check the <strong>Ibotta Aldi gallery</strong> — Aldi-specific rebates stack even on Aldi store brands",
+    "Use as your benchmark: if a \"deal\" elsewhere doesn't beat 10¢/bottle, skip it"
+   ],
+   "stk": [
+    "Aldi everyday low price",
+    "Ibotta Aldi gallery rebate"
+   ],
+   "apps": [
+    "Aldi app",
+    "Ibotta"
+   ],
+   "exp": "Everyday price",
+   "src": "Aldi everyday pricing — the benchmark most matchup blogs price against",
+   "tip": "Aldi is the price floor for water, eggs, milk and butter. Use it to sanity-check every stack in this app — a 4-layer coupon stack that lands above Aldi shelf price isn't a deal."
+  },
+  {
+   "id": 142,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Target",
+   "cat": "Beverages",
+   "em": "☕",
+   "hot": 84,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Starbucks Bagged Coffee — $5.49 After Circle + Gift Card Promo",
+   "fp": "$5.49",
+   "fn": 5.49,
+   "rv": "$11.49",
+   "sv": "52%",
+   "sn": 52,
+   "badge": "BASKET DEAL",
+   "steps": [
+    "Coffee runs a recurring <strong>$5 Target gift card when you buy 3</strong> promo",
+    "Sale price around <strong>$8.49</strong> per bag during the event",
+    "Stack the <strong>Target Circle 20% off coffee</strong> offer → about $6.79 each",
+    "Apply a Starbucks manufacturer coupon where one is running (frequent in inserts)",
+    "Buy 3 → $5 gift card back = effectively <strong>$5.49 a bag</strong>",
+    "Roll the gift card into next week's essentials run"
+   ],
+   "stk": [
+    "Buy 3 get $5 gift card",
+    "Target Circle 20% off",
+    "Manufacturer coupon",
+    "Ibotta"
+   ],
+   "apps": [
+    "Target Circle",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Target weekly ad gift-card coffee promo — recurring hip2save Target matchup",
+   "tip": "Target gift-card thresholds are calculated on shelf price before coupons, so hit the qualifying count first and let coupons reduce what you actually pay."
+  },
+  {
+   "id": 143,
+   "origin": "seed",
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Snacks",
+   "em": "🥔",
+   "hot": 93,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Frito-Lay / Doritos Party Size — $1.49 a Bag in the Mega",
+   "fp": "$1.49 each",
+   "fn": 1.49,
+   "rv": "$5.79 each",
+   "sv": "74%",
+   "sn": 74,
+   "badge": "5X EVENT",
+   "steps": [
+    "Party-size chips are a regular <strong>Buy 5 Save $5</strong> Mega item at $3.49 tagged",
+    "Mega discount drops each bag $1 → $2.49",
+    "Load the Kroger digital <strong>\"$5 off 5 Frito-Lay\"</strong> coupon → another $1 off each",
+    "Final: <strong>$1.49 per party-size bag</strong>",
+    "Add an Ibotta snack rebate if one is live for the brand"
+   ],
+   "stk": [
+    "Buy 5 Save $5 Mega price",
+    "Kroger digital $5/5 coupon",
+    "Ibotta snack rebate"
+   ],
+   "apps": [
+    "Kroger app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Kroger Mega Event snack anchor — Southern Savers Kroger matchup",
+   "tip": "Party-size bags qualify for the Mega at the same $1 discount as small bags — always take the biggest qualifying size for the best unit price."
+  },
+  {
+   "id": 144,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Snacks",
+   "em": "🥨",
+   "hot": 90,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Snacks & Crackers — Free to 50¢ with Everyday Coupon Doubling",
+   "fp": "free–50¢",
+   "fn": 0.25,
+   "rv": "$3.49",
+   "sv": "90%",
+   "sn": 90,
+   "badge": "DOUBLE COUP",
+   "steps": [
+    "Harris Teeter <strong>doubles manufacturer coupons up to 99¢ every single day</strong> (20 per day)",
+    "A 75¢ snack coupon becomes <strong>$1.50 off</strong>",
+    "Pair a doubled coupon with a weekly sale price around $1.50–$2 → free to 50¢",
+    "Stack an <strong>e-VIC digital offer</strong> loaded to your VIC card on the same item",
+    "During <strong>Super Doubles</strong> events coupons up to $2 double — a $2 coupon = $4 off"
+   ],
+   "stk": [
+    "Everyday 99¢ coupon doubling",
+    "Weekly sale price",
+    "e-VIC digital offer",
+    "Super Doubles (event weeks)"
+   ],
+   "apps": [
+    "Harris Teeter app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Doubling daily; Super Doubles announced in ad",
+   "src": "Harris Teeter coupon policy (everyday doubling to 99¢) + Southern Savers Super Doubles tracker",
+   "tip": "Everyday doubling makes Harris Teeter the best coupon store in the Carolinas even outside events — bring twenty 75¢ coupons and each is worth $1.50."
+  },
+  {
+   "id": 145,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Walgreens",
+   "cat": "Snacks",
+   "em": "🍿",
+   "hot": 82,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Chips & Snacks 2/$6 — $1.50 a Bag After Cash Rewards",
+   "fp": "$1.50 each",
+   "fn": 1.5,
+   "rv": "$4.49 each",
+   "sv": "67%",
+   "sn": 67,
+   "badge": "REG. REWARDS",
+   "steps": [
+    "Large bags of chips on sale <strong>2/$6</strong>",
+    "Earn <strong>$3 Walgreens Cash Rewards</strong> when you buy 2",
+    "Clip any snack digital coupon in the myWalgreens app",
+    "Final: <strong>$3 for two bags = $1.50 each</strong>",
+    "Roll the Cash Rewards into the same trip's next deal"
+   ],
+   "stk": [
+    "2/$6 sale price",
+    "$3 Walgreens Cash Rewards",
+    "myWalgreens digital coupon"
+   ],
+   "apps": [
+    "myWalgreens App",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Walgreens weekly ad snack promo — recurring hip2save matchup",
+   "tip": "Walgreens Cash Rewards are spendable in the same visit — do the snack deal first, then apply the rewards to household essentials before leaving."
+  },
+  {
+   "id": 146,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte"
+   ],
+   "store": "Food Lion",
+   "cat": "Snacks",
+   "em": "🦁",
+   "hot": 79,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Snack Aisle — 60% Off with MVP + Shop & Earn Stack",
+   "fp": "~$1.20 each",
+   "fn": 1.2,
+   "rv": "$3.29",
+   "sv": "63%",
+   "sn": 63,
+   "badge": "MVP STACK",
+   "steps": [
+    "Activate <strong>Shop & Earn</strong> snack-category offers in the Food Lion app at the start of the month",
+    "Buy MVP-tagged snack sale items in those categories",
+    "Stack manufacturer coupons on each item",
+    "Shop & Earn rewards load automatically and apply as instant savings on your next trip",
+    "Effective final: roughly <strong>60% off the shelf price</strong>"
+   ],
+   "stk": [
+    "MVP sale price",
+    "Shop & Earn category rewards",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Food Lion app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Monthly Shop & Earn cycle",
+   "src": "Food Lion MVP Shop & Earn program mechanics",
+   "tip": "Shop & Earn offers reset on the 1st and must be activated before they count — set a monthly reminder or you leave the entire rewards layer on the table."
+  },
+  {
+   "id": 147,
+   "origin": "seed",
+   "markets": [
+    "cincy",
+    "atlanta",
+    "houston",
+    "dfw"
+   ],
+   "store": "Kroger",
+   "cat": "Breakfast",
+   "em": "🥣",
+   "hot": 88,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "General Mills Cereal — 99¢ a Box in the Mega Event",
+   "fp": "99¢ each",
+   "fn": 0.99,
+   "rv": "$4.99 each",
+   "sv": "80%",
+   "sn": 80,
+   "badge": "5X EVENT",
+   "steps": [
+    "Cereal is a standing Mega Event item — <strong>Buy 5 Save $5</strong> puts boxes at about $1.99",
+    "Load the Kroger digital <strong>\"$1 off 2 General Mills\"</strong> coupon",
+    "Stack a General Mills insert coupon (they run near-monthly)",
+    "Add the Ibotta cereal rebate when live",
+    "Final: <strong>99¢ per box</strong>"
+   ],
+   "stk": [
+    "Buy 5 Save $5 Mega price",
+    "Kroger digital coupon",
+    "General Mills insert coupon",
+    "Ibotta rebate"
+   ],
+   "apps": [
+    "Kroger app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Kroger Mega Event cereal anchor — Southern Savers Kroger matchup",
+   "tip": "Cereal is the most reliably couponed category in the store. Under $1 a box is the stock-up threshold — buy a month's worth when it hits."
+  },
+  {
+   "id": 148,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Bakery",
+   "em": "🍞",
+   "hot": 81,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "H-E-B Bakery Bread — $1 a Loaf with Digital Coupon",
+   "fp": "$1.00",
+   "fn": 1,
+   "rv": "$2.48",
+   "sv": "60%",
+   "sn": 60,
+   "badge": "APP COUPON",
+   "steps": [
+    "H-E-B store-brand bakery bread runs <strong>$1.48–$1.98</strong> on the weekly ad",
+    "Clip the H-E-B digital <strong>bakery coupon</strong> in the app (rotates weekly, often 50¢–$1 off)",
+    "Final: around <strong>$1.00 a loaf</strong>",
+    "Check the reduced-price bakery rack after 7pm for an additional 30–50% off"
+   ],
+   "stk": [
+    "Weekly ad price",
+    "H-E-B digital bakery coupon",
+    "Evening markdown rack"
+   ],
+   "apps": [
+    "H-E-B app",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "H-E-B weekly ad bakery pricing + app digital coupon rotation",
+   "tip": "H-E-B marks bakery down hard in the evening. Stacking an app coupon on an already-marked-down loaf is the cheapest bread in Texas — and it freezes fine."
+  },
+  {
+   "id": 149,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Aldi",
+   "cat": "Dairy & Eggs",
+   "em": "🥚",
+   "hot": 85,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Eggs, Milk & Butter — The National Price Floor",
+   "fp": "benchmark low",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "30–45%",
+   "sn": 40,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Aldi holds the lowest everyday price on the four staples nearly every week: <strong>eggs, milk, butter, shredded cheese</strong>",
+    "No card, no clipping, no coupon required",
+    "Weekly ad \"Aldi Finds\" drop Wednesdays adds rotating pantry deals",
+    "Check the <strong>Ibotta Aldi gallery</strong> — it pays out on Aldi store brands too",
+    "Use these prices as the benchmark for every other stack in the app"
+   ],
+   "stk": [
+    "Aldi everyday low price",
+    "Wednesday Aldi Finds drop",
+    "Ibotta Aldi gallery"
+   ],
+   "apps": [
+    "Aldi app",
+    "Ibotta"
+   ],
+   "exp": "Everyday; Finds drop Wednesdays",
+   "src": "Aldi everyday staple pricing — the reference point for matchup blogs",
+   "tip": "The highest-value habit in couponing: buy staples at Aldi, and save your coupon energy for the national-brand categories where stacking actually multiplies."
+  },
+  {
+   "id": 150,
+   "origin": "seed",
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Dairy & Eggs",
+   "em": "🧀",
+   "hot": 83,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Cheese & Yogurt BOGO — Two for the Price of One, Minus Two Coupons",
+   "fp": "~40% of retail",
+   "fn": 1.75,
+   "rv": "$4.49 each",
+   "sv": "61%",
+   "sn": 61,
+   "badge": "BOGO STACK",
+   "steps": [
+    "Dairy hits the Publix BOGO list most weeks (shredded cheese, yogurt multipacks, cream cheese)",
+    "Both items ring at half price in BOGO markets",
+    "Use <strong>two manufacturer coupons</strong> — one on each item",
+    "Stack a Publix digital coupon where one exists on the same product",
+    "Typical landing: <strong>$1.50–$2.00 per unit on $4.49 retail</strong>"
+   ],
+   "stk": [
+    "Publix BOGO sale",
+    "2× manufacturer coupons",
+    "Publix digital coupon",
+    "Ibotta"
+   ],
+   "apps": [
+    "Publix app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Publix weekly BOGO dairy list — I Heart Publix matchup",
+   "tip": "Publix BOGO cycles run about 6 weeks per product. When your staple hits BOGO, buy the full 6-week supply — cheese freezes, yogurt dates run long."
+  },
+  {
+   "id": 151,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte",
+    "dc"
+   ],
+   "store": "Harris Teeter",
+   "cat": "Meat & Seafood",
+   "em": "🍗",
+   "hot": 87,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Boneless Chicken Breast — $1.77/lb on the Weekly Ad Low",
+   "fp": "$1.77/lb",
+   "fn": 1.77,
+   "rv": "$4.99/lb",
+   "sv": "65%",
+   "sn": 65,
+   "badge": "HOT PRICE",
+   "steps": [
+    "Harris Teeter runs boneless skinless chicken breast to <strong>$1.77–$1.99/lb</strong> on rotation",
+    "Buy the <strong>family pack</strong> — the ad price usually requires it",
+    "Stack an e-VIC digital meat offer if one is loaded to your card",
+    "Portion and freeze the same day in meal-size bags",
+    "Watch the <strong>manager markdown stickers</strong> in the morning for an extra 30% on same-day-sell meat"
+   ],
+   "stk": [
+    "Weekly ad family-pack price",
+    "e-VIC digital meat offer",
+    "Manager markdown stickers"
+   ],
+   "apps": [
+    "Harris Teeter app",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Harris Teeter weekly ad meat rotation — Southern Savers Harris Teeter matchup",
+   "tip": "Meat is where coupons don't reach, so the entire game is the ad cycle plus markdown timing. Under $2/lb on chicken breast is the stock-up trigger."
+  },
+  {
+   "id": 152,
+   "origin": "seed",
+   "markets": [
+    "austin",
+    "houston",
+    "sanantonio"
+   ],
+   "store": "HEB",
+   "cat": "Meat & Seafood",
+   "em": "🥩",
+   "hot": 84,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "H-E-B Meat Market Ground Beef — $2.97/lb Family Pack",
+   "fp": "$2.97/lb",
+   "fn": 2.97,
+   "rv": "$5.48/lb",
+   "sv": "46%",
+   "sn": 46,
+   "badge": "HOT PRICE",
+   "steps": [
+    "80/20 ground beef family packs hit <strong>$2.97–$3.27/lb</strong> on the H-E-B ad",
+    "Check the <strong>Combo Loco</strong> block — ground beef is a frequent anchor with free buns, cheese or seasoning",
+    "Clip any H-E-B digital meat coupon in the app",
+    "Look for the <strong>red \"Reduced for Quick Sale\" stickers</strong> in the morning meat case for another 30%"
+   ],
+   "stk": [
+    "Family-pack ad price",
+    "Combo Loco free partner items",
+    "H-E-B digital meat coupon",
+    "Quick-sale markdown"
+   ],
+   "apps": [
+    "H-E-B app",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "H-E-B weekly ad meat pricing + Combo Loco mechanics",
+   "tip": "H-E-B Combo Loco on ground beef routinely throws in buns and cheese free — a full burger night for the price of the meat alone."
+  },
+  {
+   "id": 153,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Target",
+   "cat": "Frozen",
+   "em": "🧊",
+   "hot": 80,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Frozen Meals & Veg — 30–40% Off with Circle + Gift Card Stack",
+   "fp": "~$1.20 each",
+   "fn": 1.2,
+   "rv": "$2.29 each",
+   "sv": "48%",
+   "sn": 48,
+   "badge": "BASKET DEAL",
+   "steps": [
+    "Frozen runs a recurring <strong>buy N get a Target gift card</strong> promo",
+    "Stack <strong>Target Circle</strong> percent-off offers on individual frozen brands",
+    "Add manufacturer coupons at the register — Target allows one store + one manufacturer coupon per item",
+    "Submit Ibotta frozen-category rebates",
+    "Typical: <strong>35–45% off</strong> the frozen aisle in one trip"
+   ],
+   "stk": [
+    "Gift-card threshold promo",
+    "Target Circle offers",
+    "Manufacturer coupons",
+    "Ibotta rebates"
+   ],
+   "apps": [
+    "Target Circle",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Target weekly ad frozen gift-card promo — hip2save Target matchup",
+   "tip": "Target's one-store-plus-one-manufacturer-coupon-per-item policy is the most generous of the mass retailers. Frozen is where it pays off most."
+  },
+  {
+   "id": 154,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Dollar General",
+   "cat": "Staples",
+   "em": "🥫",
+   "hot": 92,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Pantry Stock-Up — $25 Cart for $12 (Saturday $5/$25 + Digitals)",
+   "fp": "~50% off cart",
+   "fn": 12,
+   "rv": "$25",
+   "sv": "52%",
+   "sn": 55,
+   "badge": "EVERY SAT",
+   "steps": [
+    "Shop <strong>Saturday only</strong> — clip the <strong>$5 off $25</strong> digital coupon in the DG app",
+    "Build the cart from sale-tagged pantry staples: pasta, sauce, rice, canned beans, cereal, peanut butter",
+    "Clip <strong>every item-level DG digital coupon</strong> that matches your cart (they stack with the $5/$25)",
+    "Add manufacturer coupons — DG accepts one per item alongside its own digital",
+    "Typical landing: <strong>a $25 shelf-price cart for $12–$15</strong>",
+    "Split larger hauls into separate $25 transactions — the $5/$25 is one per transaction"
+   ],
+   "stk": [
+    "$5 off $25 Saturday digital",
+    "Item-level DG digital coupons",
+    "Manufacturer coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Dollar General app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Every Saturday",
+   "src": "Dollar General Saturday $5/$25 + Digital Coupon stacking policy",
+   "tip": "The $5/$25 threshold is measured on the shelf-price subtotal before digital coupons come off, so load up to $25 first and let the coupons take it down from there."
+  },
+  {
+   "id": 155,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Family Dollar",
+   "cat": "Staples",
+   "em": "🍝",
+   "hot": 83,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ weekly ad confirmed 7/13",
+   "title": "Pasta, Sauce & Canned Goods — $5 off $25 Smart Coupon Stack",
+   "fp": "~45% off cart",
+   "fn": 14,
+   "rv": "$25",
+   "sv": "44%",
+   "sn": 45,
+   "badge": "EVERY SAT",
+   "steps": [
+    "Clip the Saturday <strong>$5 off $25 Smart Coupon</strong> in the Family Dollar app",
+    "Fill the cart with sale-tagged pantry staples",
+    "Stack <strong>item-level Smart Coupons</strong> on individual products",
+    "Important: at Family Dollar the $5/$25 applies <strong>after</strong> item coupons — build the cart to land above $25 post-coupon",
+    "Typical: <strong>$35 of pantry goods for under $20</strong>"
+   ],
+   "stk": [
+    "$5/$25 Saturday Smart Coupon",
+    "Item-level Smart Coupons",
+    "Ibotta"
+   ],
+   "apps": [
+    "Family Dollar app",
+    "Ibotta"
+   ],
+   "exp": "Every Saturday",
+   "src": "Family Dollar Smart Coupons stacking order",
+   "tip": "This is the one threshold coupon that calculates AFTER item coupons — the opposite of Dollar General. Aim for $25.01 post-coupon or the $5 simply won't fire."
+  },
+  {
+   "id": 156,
+   "origin": "seed",
+   "markets": [
+    "tampa",
+    "orlando",
+    "miami",
+    "atlanta",
+    "charlotte",
+    "rdu"
+   ],
+   "store": "Publix",
+   "cat": "Staples",
+   "em": "🍜",
+   "hot": 90,
+   "vc": "rgba(47,224,200,.16)",
+   "vt2": "#2fe0c8",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Pasta & Sauce BOGO — Two Jars for $2.29 Total",
+   "fp": "$1.15 each",
+   "fn": 1.15,
+   "rv": "$4.29 each",
+   "sv": "73%",
+   "sn": 73,
+   "badge": "BOGO STACK",
+   "steps": [
+    "Pasta sauce hits the <strong>Publix BOGO list</strong> — $4.29 becomes $2.15 each",
+    "Apply <strong>two $1 manufacturer coupons</strong>, one per jar",
+    "Final: <strong>$2.29 for two jars — $1.15 each</strong>",
+    "Pair with BOGO dry pasta the same week for a complete meal base under $2"
+   ],
+   "stk": [
+    "Publix BOGO sale",
+    "2× $1 manufacturer coupons",
+    "Publix digital coupon",
+    "Ibotta"
+   ],
+   "apps": [
+    "Publix app",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Publix weekly BOGO pantry list — I Heart Publix matchup",
+   "tip": "Pasta and sauce almost always BOGO in the same week at Publix — that pairing is the cheapest reliable dinner base in the Southeast."
+  },
+  {
+   "id": 157,
+   "origin": "seed",
+   "markets": [
+    "rdu",
+    "charlotte"
+   ],
+   "store": "Lowes Foods",
+   "cat": "Staples",
+   "em": "🥬",
+   "hot": 76,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Fresh Rewards Personal Prices + Weekly Free Item",
+   "fp": "varies + free item",
+   "fn": 1,
+   "rv": "varies",
+   "sv": "40%+",
+   "sn": 45,
+   "badge": "FREE ITEM",
+   "steps": [
+    "Open the <strong>Fresh Rewards</strong> app — personal prices are generated from your own purchase history",
+    "Clip the <strong>weekly app freebie</strong> (a full-size item, most weeks)",
+    "Stack manufacturer coupons on personal-price items",
+    "Lowes Foods also runs strong local produce pricing — check the ad before Harris Teeter"
+   ],
+   "stk": [
+    "Fresh Rewards personal prices",
+    "Weekly free item",
+    "Manufacturer coupons"
+   ],
+   "apps": [
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Weekly",
+   "src": "Lowes Foods Fresh Rewards program mechanics",
+   "tip": "The weekly free item alone justifies the app. Personal prices differ per account, so check both adults' logins and shop whichever is better that week."
+  },
+  {
+   "id": 158,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Target",
+   "cat": "Household",
+   "em": "🧻",
+   "hot": 89,
+   "vc": "rgba(90,200,250,.16)",
+   "vt2": "#5ac8fa",
+   "vt": "◆ verified matchup 7/13",
+   "title": "Paper Towels & Toilet Paper — 40% Off with the $15 Gift Card Stack",
+   "fp": "~40% off",
+   "fn": 30,
+   "rv": "$50",
+   "sv": "40%",
+   "sn": 42,
+   "badge": "BASKET DEAL",
+   "steps": [
+    "Buy <strong>$50 of household essentials</strong> (paper goods, laundry, cleaning)",
+    "Receive a <strong>$15 Target gift card</strong> at checkout during the recurring essentials event",
+    "Stack <strong>Target Circle</strong> offers (5–30% off individual brands)",
+    "Add manufacturer coupons at the register — one store + one manufacturer coupon per item is allowed",
+    "Layer Ibotta rebates on Bounty, Charmin and Tide",
+    "Effective: <strong>35–45% total savings</strong> on the trip"
+   ],
+   "stk": [
+    "$15 gift card wyb $50",
+    "Target Circle offers",
+    "Manufacturer coupons",
+    "Ibotta rebates"
+   ],
+   "apps": [
+    "Target Circle",
+    "Ibotta",
+    "Fetch Rewards"
+   ],
+   "exp": "Valid 7/13–7/19, 2026",
+   "src": "Target essentials gift-card event — recurring hip2save Target matchup",
+   "tip": "Time the paper-goods restock to the gift-card event and roll the card into the next one. Run back to back, this keeps household paper permanently ~40% off."
+  },
+  {
+   "id": 159,
+   "origin": "seed",
+   "markets": [
+    "all"
+   ],
+   "store": "Walmart",
+   "cat": "Household",
+   "em": "🧼",
+   "hot": 81,
+   "vc": "rgba(10,132,255,.18)",
+   "vt2": "#4da3ff",
+   "vt": "✓ chain mechanic — verify ad",
+   "title": "Dish Soap, Cleaners & Laundry — Rollback + Ibotta Double Dip",
+   "fp": "~45% off",
+   "fn": 2,
+   "rv": "varies",
+   "sv": "45%",
+   "sn": 45,
+   "badge": "STACK IT",
+   "steps": [
+    "Walmart takes no store coupons — <strong>rebate apps are the entire stack</strong>",
+    "Shop the rollback tags on Dawn, Tide, Clorox and Lysol",
+    "Activate matching <strong>Ibotta</strong> rebates before checkout",
+    "Check <strong>Checkout 51</strong> for the same items — the two apps occasionally both pay on one purchase",
+    "Scan the receipt in Fetch for points on top"
+   ],
+   "stk": [
+    "Walmart rollback",
+    "Ibotta rebate",
+    "Checkout 51 rebate",
+    "Fetch Rewards"
+   ],
+   "apps": [
+    "Walmart app",
+    "Ibotta",
+    "Checkout 51",
+    "Fetch Rewards"
+   ],
+   "exp": "Rollbacks — ongoing",
+   "src": "Walmart rollback pricing + rebate app double-dip mechanics",
+   "tip": "The Ibotta + Checkout 51 double dip on one receipt is the closest thing to coupon stacking Walmart allows. Always check both galleries before a household run."
+  }
+ ]
+}

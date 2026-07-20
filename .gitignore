@@ -1,0 +1,5 @@
+node_modules/
+data/config.json
+data/deals-live.json
+.DS_Store
+*.log

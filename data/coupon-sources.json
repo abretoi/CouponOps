@@ -1,0 +1,52 @@
+{
+ "note": "Where each coupon in a stack is actually obtained. dealCard.js resolves every stack layer to one of these so no coupon is named without a way to get it. Store digital coupons and rebate apps resolve via links.json instead. Audited 2026-07-20.",
+
+ "portals": {
+  "printable": { "name": "Coupons.com", "url": "https://www.coupons.com", "for": "Printable manufacturer coupons — the main national database" },
+  "database":  { "name": "KCL Coupon Database", "url": "https://thekrazycouponlady.com/coupons", "for": "Searchable database of every live coupon and which insert it came from" },
+  "inserts":   { "name": "Sunday Insert Preview", "url": "https://www.sundaycouponpreview.com", "for": "What is in this and next Sunday's paper inserts, listed before they drop" },
+  "pg":        { "name": "P&G Good Everyday", "url": "https://www.pggoodeveryday.com/coupons/", "for": "All P&G brand coupons — Tide, Crest, Oral-B, Gillette, Old Spice, Febreze, Charmin, Bounty, Pampers" },
+  "savings":   { "name": "Savings.com", "url": "https://www.savings.com", "for": "Secondary printable + digital coupon aggregator" },
+  "surfer":    { "name": "CouponSurfer", "url": "https://www.couponsurfer.com", "for": "Additional printable coupon source" }
+ },
+
+ "brandPortal": {
+  "note": "Brands whose coupons live on a shared corporate portal rather than their own page.",
+  "pg": ["Tide", "Crest", "Oral-B", "Gillette", "Old Spice", "Febreze", "Charmin", "Bounty", "Pampers", "Dawn", "Downy", "Always", "Venus", "Head & Shoulders", "Pantene", "Olay", "Secret", "Swiffer", "Mr. Clean", "Cascade", "Luvs", "P&G"]
+ },
+
+ "brands": {
+  "Dove":            { "url": "https://www.dove.com/us/en/offers.html", "parent": "Unilever" },
+  "Garnier":         { "url": "https://www.garnierusa.com/offers" },
+  "Garnier Fructis": { "url": "https://www.garnierusa.com/offers" },
+  "CoverGirl":       { "url": "https://www.covergirl.com" },
+  "Revlon":          { "url": "https://www.revlon.com" },
+  "Colgate":         { "url": "https://www.colgate.com/en-us/offers" },
+  "Hello":           { "url": "https://www.colgate.com/en-us/offers" },
+  "Palmolive":       { "url": "https://www.palmolive.com" },
+  "Suavitel":        { "url": "https://www.palmolive.com" },
+  "Tide":            { "url": "https://www.tide.com" },
+  "Purex":           { "url": "https://www.purex.com" },
+  "All":             { "url": "https://www.all-laundry.com" },
+  "Snuggle":         { "url": "https://www.coupons.com" },
+  "Gatorade":        { "url": "https://www.gatorade.com" },
+  "Powerade":        { "url": "https://www.coupons.com" },
+  "Pepsi":           { "url": "https://www.pepsico.com" },
+  "Coca-Cola":       { "url": "https://www.coupons.com" },
+  "Coke":            { "url": "https://www.coupons.com" },
+  "Frito-Lay":       { "url": "https://www.fritolay.com" },
+  "Doritos":         { "url": "https://www.fritolay.com" },
+  "Ruffles":         { "url": "https://www.fritolay.com" },
+  "Tostitos":        { "url": "https://www.fritolay.com" },
+  "General Mills":   { "url": "https://www.bettycrocker.com/coupons" },
+  "Kellogg":         { "url": "https://www.coupons.com" },
+  "Coppertone":      { "url": "https://www.coppertone.com" },
+  "Huggies":         { "url": "https://www.coupons.com" },
+  "Starbucks":       { "url": "https://www.coupons.com" }
+ },
+
+ "programs": {
+  "note": "Store loyalty currencies. These are earned/redeemed in the retailer's own app, so they resolve to that store's coupon page via links.json.",
+  "keywords": ["cash rewards", "in-store rewards", "extrabucks", "extracare", "mperks", "for u", "e-vic", "evic", "mvp", "shop & earn", "fresh rewards", "go rewards", "flexible rewards", "fuel saver", "smart coupon", "circle", "digital coupon", "digital", "app coupon", "personal price", "points", "catalina", "gift card", "reward", "member savings", "instant rebate", "instant savings", "savings book", "coupon star", "free item", "freebie", "app freebie", "weekly app"]
+ }
+}

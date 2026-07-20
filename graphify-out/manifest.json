@@ -1,0 +1,152 @@
+{
+  "data/coupon-sources.json": {
+    "mtime": 1784555006.8143225,
+    "ast_hash": "41581b61f9a7aced0ae445c9396ae2ca",
+    "semantic_hash": "41581b61f9a7aced0ae445c9396ae2ca"
+  },
+  "data/deals-core.json": {
+    "mtime": 1784516640.4921236,
+    "ast_hash": "5d46e292bc995bccad63c7d429c58302",
+    "semantic_hash": "5d46e292bc995bccad63c7d429c58302"
+  },
+  "data/deals.json": {
+    "mtime": 1784542361.867038,
+    "ast_hash": "1d77e26df4960241aa7dead94a15439b",
+    "semantic_hash": "1d77e26df4960241aa7dead94a15439b"
+  },
+  "data/links.json": {
+    "mtime": 1784555129.8567734,
+    "ast_hash": "ca591c206ba0c16dc0429e0035a9f134",
+    "semantic_hash": "ca591c206ba0c16dc0429e0035a9f134"
+  },
+  "data/sources.json": {
+    "mtime": 1784516828.065479,
+    "ast_hash": "a3a9250cd0d8c06abcad2cec7a8f3212",
+    "semantic_hash": "a3a9250cd0d8c06abcad2cec7a8f3212"
+  },
+  "package.json": {
+    "mtime": 1784537350.7420385,
+    "ast_hash": "af8daae311ef35b6f9a089472041d37c",
+    "semantic_hash": "af8daae311ef35b6f9a089472041d37c"
+  },
+  "public/js/api.js": {
+    "mtime": 1784517146.91874,
+    "ast_hash": "62af8fe09fcb39df546f92b7261eb276",
+    "semantic_hash": "62af8fe09fcb39df546f92b7261eb276"
+  },
+  "public/js/app.js": {
+    "mtime": 1784554916.7585707,
+    "ast_hash": "af96d097f0dd640bc17ac817e89d79af",
+    "semantic_hash": "af96d097f0dd640bc17ac817e89d79af"
+  },
+  "public/js/components/dealCard.js": {
+    "mtime": 1784555091.3874981,
+    "ast_hash": "a2ddafd84cb986318b8c88e4376119c9",
+    "semantic_hash": "a2ddafd84cb986318b8c88e4376119c9"
+  },
+  "public/js/views/deals.js": {
+    "mtime": 1784554935.332659,
+    "ast_hash": "6152f67ec3c762d3b94ea3deb0cf6b77",
+    "semantic_hash": "6152f67ec3c762d3b94ea3deb0cf6b77"
+  },
+  "public/js/views/settings.js": {
+    "mtime": 1784517254.2639213,
+    "ast_hash": "0c73343e47b6ff5dfefaa61c5674be78",
+    "semantic_hash": "0c73343e47b6ff5dfefaa61c5674be78"
+  },
+  "public/js/views/sources.js": {
+    "mtime": 1784518855.6690867,
+    "ast_hash": "43583cdb51b347f3549675a26399b9c3",
+    "semantic_hash": "43583cdb51b347f3549675a26399b9c3"
+  },
+  "scripts/build-data.js": {
+    "mtime": 1784542361.8376977,
+    "ast_hash": "927e79a05d2f4d355c9f45ff7eb8001b",
+    "semantic_hash": "927e79a05d2f4d355c9f45ff7eb8001b"
+  },
+  "scripts/check-links.js": {
+    "mtime": 1784554971.5762863,
+    "ast_hash": "1a033804d5ed89c94d9146b9c08ec85b",
+    "semantic_hash": "1a033804d5ed89c94d9146b9c08ec85b"
+  },
+  "scripts/setup.sh": {
+    "mtime": 1784517481.5605493,
+    "ast_hash": "097e7b87e12414bdc41e1966b6dd8860",
+    "semantic_hash": "097e7b87e12414bdc41e1966b6dd8860"
+  },
+  "server/index.js": {
+    "mtime": 1784516804.6627505,
+    "ast_hash": "aaf8559b733020ecf71c8770abf07b43",
+    "semantic_hash": "aaf8559b733020ecf71c8770abf07b43"
+  },
+  "server/routes/ask.js": {
+    "mtime": 1784516801.065706,
+    "ast_hash": "d4cd5dd1fdb82b982b44cca47250a289",
+    "semantic_hash": "d4cd5dd1fdb82b982b44cca47250a289"
+  },
+  "server/routes/config.js": {
+    "mtime": 1784516793.965643,
+    "ast_hash": "be83f1f9489167c49a38a3169d08afad",
+    "semantic_hash": "be83f1f9489167c49a38a3169d08afad"
+  },
+  "server/routes/deals.js": {
+    "mtime": 1784516786.8478305,
+    "ast_hash": "898d7450e8869498ea9ba7a1f1706d6d",
+    "semantic_hash": "898d7450e8869498ea9ba7a1f1706d6d"
+  },
+  "server/services/aiAdapter.js": {
+    "mtime": 1784516740.403899,
+    "ast_hash": "9a4472b2007171adf5e3c58656290078",
+    "semantic_hash": "9a4472b2007171adf5e3c58656290078"
+  },
+  "server/services/dealRefresh.js": {
+    "mtime": 1784516778.2751968,
+    "ast_hash": "b050addead5cf4706008d0ef85629f45",
+    "semantic_hash": "b050addead5cf4706008d0ef85629f45"
+  },
+  "server/services/dealStore.js": {
+    "mtime": 1784554916.7575073,
+    "ast_hash": "35467306f9fc179ebaffa6e783fcd58a",
+    "semantic_hash": "35467306f9fc179ebaffa6e783fcd58a"
+  },
+  "CLAUDE.md": {
+    "mtime": 1784555204.741166,
+    "ast_hash": "c89e65083363d47670252621c1bf967c",
+    "semantic_hash": "c89e65083363d47670252621c1bf967c"
+  },
+  "MEMORY.md": {
+    "mtime": 1784555187.7909281,
+    "ast_hash": "8aa879712dfab0e305215b0a0809fbd1",
+    "semantic_hash": "8aa879712dfab0e305215b0a0809fbd1"
+  },
+  "OMNISCIENT CLAUDE.md": {
+    "mtime": 1784517417.6156282,
+    "ast_hash": "a5ea66183b3d00b0e610334a77547ae4",
+    "semantic_hash": "a5ea66183b3d00b0e610334a77547ae4"
+  },
+  "README.md": {
+    "mtime": 1784555187.7914033,
+    "ast_hash": "0604950a7dccd2e341cd35e70dbcf636",
+    "semantic_hash": "0604950a7dccd2e341cd35e70dbcf636"
+  },
+  "SETUP.md": {
+    "mtime": 1784555187.7917051,
+    "ast_hash": "f36e476cea48f63199017cc936694558",
+    "semantic_hash": "f36e476cea48f63199017cc936694558"
+  },
+  "coupon-dashboard-july2026.html": {
+    "mtime": 1784515959.3086467,
+    "ast_hash": "f573e984763e6d74641ecd7a1d297bec",
+    "semantic_hash": "f573e984763e6d74641ecd7a1d297bec"
+  },
+  "docs/SETUP-GUIDE.md": {
+    "mtime": 1784555187.7922165,
+    "ast_hash": "a5e35efee2e28aa0a92aebb8430499e6",
+    "semantic_hash": "a5e35efee2e28aa0a92aebb8430499e6"
+  },
+  "public/index.html": {
+    "mtime": 1784554971.5534313,
+    "ast_hash": "f02695cf852c1fd522149fd6a406433a",
+    "semantic_hash": "f02695cf852c1fd522149fd6a406433a"
+  }
+}

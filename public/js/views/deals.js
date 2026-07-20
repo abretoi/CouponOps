@@ -41,6 +41,7 @@ export default async function renderDeals(el, state) {
       </button>
     </div>
     <div class="ctrl-row" id="catBar"></div>
+    <div class="ctrl-row" id="storeBar"></div>
   </div>
 
   <div class="ask-bar" data-reveal>
@@ -61,6 +62,7 @@ export default async function renderDeals(el, state) {
 
   const mktBar = el.querySelector('#mktBar');
   const catBar = el.querySelector('#catBar');
+  const storeBar = el.querySelector('#storeBar');
   const grid = el.querySelector('#grid');
 
   function renderMarkets() {
@@ -71,16 +73,40 @@ export default async function renderDeals(el, state) {
   }
 
   function renderCats() {
-    catBar.innerHTML = cats.map(c => `
-      <button class="chip ${state.cat === c ? 'active' : ''}" data-cat="${c}">${esc(c)}</button>`).join('');
+    catBar.innerHTML = `<span class="filter-label">Category</span>` + cats.map(c => `
+      <button class="chip ${state.cat === c ? 'active' : ''}" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
+  }
+
+  // Stores carried in the CURRENTLY selected market (and category), with the
+  // count each contributes — this is the in-market drill-down.
+  function storesForMarket() {
+    const counts = {};
+    for (const d of visibleFor(state.market)) {
+      if (state.cat !== 'All' && d.cat !== state.cat) continue;
+      counts[d.store] = (counts[d.store] || 0) + 1;
+    }
+    return Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  }
+
+  function renderStores() {
+    const list = storesForMarket();
+    // The selected store may not exist in the new market/category — fall back.
+    if (state.store !== 'All' && !list.some(([s]) => s === state.store)) state.store = 'All';
+    const total = list.reduce((n, [, c]) => n + c, 0);
+    storeBar.innerHTML =
+      `<span class="filter-label">Store</span>` +
+      `<button class="chip ${state.store === 'All' ? 'active' : ''}" data-store="All">All stores <span class="cnt">${total}</span></button>` +
+      list.map(([s, c]) => `
+        <button class="chip ${state.store === s ? 'active' : ''}" data-store="${esc(s)}">${esc(s)} <span class="cnt">${c}</span></button>`).join('');
   }
 
   function filtered() {
     const q = state.query.toLowerCase();
     let f = visibleFor(state.market).filter(d => {
       const cOk = state.cat === 'All' || d.cat === state.cat;
+      const stOk = state.store === 'All' || d.store === state.store;
       const sOk = !q || [d.title, d.cat, d.store, d.badge, (d.stk || []).join(' ')].join(' ').toLowerCase().includes(q);
-      return cOk && sOk;
+      return cOk && stOk && sOk;
     });
     if (state.sort === 'hot') f.sort((a, b) => b.hot - a.hot);
     else if (state.sort === 'save') f.sort((a, b) => b.sn - a.sn);
@@ -97,7 +123,7 @@ export default async function renderDeals(el, state) {
       ? `Deals — AI-refreshed ${new Date(refreshedAt).toLocaleDateString()}`
       : "This week's deals";
     grid.innerHTML = f.length
-      ? f.map(d => dealCard(d, marketLookup, data.sbg || {}, data.badgeStyle || {}, data.links || {})).join('')
+      ? f.map(d => dealCard(d, marketLookup, data.sbg || {}, data.badgeStyle || {}, data.links || {}, data.couponSources || {})).join('')
       : '<p style="color:var(--text-3);padding:32px 0">No deals match. Try clearing filters — or hit Refresh to pull this market\'s current week.</p>';
     grid.querySelectorAll('[data-reveal]').forEach(c => c.classList.add('in'));
   }
@@ -107,13 +133,20 @@ export default async function renderDeals(el, state) {
     if (!b) return;
     state.market = b.dataset.mkt;
     localStorage.setItem('couponops-market', state.market);
-    renderMarkets(); renderGrid();
+    state.store = 'All';           // store list is market-scoped; reset on switch
+    renderMarkets(); renderStores(); renderGrid();
   });
   catBar.addEventListener('click', e => {
     const b = e.target.closest('[data-cat]');
     if (!b) return;
     state.cat = b.dataset.cat;
-    renderCats(); renderGrid();
+    renderCats(); renderStores(); renderGrid();
+  });
+  storeBar.addEventListener('click', e => {
+    const b = e.target.closest('[data-store]');
+    if (!b) return;
+    state.store = b.dataset.store;
+    renderStores(); renderGrid();
   });
   el.querySelector('#searchInput').addEventListener('input', e => { state.query = e.target.value; renderGrid(); });
   el.querySelector('#sortSel').value = state.sort;
@@ -157,5 +190,5 @@ export default async function renderDeals(el, state) {
   askBtn.addEventListener('click', ask);
   askInput.addEventListener('keydown', e => { if (e.key === 'Enter') ask(); });
 
-  renderMarkets(); renderCats(); renderGrid();
+  renderMarkets(); renderCats(); renderStores(); renderGrid();
 }

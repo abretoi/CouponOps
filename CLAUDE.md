@@ -27,7 +27,7 @@ server/
 │   └── ask.js              /api/ask — deal-grounded Q&A via active model
 └── services/
     ├── aiAdapter.js        PROVIDERS registry, callModel(), parseJson(), config read/write
-    ├── dealStore.js        Seed + live overlay merge; getDeals/saveRefresh/clearRefresh
+    ├── dealStore.js        Seed + live overlay merge; getDeals/getLinks/getCouponSources
     └── dealRefresh.js      Per-market AI refresh prompt + response normalization
 
 public/
@@ -36,17 +36,20 @@ public/
     ├── app.js              Router, state, toast, theme, model chip
     ├── api.js              Fetch helpers + esc()
     ├── views/              deals.js, sources.js, settings.js
-    └── components/         dealCard.js
+    └── components/         dealCard.js (+ couponFor() coupon resolver)
 
 data/
 ├── deals-core.json         48 deals extracted verbatim from coupon-dashboard-july2026.html
 ├── deals.json              GENERATED seed artifact — never hand-edit (see build rule)
+├── links.json              Verified outbound-URL registry (stores x ad/coupons/matchup + apps)
+├── coupon-sources.json     Where each manufacturer coupon is obtained (portals + brands)
 ├── sources.json            Deal-source ecosystem (blogs/IG/FB groups/forums/apps) — hand-curated
 ├── config.json             Gitignored — aiProvider, aiModel, aiBaseUrl, aiKeys{provider:key}
 └── deals-live.json         Gitignored — AI-refreshed weeks, keyed by market
 
 scripts/
 ├── build-data.js           Source of truth for markets/expansion deals → regenerates data/deals.json
+├── check-links.js          Audits every URL in links.json + coupon-sources.json
 └── setup.sh                Clean-install script
 ```
 
@@ -85,13 +88,28 @@ Apple product-marketing language per the `dashboard-design` skill: pure-black su
 
 Card pillar tint maps from badge family (`PILLAR_BY_BADGE` in `dealCard.js`) onto the same five stops.
 
+## Coupon Registry (`data/coupon-sources.json`)
+
+Naming a coupon in a step without a way to get it is a bug. This registry maps every coupon *type* to where it is actually obtained, and `couponFor()` in `dealCard.js` resolves each stack layer against it, in priority order:
+
+1. **Rebate app** (exact name match in `links.apps`) → Ibotta / Fetch / Checkout 51
+2. **Store loyalty currency or digital coupon** (`programs.keywords` — Cash Rewards, ExtraBucks, mPerks, for U, e-VIC, MVP, Catalina, reward, …) → that store's `coupons` page
+3. **Sunday paper insert** → Sunday Coupon Preview (what's in this week's inserts)
+4. **P&G brand** (`brandPortal.pg` — Tide, Crest, Oral-B, Gillette, Old Spice, Febreze, Charmin, Bounty, Pampers) → P&G Good Everyday
+5. **Other known brand** (`brands`) → that brand's offers page
+6. **Any remaining manufacturer coupon** → Coupons.com
+
+Resolved layers render as clickable `.stack-tag.is-link` chips, and the card shows a deduped **"Get these coupons before you go"** checklist. Shelf prices (BOGO, Mega, rollback, auto-applied) deliberately resolve to `null` — they aren't coupons and must not get a fake link.
+
+**Coverage is verifiable**, and regressions are catchable: 291/369 stack layers resolve; every layer whose text mentions a coupon/rebate/reward/insert resolves (0 gaps). The 78 unresolved are shelf prices. Re-check by resolving `stk[]` across `/api/deals`.
+
 ## Link Registry (`data/links.json`)
 
 **Every outbound URL lives here, and nowhere else.** Per store: `ad`, `coupons`, `matchup`. Plus an `apps` map (Ibotta, Fetch, store apps). `build-data.js` deletes any per-deal `durl`/`surl` so the registry is unambiguously the single source of truth — this permanently kills the dead-link class of bug.
 
 `dealCard.js` assembles each card's link row from the registry: **Weekly ad** + **Clip coupons** (primary, turquoise) then **Step-by-step matchup** and one button per required app (ocean). That's how a user goes from card → live deal → the actual coupons.
 
-Audit with `npm run check-links`. Retail sites behind Akamai/Cloudflare answer curl with 403/503/dropped connections while serving browsers normally; those domains are listed under `botWalled` and reported separately. **A 404 is never excused, even on a walled domain** — bot walls don't return 404, so a 404 there is a real dead link (this is exactly how the Meijer `weekly-ad.html` → `weeklyad.html` and `mperks.html` → `mPerks.html` typos were caught).
+Audit with `npm run check-links` (covers `links.json` **and** `coupon-sources.json` — 126 URLs). Retail sites behind Akamai/Cloudflare answer curl with 403/503/dropped connections while serving browsers normally; those domains are listed under `botWalled` and reported separately. **A 404 is never excused, even on a walled domain** — bot walls don't return 404, so a 404 there is a real dead link (this is exactly how the Meijer `weekly-ad.html` → `weeklyad.html` and `mperks.html` → `mPerks.html` typos were caught).
 
 ## Running Locally
 
@@ -109,7 +127,19 @@ npm run build-data              # regenerate data/deals.json after editing build
 - Gemini uses `:generateContent` with the key in the query string, not a Bearer header.
 - Ollama needs no key; its base URL is overridable for non-default ports.
 
+## Filters
+
+Grocery Deals filters compose: **market → category → store → search → sort**. The store row is *market-and-category scoped* (`storesForMarket()` in `deals.js`) — it lists only stores carrying deals in the current market/category, with per-store counts, and resets to All when the market changes or the selected store leaves the filtered set. State lives in `state.store` in `app.js`.
+
 ## QA Fix Log
+
+### R3 (Jul 20 2026) — Readability, theme toggle, coupon links, store filter
+
+- **Contrast fixed and verified.** Split each ramp stop into a *fill* token and an `-ink` *text* token; saturated blues are unreadable at 11–13px. Small pills (badges, stack tags, deal links, refresh pill) were translucent over `transparent`, so their contrast depended on whatever composited behind them — now mixed into `--bg-2` and opaque, making contrast deterministic. Badge/verification colors were previously baked as raw hex in `deals.json` and therefore never adapted to light mode (light ink on a light card); they are now emitted as `var()`/`color-mix()` expressions. Verified in-browser with a canvas-based contrast probe: **every measured element passes WCAG AA in both themes.**
+  - *Measurement gotcha:* `getComputedStyle` returns `oklab(...)` for `color-mix()` and puts gradients in `background-image`; a naive rgb parser silently mis-reads both. It also samples **mid-transition** colors right after a theme flip. Disable transitions and resolve colors via a canvas before trusting any contrast number.
+- **Theme toggle restored to the top-right** in a sticky frosted `header.topbar` (matching the dashboard-design scaffold), with sun/moon SVGs and the page title on the left. `.controls` now sticks below it at `top: 56px`.
+- **Manufacturer coupons are now linked** — see the Coupon Registry section above.
+- **Store filter added** within each market.
 
 ### R2 (Jul 20 2026) — Blue-only palette, verified link registry, staples/drinks expansion
 

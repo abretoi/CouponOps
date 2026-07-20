@@ -52,17 +52,18 @@ Then open your web browser and go to: **http://localhost:4747**
 2. **Search bar** — type any product ("detergent", "diapers"), store ("HEB"), or deal type ("BOGO").
 3. **Sort menu** — Hottest / Biggest % saved / Lowest final price / By store.
 4. **↻ Refresh week** — see section 6.
-5. **Category chips** — Baby, Beauty, Household, Pantry, Produce, Penny Items, and more.
-6. **Ask AI bar** — see section 7.
-7. **Deal cards** — every card carries a row of link buttons you can click straight through:
+5. **Category chips** — Baby, Beauty, Household, Pantry, Produce, Staples, and more.
+6. **Store chips** — after picking a market, narrow to one retailer (e.g. just H-E-B, or just Harris Teeter). The number on each chip is how many deals that store has in your market right now.
+7. **Ask AI bar** — see section 7.
+8. **Deal cards** — every card carries a row of link buttons you can click straight through:
    - **Weekly ad** — that store's current ad
    - **Clip coupons** — the digital coupon page where you load the offers
    - **Step-by-step matchup** — the blog post laying the whole stack out
    - **One button per app** (Ibotta, Fetch, the store app) — tap to install or open
 
-   Click the card itself to expand it. You'll then see:
+   Click the card itself to expand it. You'll then see **"Get these coupons before you go"** — one button per coupon the deal needs, linking to exactly where you clip or print it (the store's app, P&G Good Everyday, Coupons.com, or the Sunday insert preview). Below that:
    - **Numbered steps** — the exact stacking order at the register, with the running math
-   - **Stack tags** — every layer in the stack, listed out
+   - **Stack tags** — every layer in the stack. Any layer that is an actual coupon is **clickable** and takes you to where to get it
    - **The tip** — the insider trick that makes the deal work
    - **The source** — where the deal was verified
 
@@ -126,4 +127,4 @@ Answers come only from the deals currently loaded for your selected market, so i
 
 ---
 
-*CouponOps v1.1 · updated Jul 20, 2026 · 108 deals · runs locally · your keys, your machine, your savings.*
+*CouponOps v1.2 · updated Jul 20, 2026 · 108 deals · runs locally · your keys, your machine, your savings.*

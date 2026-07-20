@@ -29,6 +29,12 @@ export function getLinks() {
   return readJson(path.join(DATA, 'links.json'), { stores: {}, apps: {} });
 }
 
+// Where each manufacturer coupon in a stack is actually obtained (printable
+// portals, per-brand offer pages, Sunday-insert previews).
+export function getCouponSources() {
+  return readJson(path.join(DATA, 'coupon-sources.json'), { portals: {}, brands: {} });
+}
+
 // Live refreshed deals replace seed deals for the markets they were fetched for.
 export function getDeals() {
   const seed = readJson(SEED, { deals: [], markets: [], updatedAt: null });
@@ -50,6 +56,7 @@ export function getDeals() {
     sbg: seed.sbg,
     badgeStyle: seed.badgeStyle,
     links: getLinks(),
+    couponSources: getCouponSources(),
     refreshes: Object.fromEntries(refreshedMarkets.map(m => [m, live.refreshes[m].refreshedAt])),
     deals: [...liveDeals, ...deals],
   };

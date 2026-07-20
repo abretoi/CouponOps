@@ -10,18 +10,24 @@
   color-scheme: dark;
   --bg: #000; --bg-1: #0a0a0c; --bg-2: #131316; --bg-3: #1c1c20;
   --line: rgba(255,255,255,0.08); --line-2: rgba(255,255,255,0.14);
-  --text: #f5f5f7; --text-2: #a1a1a6; --text-3: #6e6e73; --text-4: #4a4a4e;
-  /* Blue-family ramp — turquoise → sky → ocean → blue → navy. The ONLY hues
-     in this app. Every accent, tint, gradient, and badge resolves to one of
-     these five; nothing outside the family. */
-  --turquoise: #2fe0c8;
-  --sky:       #5ac8fa;
-  --ocean:     #0a84ff;
-  --blue:      #3d5afe;
-  --navy:      #4a6fd4;
+  --text: #f5f5f7; --text-2: #a1a1a6; --text-3: #8e8e93; --text-4: #6e6e73;
 
-  --accent: var(--ocean); --accent-soft: var(--sky);
+  /* Blue-family ramp — turquoise → sky → ocean → blue → navy. The ONLY hues
+     in this app.
+     TWO variants per stop, and the distinction is load-bearing:
+       --<stop>      saturated FILL — backgrounds, borders, glows, gradients.
+       --<stop>-ink  lightened TEXT — every stop clears WCAG AA (>=4.5:1) on
+                     the card surface. Saturated blues are too dark to read at
+                     11–13px on black, so text must never use the fill token. */
+  --turquoise: #2fe0c8;  --turquoise-ink: #5eead4;  /* 12.6:1 */
+  --sky:       #5ac8fa;  --sky-ink:       #7dd3fc;  /* 11.1:1 */
+  --ocean:     #0a84ff;  --ocean-ink:     #60a5fa;  /*  7.3:1 */
+  --blue:      #3d5afe;  --blue-ink:      #a5b4fc;  /*  9.3:1 */
+  --navy:      #4a6fd4;  --navy-ink:      #aec3f0;  /* 10.5:1 */
+
+  --accent: var(--ocean); --accent-soft: var(--ocean-ink);
   --good: var(--turquoise); --warn: var(--sky);
+  --good-ink: var(--turquoise-ink); --warn-ink: var(--sky-ink);
   --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
   --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
   --fs-display: clamp(32px, 4.6vw, 54px);
@@ -38,15 +44,17 @@
   color-scheme: light;
   --bg: #fbfbfd; --bg-1: #ffffff; --bg-2: #f5f5f7; --bg-3: #ececef;
   --line: rgba(0,0,0,0.08); --line-2: rgba(0,0,0,0.14);
-  --text: #1d1d1f; --text-2: #515154; --text-3: #86868b; --text-4: #b8b8bd;
-  /* Light mode steps each blue down for AA contrast on white. */
-  --turquoise: #00857a;
-  --sky:       #0077b6;
-  --ocean:     #0060c0;
-  --blue:      #2a3fb0;
-  --navy:      #16305c;
-  --accent: var(--ocean); --accent-soft: var(--sky);
+  --text: #1d1d1f; --text-2: #515154; --text-3: #6c6c70; --text-4: #86868b;
+  /* Light mode inverts the relationship: the INK variant is the darker one,
+     so text clears AA on white while fills stay light enough to sit under it. */
+  --turquoise: #00857a;  --turquoise-ink: #00706a;  /* 5.4:1 on white */
+  --sky:       #0077b6;  --sky-ink:       #0369a1;  /* 5.9:1 */
+  --ocean:     #0060c0;  --ocean-ink:     #0b57d0;  /* 6.4:1 */
+  --blue:      #2a3fb0;  --blue-ink:      #3730a3;  /* 9.1:1 */
+  --navy:      #16305c;  --navy-ink:      #1e3a6e;  /* 11.4:1 */
+  --accent: var(--ocean); --accent-soft: var(--ocean-ink);
   --good: var(--turquoise); --warn: var(--sky);
+  --good-ink: var(--turquoise-ink); --warn-ink: var(--sky-ink);
   --shadow-card: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 32px rgba(0,0,0,.05);
   --shadow-card-hover: 0 1px 0 rgba(255,255,255,.7) inset, 0 24px 48px rgba(0,0,0,.08);
 }
@@ -85,6 +93,31 @@ aside.side {
 
 main.content { flex: 1; min-width: 0; padding: 0 var(--s-6) var(--s-8); }
 
+/* ── Top bar — frosted glass, theme toggle top-right (per the scaffold) ── */
+header.topbar {
+  position: sticky; top: 0; z-index: 30;
+  display: flex; align-items: center; gap: var(--s-4);
+  height: 56px; margin: 0 calc(-1 * var(--s-6));
+  padding: 0 var(--s-6);
+  background: color-mix(in oklab, var(--bg) 72%, transparent);
+  backdrop-filter: saturate(180%) blur(24px); -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-bottom: 1px solid var(--line);
+}
+.page-title { font-size: 14.5px; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.top-actions { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.icon-btn {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--line); background: var(--bg-2); color: var(--text-2);
+  display: grid; place-items: center;
+  transition: color var(--t-fast), border-color var(--t-fast), background var(--t-fast), transform var(--t-fast);
+}
+.icon-btn:hover { color: var(--text); border-color: var(--line-2); transform: translateY(-1px); }
+.icon-btn:active { transform: translateY(0); }
+.icon-btn:focus-visible { outline: 2px solid var(--ocean); outline-offset: 2px; }
+.icon-btn .sun { display: none; }
+[data-theme="light"] .icon-btn .moon { display: none; }
+[data-theme="light"] .icon-btn .sun { display: block; }
+
 /* ── Hero ── */
 .hero { position: relative; padding: var(--s-7) 0 var(--s-5); }
 .hero::before { content: ""; position: absolute; top: -140px; left: 50%; transform: translateX(-50%);
@@ -109,11 +142,12 @@ h1.hero-h em { font-style: normal; background: linear-gradient(120deg, var(--tur
 .lede { color: var(--text-2); font-size: clamp(15px,1.3vw,18px); max-width: 720px; line-height: 1.45; }
 
 /* ── Controls ── */
-.controls { position: sticky; top: 0; z-index: 20; padding: var(--s-3) 0;
+.controls { position: sticky; top: 56px; z-index: 20; padding: var(--s-3) 0;
   background: color-mix(in oklab, var(--bg) 72%, transparent);
   backdrop-filter: saturate(180%) blur(24px); -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-bottom: 1px solid var(--line); margin-bottom: var(--s-5); }
 .ctrl-row { display: flex; gap: var(--s-2); align-items: center; flex-wrap: wrap; margin-bottom: var(--s-2); }
+#storeBar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
 .ctrl-row:last-child { margin-bottom: 0; }
 .mkt-scroll { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; flex: 1; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: var(--r-pill);
@@ -133,9 +167,9 @@ select.sel { padding: 8px 12px; border-radius: var(--r-pill); border: 1px solid 
   background: var(--bg-2); color: var(--text); font: inherit; font-size: 13px; outline: none; cursor: pointer; }
 .refresh-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: var(--r-pill);
   border: 1px solid color-mix(in oklab, var(--turquoise) 35%, var(--line)); font-weight: 600; font-size: 13px;
-  background: color-mix(in oklab, var(--turquoise) 14%, transparent); color: var(--turquoise);
+  background: color-mix(in oklab, var(--turquoise) 14%, var(--bg-2)); color: var(--turquoise-ink);
   transition: transform var(--t-fast), background var(--t-fast); }
-.refresh-pill:hover { transform: translateY(-1px); background: color-mix(in oklab, var(--turquoise) 22%, transparent); }
+.refresh-pill:hover { transform: translateY(-1px); background: color-mix(in oklab, var(--turquoise) 24%, var(--bg-2)); }
 .refresh-pill:disabled { opacity: .5; cursor: wait; transform: none; }
 .refresh-pill .spin { width: 12px; height: 12px; border: 2px solid currentColor; border-top-color: transparent;
   border-radius: 50%; animation: spin .8s linear infinite; display: none; }
@@ -173,39 +207,58 @@ select.sel { padding: 8px 12px; border-radius: var(--r-pill); border: 1px solid 
 .price-row { display: flex; align-items: baseline; gap: var(--s-3); margin-bottom: var(--s-2); flex-wrap: wrap; }
 .fp { font-size: 22px; font-weight: 700; padding: 2px 12px; border-radius: var(--r-sm); letter-spacing: -0.02em; }
 .rv { font-size: var(--fs-small); color: var(--text-3); text-decoration: line-through; }
-.sv { font-size: var(--fs-small); font-weight: 700; color: var(--turquoise); }
+.sv { font-size: var(--fs-small); font-weight: 700; color: var(--turquoise-ink); }
 .vt { font-size: var(--fs-micro); padding: 3px 9px; border-radius: var(--r-pill); display: inline-block; margin-bottom: var(--s-2); }
-.mkt-line { font-size: var(--fs-micro); color: var(--text-4); margin-bottom: var(--s-2); }
+.mkt-line { font-size: var(--fs-micro); color: var(--text-3); margin-bottom: var(--s-2); }
 .card-detail { display: none; border-top: 1px solid var(--line); margin-top: var(--s-3); padding-top: var(--s-3); }
 .card.open .card-detail { display: block; }
 .card-detail ol { padding-left: 20px; margin-bottom: var(--s-3); }
 .card-detail li { margin-bottom: 6px; font-size: var(--fs-small); }
 .stack-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--s-3); }
-.stack-tag { font-size: 11.5px; padding: 3px 9px; border-radius: var(--r-pill);
-  background: color-mix(in oklab, var(--turquoise) 12%, transparent); color: var(--turquoise);
-  border: 1px solid color-mix(in oklab, var(--turquoise) 30%, var(--line)); }
+.stack-tag { display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11.5px; padding: 3px 9px; border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--turquoise) 14%, var(--bg-2)); color: var(--turquoise-ink);
+  border: 1px solid color-mix(in oklab, var(--turquoise) 34%, var(--line)); }
+/* A stack layer that resolves to a real coupon source becomes clickable. */
+.stack-tag.is-link { transition: background var(--t-fast), border-color var(--t-fast), transform var(--t-fast); }
+.stack-tag.is-link:hover { background: color-mix(in oklab, var(--turquoise) 26%, var(--bg-2));
+  border-color: color-mix(in oklab, var(--turquoise) 55%, var(--line)); transform: translateY(-1px); }
+.stack-tag.is-link:focus-visible { outline: 2px solid var(--turquoise); outline-offset: 2px; }
+.stack-tag svg { opacity: .6; flex-shrink: 0; }
+
+/* ── "Get these coupons before you go" — every clip destination, deduped ── */
+.coupon-box { border: 1px solid color-mix(in oklab, var(--ocean) 26%, var(--line));
+  background: color-mix(in oklab, var(--ocean) 7%, var(--bg-2));
+  border-radius: var(--r-md); padding: var(--s-3); margin-bottom: var(--s-3); }
+.coupon-box-head { font-size: var(--fs-eyebrow); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--ocean-ink); margin-bottom: var(--s-2); }
+.coupon-box .link-row { margin-bottom: 0; }
+
+/* Label prefixing a filter chip row */
+.filter-label { font-size: var(--fs-eyebrow); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .09em; color: var(--text-3); margin-right: 2px; align-self: center; flex-shrink: 0; }
 
 /* ── Link row — click straight through to the ad, the coupons, and each app ── */
 .link-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--s-2); }
 .deal-link { display: inline-flex; align-items: center; gap: 5px;
   font-size: 11.5px; font-weight: 600; padding: 5px 11px; border-radius: var(--r-pill);
   border: 1px solid color-mix(in oklab, var(--ocean) 26%, var(--line));
-  background: color-mix(in oklab, var(--ocean) 9%, transparent); color: var(--accent-soft);
+  background: color-mix(in oklab, var(--ocean) 12%, var(--bg-2)); color: var(--ocean-ink);
   transition: background var(--t-fast), border-color var(--t-fast), transform var(--t-fast), color var(--t-fast); }
-.deal-link:hover { background: color-mix(in oklab, var(--ocean) 20%, transparent);
+.deal-link:hover { background: color-mix(in oklab, var(--ocean) 22%, var(--bg-2));
   border-color: color-mix(in oklab, var(--ocean) 48%, var(--line)); color: var(--text); transform: translateY(-1px); }
 .deal-link:active { transform: translateY(0); }
 .deal-link:focus-visible { outline: 2px solid var(--ocean); outline-offset: 2px; }
-.deal-link.primary { background: color-mix(in oklab, var(--turquoise) 13%, transparent);
-  border-color: color-mix(in oklab, var(--turquoise) 36%, var(--line)); color: var(--turquoise); }
-.deal-link.primary:hover { background: color-mix(in oklab, var(--turquoise) 24%, transparent);
+.deal-link.primary { background: color-mix(in oklab, var(--turquoise) 15%, var(--bg-2));
+  border-color: color-mix(in oklab, var(--turquoise) 40%, var(--line)); color: var(--turquoise-ink); }
+.deal-link.primary:hover { background: color-mix(in oklab, var(--turquoise) 26%, var(--bg-2));
   border-color: color-mix(in oklab, var(--turquoise) 55%, var(--line)); }
 .deal-link svg { flex-shrink: 0; opacity: .85; }
 .tip { font-size: var(--fs-small); color: var(--text-2); background: var(--bg-3); border-radius: var(--r-md);
   padding: var(--s-3); margin-bottom: var(--s-3); border-left: 3px solid var(--sky); }
 .src-line { font-size: var(--fs-micro); color: var(--text-3); }
 .src-line a { color: var(--accent-soft); }
-.exp-line { font-size: var(--fs-micro); color: var(--warn); font-weight: 600; margin-bottom: var(--s-2); }
+.exp-line { font-size: var(--fs-micro); color: var(--warn-ink); font-weight: 600; margin-bottom: var(--s-2); }
 
 /* ── Ask AI panel ── */
 .ask-bar { display: flex; gap: var(--s-2); margin-bottom: var(--s-4); }
@@ -233,7 +286,7 @@ select.sel { padding: 8px 12px; border-radius: var(--r-pill); border: 1px solid 
 .field input:focus, .field select:focus { border-color: var(--accent); }
 .provider-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--s-4); }
 .status-line { font-size: var(--fs-small); font-family: var(--mono); margin-top: var(--s-3); }
-.status-line.ok { color: var(--turquoise); } .status-line.err { color: var(--navy); }
+.status-line.ok { color: var(--turquoise-ink); } .status-line.err { color: var(--sky-ink); }
 .src-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--s-4); }
 .type-pill { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
   padding: 3px 9px; border-radius: var(--r-pill); border: 1px solid; align-self: flex-start; margin-bottom: var(--s-2); display: inline-block; }
@@ -258,6 +311,7 @@ select.sel { padding: 8px 12px; border-radius: var(--r-pill); border: 1px solid 
   .brand { margin-bottom: 0; margin-right: var(--s-4); }
   .side-foot { display: none; }
   main.content { padding: 0 var(--s-4) var(--s-7); }
+  header.topbar { margin: 0 calc(-1 * var(--s-4)); padding: 0 var(--s-4); }
 }
 </style>
 </head>
@@ -281,10 +335,20 @@ select.sel { padding: 8px 12px; border-radius: var(--r-pill); border: 1px solid 
     </nav>
     <div class="side-foot">
       <span class="model-chip" id="modelChip">no model configured</span>
-      <button class="chip" id="themeToggle" title="Toggle theme">◐ theme</button>
     </div>
   </aside>
-  <main class="content" id="content"></main>
+  <main class="content">
+    <header class="topbar">
+      <span class="page-title" id="pageTitle">Grocery Deals</span>
+      <div class="top-actions">
+        <button class="icon-btn" id="themeToggle" title="Toggle light or dark mode" aria-label="Toggle light or dark mode">
+          <svg class="moon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.5A6 6 0 1 1 6.5 2a5 5 0 0 0 7.5 7.5z"/></svg>
+          <svg class="sun" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v1.5M8 13v1.5M14.5 8H13M3 8H1.5M12.6 3.4l-1 1M4.4 11.6l-1 1M12.6 12.6l-1-1M4.4 4.4l-1-1"/><circle cx="8" cy="8" r="3.2"/></svg>
+        </button>
+      </div>
+    </header>
+    <div id="content"></div>
+  </main>
 </div>
 <div class="toast" id="toast"></div>
 <script type="module" src="/js/app.js"></script>

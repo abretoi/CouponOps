@@ -85,7 +85,7 @@ Every outbound URL (store weekly ads, coupon pages, matchup blogs, rebate apps) 
 npm run check-links
 ```
 
-Expect `96 OK, 11 bot-walled, 0 broken`. Bot-walled means the retailer blocks scripted requests but the page works fine in a browser — those are verified by hand and listed separately. If anything shows under **BROKEN**, fix that entry in `data/links.json`; no URL lives anywhere else.
+Expect `112 OK, 12 bot-walled, 0 broken` (covers `links.json` and `coupon-sources.json`). Bot-walled means the retailer blocks scripted requests but the page works fine in a browser — those are verified by hand and listed separately. If anything shows under **BROKEN**, fix that entry in `data/links.json`; no URL lives anywhere else.
 
 ## Troubleshooting
 

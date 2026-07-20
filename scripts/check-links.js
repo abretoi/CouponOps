@@ -20,6 +20,13 @@ const links = JSON.parse(fs.readFileSync(path.join(DATA, 'links.json'), 'utf8'))
 const walled = links.botWalled.domains;
 
 const urls = new Set(Object.values(links.apps));
+
+// Coupon-source registry: printable portals + per-brand offer pages.
+try {
+  const cs = JSON.parse(fs.readFileSync(path.join(DATA, 'coupon-sources.json'), 'utf8'));
+  for (const p of Object.values(cs.portals || {})) if (p.url) urls.add(p.url);
+  for (const b of Object.values(cs.brands || {})) if (b.url) urls.add(b.url);
+} catch { /* registry absent */ }
 for (const store of Object.values(links.stores)) {
   for (const key of ['ad', 'coupons', 'matchup']) if (store[key]) urls.add(store[key]);
 }

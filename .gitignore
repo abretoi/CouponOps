@@ -3,3 +3,7 @@ data/config.json
 data/deals-live.json
 .DS_Store
 *.log
+
+# graphify working cache (graph.json / GRAPH_REPORT.md / graph.html are committed)
+graphify-out/cache/
+graphify-out/.graphify_*

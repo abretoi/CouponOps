@@ -616,12 +616,23 @@ const deals = [...core.deals.map(remapCoreDeal), ...EXPANSION, ...STAPLES];
 // Every color in the app resolves to one of five stops on a turquoise → navy
 // ramp. Brand colors (HEB red, Kroger blue, Aldi orange) are deliberately NOT
 // used — the palette is the product's, not the retailers'.
-const BLUE = {
-  turquoise: { text: '#2fe0c8', bg: 'rgba(47,224,200,.16)',  bd: 'rgba(47,224,200,.34)',  g: ['#12a89a', '#06564f'] },
-  sky:       { text: '#5ac8fa', bg: 'rgba(90,200,250,.16)',  bd: 'rgba(90,200,250,.34)',  g: ['#2a8fc4', '#124861'] },
-  ocean:     { text: '#4da3ff', bg: 'rgba(10,132,255,.18)',  bd: 'rgba(10,132,255,.36)',  g: ['#0a63c4', '#052f5e'] },
-  blue:      { text: '#7f8cff', bg: 'rgba(61,90,254,.20)',   bd: 'rgba(61,90,254,.38)',   g: ['#2f3fc4', '#141a5e'] },
-  navy:      { text: '#8aa4e8', bg: 'rgba(74,111,212,.20)',  bd: 'rgba(74,111,212,.38)',  g: ['#26407a', '#0f1c3d'] },
+// Colors are emitted as CSS `var()` / `color-mix()` expressions rather than raw
+// hex so badges and verification tags follow the light/dark theme. Baking hex
+// here is what made them unreadable in light mode (light ink on a light card).
+// Text always uses the `-ink` variant, which clears WCAG AA in both themes.
+// Store-chip gradients stay fixed dark blues — they carry white text in both
+// themes, so they must not lighten when the theme flips.
+const BLUE = Object.fromEntries(['turquoise', 'sky', 'ocean', 'blue', 'navy'].map(stop => [stop, {
+  text: `var(--${stop}-ink)`,
+  bg: `color-mix(in oklab, var(--${stop}) 14%, var(--bg-2))`,
+  bd: `color-mix(in oklab, var(--${stop}) 34%, var(--line))`,
+}]));
+const STORE_GRADIENT = {
+  turquoise: ['#0d7a70', '#05403a'],  // white text 5.2:1
+  sky:       ['#1d6f99', '#0d3b52'],  // white text 5.6:1
+  ocean:     ['#0a52a0', '#04264d'],  // white text 7.8:1
+  blue:      ['#2a35a0', '#11154d'],  // white text 9.9:1
+  navy:      ['#1f3563', '#0c1530'],  // white text 11.2:1
 };
 const STOPS = Object.keys(BLUE);
 
@@ -648,7 +659,7 @@ const badgeStyle = Object.fromEntries(
 const hash = s => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
 const SBG = Object.fromEntries(
   [...new Set(deals.map(d => d.store))].map(store => {
-    const [from, to] = BLUE[STOPS[hash(store) % STOPS.length]].g;
+    const [from, to] = STORE_GRADIENT[STOPS[hash(store) % STOPS.length]];
     return [store, `linear-gradient(135deg,${from},${to})`];
   }));
 

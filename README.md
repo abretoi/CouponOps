@@ -25,7 +25,9 @@ That's it. The app ships with a full seed dataset — no API key needed to brows
 | **One-click links on every card** — jump straight to the weekly ad, the coupon clip page, the step-by-step matchup, and each rebate app | deal card |
 | **Everyday staples & drinks** — sports drinks, soda, chips, cereal, bread, eggs, meat, pasta, paper goods — the weekly grocery list, not just drugstore health-and-beauty | Staples / Beverages / Snacks chips |
 | **Market drill-down** — 21 metros from Austin to Seattle; each shows only its retailers' deals | market pill bar |
-| **Category filter** — Baby, Beauty, Household, Pantry, Produce, Penny Items… | chip row |
+| **Category filter** — Baby, Beauty, Household, Pantry, Produce, Staples, Penny Items… | chip row |
+| **Store filter** — drill into a single retailer within the selected market, with per-store counts | chip row |
+| **Coupon links on every stack layer** — each coupon resolves to where you actually clip it (store app, P&G Good Everyday, Coupons.com, Sunday insert preview) plus a "get these before you go" checklist | deal card |
 | **Open product search** — search any product, store, category, or stack component | search bar |
 | **Sort** — hottest, biggest % saved, lowest final price, by store | sort select |
 | **↻ Refresh week pill** — regenerates the selected market's deals for the current week via your AI model | controls bar |
@@ -43,7 +45,7 @@ The interface uses exactly five hues, all blue — turquoise, sky, ocean, blue, 
 Every outbound URL lives in `data/links.json` and is verified:
 
 ```bash
-npm run check-links      # 96 OK, 11 bot-walled, 0 broken
+npm run check-links      # 112 OK, 12 bot-walled, 0 broken
 ```
 
 Retail sites behind bot walls answer scripts with 403 while serving browsers normally; those are listed and reported separately. A 404 is never excused.

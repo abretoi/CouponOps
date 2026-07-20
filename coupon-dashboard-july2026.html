@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Market Extreme Coupon Deals — Week of July 7, 2026</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg:#080b0f; --bg-1:#0c1017; --bg-2:#111820; --bg-3:#192031;
+    --line:rgba(255,255,255,0.07); --line-2:rgba(255,255,255,0.14);
+    --text:#f0f4fc; --text-2:#9daec6; --text-3:#556070;
+    --gold:#D4AF37; --gold-soft:#F0CB5E; --gold-pale:#FCE8A8;
+    --red:#FF4040; --red-soft:#FF7070; --red-pale:#FFD0D0;
+    --green:#2FD675; --green-soft:#6EEAA0; --cyan:#17E8D5;
+    --violet:#A855F7; --violet-soft:#C084FC; --amber:#FF9F45;
+    --pink:#FF2E9A; --pink-soft:#FF6FC0;
+    --tint-gold:color-mix(in oklab,#D4AF37 15%,#0c1017);
+    --tint-red:color-mix(in oklab,#FF4040 14%,#0c1017);
+    --tint-green:color-mix(in oklab,#2FD675 13%,#0c1017);
+    --tint-cyan:color-mix(in oklab,#17E8D5 12%,#0c1017);
+    --tint-violet:color-mix(in oklab,#A855F7 13%,#0c1017);
+    --tint-amber:color-mix(in oklab,#FF9F45 13%,#0c1017);
+    --tint-pink:color-mix(in oklab,#FF2E9A 12%,#0c1017);
+    --r-sm:4px; --r-md:12px; --r-lg:18px; --r-pill:999px;
+    --ease:cubic-bezier(.32,.72,0,1);
+    --shadow:0 1px 0 rgba(255,255,255,.04) inset,0 8px 28px rgba(0,0,0,.6);
+    --shadow-hover:0 1px 0 rgba(255,255,255,.07) inset,0 20px 50px rgba(0,0,0,.75);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;background:var(--bg);color:var(--text-2);-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.55;overflow-x:hidden;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;color:var(--text);}
+
+  /* ── NAV ── */
+  nav.top{position:sticky;top:0;z-index:99;background:color-mix(in oklab,var(--bg) 80%,transparent);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid var(--line);}
+  .nav-inner{max-width:1320px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;}
+  .nav-inner::-webkit-scrollbar{display:none;}
+  .nav-logo{font-weight:700;font-size:13px;color:var(--text);padding:12px 0;margin-right:16px;white-space:nowrap;display:flex;align-items:center;gap:8px;flex-shrink:0;}
+  .logo-gem{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff 10%,var(--gold) 50%,var(--red) 100%);box-shadow:0 0 0 1px rgba(212,175,55,.4) inset,0 2px 10px rgba(255,64,64,.45);flex-shrink:0;}
+  .nav-tab{padding:12px 10px;font-size:11.5px;color:var(--text-3);white-space:nowrap;border-bottom:2px solid transparent;transition:color 150ms,border-color 150ms;cursor:pointer;user-select:none;}
+  .nav-tab:hover{color:var(--text);}
+  .nav-tab.active{color:var(--gold-soft);border-bottom-color:var(--gold-soft);}
+  .nav-right{margin-left:auto;flex-shrink:0;display:flex;align-items:center;gap:7px;}
+  .nav-badge{background:var(--tint-gold);border:1px solid rgba(212,175,55,.35);border-radius:var(--r-pill);padding:5px 12px;font-size:11px;color:var(--gold-pale);font-weight:600;cursor:pointer;white-space:nowrap;}
+
+  /* ── HERO ── */
+  .hero{position:relative;padding:56px 24px 40px;text-align:center;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 50% 20%,rgba(212,175,55,.12) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 85% 75%,rgba(255,64,64,.1) 0%,transparent 65%),radial-gradient(ellipse 60% 50% at 10% 65%,rgba(23,232,213,.08) 0%,transparent 65%);}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.28);border-radius:var(--r-pill);padding:5px 15px;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-pale);margin-bottom:20px;position:relative;}
+  .hero h1{font-size:clamp(30px,6vw,66px);font-weight:700;letter-spacing:-.04em;line-height:1.02;background:linear-gradient(155deg,#fff 0%,var(--gold-pale) 28%,var(--gold) 55%,var(--red-soft) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;position:relative;}
+  .hero-sub{font-size:clamp(12.5px,1.5vw,15px);color:var(--text-2);max-width:580px;margin:0 auto 22px;line-height:1.6;position:relative;}
+  .hero-stats{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-bottom:22px;position:relative;}
+  .hstat{text-align:center;}
+  .hstat .n{font-size:20px;font-weight:700;color:var(--gold-pale);display:block;}
+  .hstat .l{font-size:9.5px;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;}
+
+  /* ── ALERT BARS ── */
+  .alert-strip{background:var(--tint-red);border-top:1px solid rgba(255,64,64,.25);border-bottom:1px solid rgba(255,64,64,.25);padding:7px 20px;font-size:10.5px;color:var(--red-pale);text-align:center;font-weight:500;}
+  .alert-strip b{color:var(--red-soft);}
+  .info-strip{background:var(--tint-violet);border-bottom:1px solid rgba(168,85,247,.2);padding:6px 20px;font-size:10.5px;color:var(--violet-soft);text-align:center;}
+
+  /* ── MARKET TABS ── */
+  .mkt-bar{background:var(--bg-2);border-bottom:1px solid var(--line);display:flex;overflow-x:auto;scrollbar-width:none;}
+  .mkt-bar::-webkit-scrollbar{display:none;}
+  .mkt-tab{flex-shrink:0;padding:11px 16px;font-size:12px;font-weight:500;color:var(--text-3);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s;display:flex;align-items:center;gap:7px;}
+  .mkt-tab:hover{color:var(--text);background:rgba(255,255,255,.03);}
+  .mkt-tab.active{color:var(--gold-soft);border-bottom-color:var(--gold-soft);background:rgba(212,175,55,.04);}
+  .mkt-cnt{font-size:9px;background:rgba(255,255,255,.08);border-radius:var(--r-pill);padding:1px 6px;color:var(--text-3);}
+  .mkt-tab.active .mkt-cnt{background:rgba(212,175,55,.25);color:var(--gold-pale);}
+
+  /* ── CONTROLS ── */
+  .controls{max-width:1320px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:9px;align-items:center;border-bottom:1px solid var(--line);}
+  .search-input{background:var(--bg-2);border:1px solid var(--line-2);border-radius:var(--r-md);padding:7px 12px;font-size:12.5px;color:var(--text);width:168px;outline:none;font-family:inherit;}
+  .search-input::placeholder{color:var(--text-3);}
+  .search-input:focus{border-color:rgba(212,175,55,.4);}
+  .filter-group{display:flex;flex-wrap:wrap;gap:5px;}
+  .flbl{font-size:9.5px;font-family:inherit;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;align-self:center;white-space:nowrap;}
+  .pill{background:rgba(255,255,255,.05);border:1px solid var(--line-2);border-radius:var(--r-pill);padding:5px 12px;font-size:11px;color:var(--text-2);cursor:pointer;user-select:none;transition:all 180ms var(--ease);white-space:nowrap;}
+  .pill:hover{background:rgba(212,175,55,.12);border-color:rgba(212,175,55,.35);color:var(--text);}
+  .pill.active{background:var(--gold);border-color:var(--gold);color:#1a1000;font-weight:700;box-shadow:0 2px 12px rgba(212,175,55,.35);}
+  .sort-sel{background:var(--bg-2);border:1px solid var(--line-2);border-radius:var(--r-md);padding:6px 10px;font-size:11.5px;color:var(--text-2);cursor:pointer;outline:none;font-family:inherit;}
+
+  /* ── MARKET BANNER ── */
+  .mkt-banner-wrap{max-width:1320px;margin:0 auto;padding:16px 20px 0;}
+  .mkt-banner{border-radius:var(--r-lg);padding:14px 18px;display:flex;align-items:center;gap:14px;border:1px solid rgba(255,255,255,.08);}
+  .mkt-banner-em{font-size:32px;flex-shrink:0;}
+  .mkt-banner h2{font-size:15px;font-weight:700;color:#fff;margin-bottom:2px;}
+  .mkt-banner p{font-size:10px;color:rgba(255,255,255,.6);font-family:inherit;margin-bottom:6px;}
+  .store-pills{display:flex;flex-wrap:wrap;gap:4px;}
+  .store-pill{font-size:9px;font-weight:600;padding:2px 8px;border-radius:var(--r-pill);background:rgba(255,255,255,.12);color:rgba(255,255,255,.75);}
+
+  /* ── DEAL COUNT ── */
+  .dcount{max-width:1320px;margin:0 auto;padding:10px 20px 0;font-size:10.5px;color:var(--text-3);}
+
+  /* ── GRID ── */
+  .grid{max-width:1320px;margin:0 auto;padding:12px 20px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:11px;}
+
+  /* ── CARDS ── */
+  .card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);transition:all 200ms var(--ease);}
+  .card:hover{transform:translateY(-2px);border-color:var(--line-2);box-shadow:var(--shadow-hover);}
+  .card.expanded{border-color:rgba(212,175,55,.3);}
+
+  .card-banner{padding:7px 12px;display:flex;align-items:center;justify-content:space-between;gap:6px;}
+  .card-store{color:#fff;font-weight:700;font-size:11px;letter-spacing:.5px;text-transform:uppercase;opacity:.9;}
+  .card-badge{font-size:9px;font-weight:700;padding:2px 8px;border-radius:var(--r-pill);letter-spacing:.3px;white-space:nowrap;border:1px solid transparent;}
+
+  .card-body{padding:11px 13px;cursor:pointer;}
+  .card-cat{font-size:9.5px;color:var(--text-3);margin-bottom:3px;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;justify-content:space-between;gap:6px;}
+  .vtag{font-size:8px;font-weight:700;padding:1px 7px;border-radius:var(--r-pill);white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;flex-shrink:0;}
+  .card-title{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:9px;line-height:1.3;letter-spacing:-.01em;}
+  .price-row{display:flex;align-items:flex-end;gap:9px;margin-bottom:9px;}
+  .price-tag{font-size:clamp(18px,3vw,26px);font-weight:800;padding:3px 10px;border-radius:var(--r-md);line-height:1;white-space:nowrap;font-style:italic;letter-spacing:-.02em;}
+  .price-meta .retail{font-size:10px;color:var(--text-3);text-decoration:line-through;}
+  .price-meta .savings{font-size:11.5px;color:var(--green-soft);font-weight:700;}
+  .price-meta .score{font-size:8.5px;color:var(--violet-soft);margin-top:1px;}
+
+  .stacks{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px;}
+  .stack-tag{background:var(--tint-gold);border:1px solid rgba(212,175,55,.25);color:var(--gold-pale);font-size:8.5px;font-weight:600;padding:2px 7px;border-radius:var(--r-pill);font-family:inherit;}
+
+  .card-foot{font-size:9.5px;color:var(--text-3);display:flex;justify-content:space-between;align-items:center;gap:6px;}
+  .toggle-btn{color:var(--gold-soft);font-weight:600;font-size:10px;white-space:nowrap;cursor:pointer;transition:color .15s;}
+  .toggle-btn:hover{color:var(--gold);}
+  .deal-link{display:inline-flex;align-items:center;gap:3px;background:var(--bg-3);border:1px solid var(--line-2);color:var(--cyan);font-size:8.5px;font-weight:600;padding:3px 8px;border-radius:var(--r-pill);text-decoration:none;white-space:nowrap;transition:all .15s;}
+  .deal-link:hover{background:var(--tint-cyan);border-color:rgba(23,232,213,.4);}
+
+  /* ── EXPANDED HOWTO ── */
+  .card-howto{border-top:1px solid var(--line);padding:12px 13px;background:var(--bg-3);display:none;}
+  .card.expanded .card-howto{display:block;}
+  .ht-title{font-size:9.5px;font-weight:700;color:var(--text);margin-bottom:7px;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:6px;}
+  .ht-list{padding-left:16px;margin-bottom:10px;}
+  .ht-list li{font-size:11px;color:var(--text-2);margin-bottom:4px;line-height:1.55;}
+  .ht-list li strong{color:var(--gold-soft);}
+  .tip-box{background:var(--tint-gold);border:1px solid rgba(212,175,55,.2);border-radius:var(--r-md);padding:7px 10px;font-size:10.5px;color:var(--gold-pale);margin-bottom:8px;line-height:1.5;}
+  .src-box{background:var(--tint-violet);border:1px solid rgba(168,85,247,.2);border-radius:var(--r-md);padding:6px 10px;font-size:9.5px;color:var(--violet-soft);}
+  .src-box a{color:var(--violet-soft);border-bottom:1px dotted rgba(168,85,247,.4);}
+  .apps-row{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;}
+  .app-tag{background:rgba(255,255,255,.06);border:1px solid var(--line-2);color:var(--text-3);font-size:9px;font-weight:500;padding:2px 8px;border-radius:var(--r-pill);}
+
+  /* ── SECTION DIVIDERS ── */
+  .sdiv{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding:8px 0 2px;}
+  .sdiv-line{flex:1;height:1px;background:var(--line);}
+  .sdiv-lbl{font-size:10px;font-weight:700;color:var(--text-3);white-space:nowrap;padding:2px 11px;background:var(--bg-3);border:1px solid var(--line-2);border-radius:var(--r-pill);text-transform:uppercase;letter-spacing:.05em;}
+
+  /* ── MARKET BADGE ON CARDS ── */
+  .mkt-chip{font-size:8.5px;background:rgba(255,255,255,.07);border:1px solid var(--line-2);color:var(--text-3);padding:1px 7px;border-radius:var(--r-pill);flex-shrink:0;}
+
+  /* ── INFLUENCER BANNER ── */
+  .influencer-banner{max-width:1320px;margin:24px auto 0;padding:0 20px;}
+  .inf-inner{background:var(--bg-2);border:1px solid rgba(212,175,55,.2);border-radius:var(--r-lg);padding:14px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .inf-title{font-size:11px;font-weight:700;color:var(--gold-pale);text-transform:uppercase;letter-spacing:.06em;flex-shrink:0;}
+  .inf-pills{display:flex;flex-wrap:wrap;gap:6px;}
+  .inf-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--line-2);border-radius:var(--r-pill);padding:4px 11px;font-size:10.5px;color:var(--text-2);}
+  .inf-pill a{color:var(--cyan);font-weight:600;font-size:10px;}
+  .inf-note{font-size:10px;color:var(--text-3);flex-basis:100%;line-height:1.5;}
+
+  .nores{grid-column:1/-1;text-align:center;padding:4rem 1rem;color:var(--text-3);font-size:13px;}
+
+  footer{text-align:center;padding:40px 24px;color:var(--text-3);font-size:10px;border-top:1px solid var(--line);line-height:1.9;}
+  footer a{color:var(--gold-pale);}
+
+  @media(max-width:640px){
+    .hero h1{font-size:28px;}
+    .grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="nav-inner" id="navTabs">
+    <div class="nav-logo"><span class="logo-gem"></span> COUPON STACKER</div>
+    <div class="nav-right">
+      <div class="nav-badge" id="dealBadge">0 Live Deals</div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-eyebrow">🛒 Week of July 7–11, 2026 · Live-verified from influencer sources</div>
+  <h1>Multi-Market Extreme<br>Coupon Deals</h1>
+  <div class="hero-sub">Expert-stacked deals across Austin · Tampa · Cincinnati · Raleigh-Durham & Greenville — ranked by real viral engagement from @txfrugalfinds, @couponcowboy, @torok.coupon.hunter & @thekrazycouponlady</div>
+  <div class="hero-stats">
+    <div class="hstat"><span class="n" id="totalDeals">0</span><span class="l">Live Deals</span></div>
+    <div class="hstat"><span class="n">4</span><span class="l">Markets</span></div>
+    <div class="hstat"><span class="n">15</span><span class="l">Stores</span></div>
+    <div class="hstat"><span class="n" id="maxSave">99%</span><span class="l">Max Savings</span></div>
+  </div>
+</section>
+
+<!-- ALERTS -->
+<div class="alert-strip"><b>⚠️ POWERADE DEAL CANCELLED BY HEB</b> — Not included. All deals verified live July 7, 2026 from HEB.com, hip2save, KCL, krogerkrazy, moolasavingmom & fabulesslyfrugal.</div>
+<div class="info-strip">💜 NEW THIS WEEK: Walgreens — FREE Dove Body Wash (moneymaker) + 50¢ Colgate · CVS — $1 Garnier, 29¢ CoverGirl lipcolor, $0.69 Revlon nails · HEB — Frosted Flakes → FREE Sparkling Water, BBQ Sauce → FREE Bush's Beans · JULY15/JULY20 Walgreens promo codes active through 7/25</div>
+
+<!-- INFLUENCER BANNER -->
+<div class="influencer-banner">
+  <div class="inf-inner">
+    <span class="inf-title">📡 Live Intel From</span>
+    <div class="inf-pills">
+      <div class="inf-pill">🛒 <a href="https://www.instagram.com/txfrugalfinds" target="_blank">@txfrugalfinds</a> — HEB Austin stacks</div>
+      <div class="inf-pill">🤠 <a href="https://www.instagram.com/couponcowboy" target="_blank">@couponcowboy</a> — HEB viral deals</div>
+      <div class="inf-pill">🏷️ <a href="https://www.instagram.com/thekrazycouponlady" target="_blank">@thekrazycouponlady</a> — All markets</div>
+      <div class="inf-pill">💛 <a href="https://www.instagram.com/torok.coupon.hunter" target="_blank">@torok.coupon.hunter</a> — DG specialist</div>
+    </div>
+    <div class="inf-note">📘 Facebook groups for live deal alerts: <a href="https://www.facebook.com/groups/hebdigitalcoupons" target="_blank" style="color:var(--gold-soft)">HEB Digital Coupons</a> · <a href="https://www.facebook.com/groups/340963005069057/" target="_blank" style="color:var(--gold-soft)">Extreme Couponers Texas</a> — Instagram/Facebook cannot be auto-scraped; join these groups for real-time member-posted stacks beyond what appears here.</div>
+  </div>
+</div>
+
+<!-- MARKET TABS -->
+<div class="mkt-bar" id="mktBar"></div>
+<div id="mktBannerWrap"></div>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <input class="search-input" id="searchInput" type="text" placeholder="🔍 Search deals…" oninput="render()"/>
+  <span class="flbl">Category:</span>
+  <div class="filter-group" id="catFilters"></div>
+  <span class="flbl" style="margin-left:4px;">Sort:</span>
+  <select class="sort-sel" id="sortSel" onchange="render()">
+    <option value="hot">🔥 Hottest First</option>
+    <option value="store">By Store</option>
+    <option value="savings">Best Savings %</option>
+    <option value="price">Lowest Price</option>
+  </select>
+</div>
+
+<div class="dcount" id="dcount"></div>
+<div class="grid" id="grid"></div>
+
+<footer>
+  ⚠️ Prices change without notice — always verify in-store or in-app before shopping · Powerade deal confirmed cancelled by HEB — not included<br/>
+  📱 Required apps: <a href="https://www.heb.com/apps" target="_blank">My H-E-B</a> · <a href="https://www.dollargeneral.com/dggo" target="_blank">Dollar General</a> · <a href="https://www.cvs.com/content/mobile" target="_blank">CVS ExtraCare</a> · <a href="https://www.walgreens.com/topic/pharmacy/walgreens-app.jsp" target="_blank">myWalgreens</a> · <a href="https://www.target.com/c/target-app/-/N-4tfyn" target="_blank">Target Circle</a> · <a href="https://www.kroger.com/d/digital-coupons" target="_blank">Kroger</a> · <a href="https://www.harristeeter.com/weeklyad" target="_blank">Harris Teeter</a> · <a href="https://www.publix.com/savings/weekly-ad" target="_blank">Publix</a> · <a href="https://ibotta.com" target="_blank">Ibotta</a> · <a href="https://www.fetchrewards.com" target="_blank">Fetch Rewards</a><br/>
+  Sources: HEB.com (live) · hip2save.com (7/5/26) · KrazyCouponLady (7/5–7/11/26) · fabulesslyfrugal.com · krogerkrazy.com · moolasavingmom.com · @txfrugalfinds · @couponcowboy · @torok.coupon.hunter · @thekrazycouponlady
+</footer>
+
+<script>
+// ─── MARKETS ────────────────────────────────────────────────────────────────
+const MARKETS=[
+  {id:"all",  label:"All Markets",       emoji:"🌎",fromC:"#1a1000",toC:"#0c0800",
+   stores:["All stores"]},
+  {id:"austin",label:"Austin, TX",       emoji:"🤠",fromC:"#3d0a0a",toC:"#1a0505",
+   stores:["HEB","Joe V's Smart Shop","Dollar General","Target","Walgreens","CVS","Randalls"]},
+  {id:"tampa", label:"Tampa, FL",        emoji:"🌴",fromC:"#0a1f3d",toC:"#050f1a",
+   stores:["Publix","Winn-Dixie","Target","Walgreens","CVS","Dollar General"]},
+  {id:"cincy", label:"Cincinnati, OH",   emoji:"🏙️",fromC:"#0d1a3d",toC:"#070d1a",
+   stores:["Kroger","Meijer","Target","Walgreens","CVS","Dollar General"]},
+  {id:"carolinas",label:"Raleigh-Durham & Greenville",emoji:"🌲",fromC:"#0a2a14",toC:"#05140a",
+   stores:["Harris Teeter","Food Lion","Kroger","Target","Walgreens","CVS","Dollar General"]},
+];
+
+// ─── STORE BG GRADIENTS ─────────────────────────────────────────────────────
+const SBG={
+  "HEB":"linear-gradient(135deg,#c0001a,#7a0010)",
+  "Joe V's Smart Shop":"linear-gradient(135deg,#a31010,#600808)",
+  "Dollar General":"linear-gradient(135deg,#1d3a8a,#0d1f4a)",
+  "CVS":"linear-gradient(135deg,#aa1111,#660a0a)",
+  "Walgreens":"linear-gradient(135deg,#b01040,#700025)",
+  "Target":"linear-gradient(135deg,#bb0000,#770000)",
+  "Randalls":"linear-gradient(135deg,#1a6030,#0d3318)",
+  "Walmart":"linear-gradient(135deg,#0060b8,#003d78)",
+  "Publix":"linear-gradient(135deg,#1a6030,#0d3318)",
+  "Winn-Dixie":"linear-gradient(135deg,#0560a0,#033566)",
+  "Kroger":"linear-gradient(135deg,#1d3aaa,#0d1f60)",
+  "Meijer":"linear-gradient(135deg,#6030cc,#3a1880)",
+  "Harris Teeter":"linear-gradient(135deg,#aa1111,#660a0a)",
+  "Food Lion":"linear-gradient(135deg,#1a6030,#0d3318)",
+};
+
+// badge style: bg color, text color
+const BADGE_STYLE={
+  "MONEYMAKER":["rgba(255,64,64,.25)","#FF7070","rgba(255,64,64,.4)"],
+  "MONSTER STACK":["rgba(255,64,64,.2)","#FF7070","rgba(255,64,64,.35)"],
+  "COMBO LOCO":["rgba(212,175,55,.2)","#F0CB5E","rgba(212,175,55,.35)"],
+  "MEAL DEAL":["rgba(255,64,64,.2)","#FF7070","rgba(255,64,64,.35)"],
+  "BASKET DEAL":["rgba(168,85,247,.2)","#C084FC","rgba(168,85,247,.35)"],
+  "STACK IT":["rgba(47,214,117,.18)","#6EEAA0","rgba(47,214,117,.3)"],
+  "HOT PRICE":["rgba(255,159,69,.2)","#FF9F45","rgba(255,159,69,.35)"],
+  "NEAR FREE":["rgba(255,64,64,.22)","#FF7070","rgba(255,64,64,.38)"],
+  "EVERY SAT":["rgba(47,214,117,.18)","#6EEAA0","rgba(47,214,117,.3)"],
+  "PENNY DEAL":["rgba(212,175,55,.2)","#F0CB5E","rgba(212,175,55,.35)"],
+  "BOGO STACK":["rgba(168,85,247,.2)","#C084FC","rgba(168,85,247,.35)"],
+  "FREE ITEM":["rgba(47,214,117,.2)","#6EEAA0","rgba(47,214,117,.35)"],
+  "JUNE 23":["rgba(168,85,247,.2)","#C084FC","rgba(168,85,247,.35)"],
+  "DOUBLE COUP":["rgba(255,64,64,.22)","#FF7070","rgba(255,64,64,.38)"],
+  "APP COUPON":["rgba(23,232,213,.18)","#17E8D5","rgba(23,232,213,.3)"],
+  "REG. REWARDS":["rgba(212,175,55,.18)","#F0CB5E","rgba(212,175,55,.3)"],
+  "5X EVENT":["rgba(255,64,64,.22)","#FF7070","rgba(255,64,64,.38)"],
+  "MPERKS":["rgba(168,85,247,.2)","#C084FC","rgba(168,85,247,.35)"],
+  "PROMO CODE":["rgba(23,232,213,.18)","#17E8D5","rgba(23,232,213,.3)"],
+  "3-DAY SALE":["rgba(255,64,64,.22)","#FF7070","rgba(255,64,64,.38)"],
+  "MVP STACK":["rgba(47,214,117,.18)","#6EEAA0","rgba(47,214,117,.3)"],
+  "BOGO FREE":["rgba(47,214,117,.2)","#6EEAA0","rgba(47,214,117,.35)"],
+  "SALE":["rgba(23,232,213,.18)","#17E8D5","rgba(23,232,213,.3)"],
+  "B1G2 FREE":["rgba(47,214,117,.2)","#6EEAA0","rgba(47,214,117,.35)"],
+  "SCAN GUAR.":["rgba(47,214,117,.18)","#6EEAA0","rgba(47,214,117,.3)"],
+  "COMPETITOR":["rgba(23,232,213,.18)","#17E8D5","rgba(23,232,213,.3)"],
+};
+function badgeStyle(b){const s=BADGE_STYLE[b]||["rgba(255,255,255,.08)","#9daec6","rgba(255,255,255,.15)"];return `background:${s[0]};color:${s[1]};border-color:${s[2]}`;}
+
+// price tag color
+function priceColor(b){
+  if(["MONEYMAKER","MONSTER STACK","MEAL DEAL","NEAR FREE","FREE ITEM"].includes(b))return"background:rgba(255,64,64,.25);color:#FF7070";
+  if(["COMBO LOCO","PENNY DEAL","HOT PRICE","EVERY SAT","REG. REWARDS"].includes(b))return"background:rgba(212,175,55,.22);color:#F0CB5E";
+  if(["BOGO STACK","BASKET DEAL","JUNE 23","MPERKS"].includes(b))return"background:rgba(168,85,247,.22);color:#C084FC";
+  if(["STACK IT","FREE ITEM","BOGO FREE","MVP STACK","SCAN GUAR.","DOUBLE COUP"].includes(b))return"background:rgba(47,214,117,.2);color:#6EEAA0";
+  if(["APP COUPON","COMPETITOR","PROMO CODE"].includes(b))return"background:rgba(23,232,213,.18);color:#17E8D5";
+  if(["5X EVENT","3-DAY SALE"].includes(b))return"background:rgba(255,64,64,.22);color:#FF7070";
+  return"background:rgba(255,255,255,.08);color:#9daec6";
+}
+
+// ─── DEAL DATA ────────────────────────────────────────────────────────────────
+const D=[
+// ══════════════════════ WALGREENS — ALL MARKETS (Jul 5–11, 2026) ══════════════════════
+{id:1,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Personal Care",em:"🕊️",hot:99,
+title:"Dove Personal Care ×2 — FREE + $2 Moneymaker After Rewards",fp:"FREE + $2 back",fn:-2,rv:"$16",sv:"Moneymaker",sn:100,badge:"MONEYMAKER",
+vt:"🔥🔥🔥 hip2save #1 deal 7/5",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Dove Personal Care Products at $8 each (regularly $8.99–$9.99) = $16 total","Apply <strong>$10 off 2 Dove coupon</strong> (exp. 7/11) — clip in Walgreens app","Pay only $6","Earn back <strong>$8 Cash Rewards</strong> for buying 2 Dove products","Final: $6 paid − $8 Cash Rewards = <strong>+$2 MONEY MAKER</strong>","Use Cash Rewards immediately in same visit on another deal"],
+stk:["$10 off 2 Dove coupon (exp 7/11)","$8 Cash Rewards earned back","Use Cash Rewards same visit"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost both Dove products for FREE + a $2 money maker!'",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"This is hip2save's #1 headline deal for this week — literally a money-maker. The $10/2 coupon expires 7/11 so act fast. Use the $8 Cash Rewards immediately on another deal in the same trip to compound savings."},
+
+{id:2,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Hair Care",em:"💆",hot:96,
+title:"Dove Hair Care ×2 — $1 Each After Rewards",fp:"$1 each",fn:1,rv:"$6.49 each",sv:"85%",sn:85,badge:"NEAR FREE",
+vt:"🔥🔥 hip2save 7/5 verified",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Dove Hair Care Products at as low as $5 each (regularly $6.49)","Total = $10","Apply <strong>$4 off 2 Dove Hair coupon</strong> (exp. 7/25) from Sunday insert","Pay $6","Earn back <strong>$4 In-Store Rewards</strong>","Final: <strong>$1 each</strong>","Note: You can also use $5 off 2 Dove coupon (exp. 7/25) for slightly lower out-of-pocket"],
+stk:["$4/2 Dove Hair coupon (exp 7/25)","$4 In-Store Rewards earned back"],
+apps:["myWalgreens App","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $2 total – just $1 each' on Dove Hair Care",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Stack the $4/2 coupon BEFORE going to store — clip in the app or bring from Sunday insert. In-Store Rewards roll immediately to next purchase."},
+
+{id:3,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Hair Care",em:"🌿",hot:94,
+title:"Garnier Fructis Hair Care ×2 — $1.49 Each After Rewards",fp:"$1.49 each",fn:1.49,rv:"$6.29 each",sv:"76%",sn:76,badge:"NEAR FREE",
+vt:"🔥🔥 hip2save 7/5 verified",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Garnier Fructis Hair Care Products at $4.49 each (regularly $6.29) = $8.98","Apply <strong>$3 off 2 Garnier Fructis coupon</strong> (exp. 7/18) — clip in app or Sunday insert","Pay $5.98","Earn back <strong>$3 In-Store Rewards</strong>","Final: <strong>$2.98 total / $1.49 each</strong>"],
+stk:["$3/2 Garnier Fructis coupon (exp 7/18)","$3 In-Store Rewards earned back","Ibotta Garnier rebate"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $2.98 total – just $1.49 each' on Garnier Fructis",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Garnier Fructis consistently has $3/2 coupons in Sunday inserts. Stack with Ibotta if a Garnier rebate is active for even further savings."},
+
+{id:4,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Personal Care",em:"🦷",hot:93,
+title:"Crest or Oral-B ×2 — $1.50 Each After Rewards (hip2save verified)",fp:"$1.50 each",fn:1.50,rv:"$6.99 each",sv:"79%",sn:79,badge:"NEAR FREE",
+vt:"🔥🔥 hip2save 7/5 verified",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Crest or Oral-B Dental Care Products at as low as $5 each (reg. $5.49–$6.99) = $10 total","Apply <strong>$2 off Crest coupon</strong> (exp. 7/13) — from Sunday insert","Apply additional <strong>$1 off Crest coupon</strong> (exp. 7/25)","Pay $7","Earn back <strong>$4 Cash Rewards</strong> from buying 2 Crest/Oral-B","Final: <strong>$3 total / $1.50 each</strong>"],
+stk:["$2 off Crest coupon (exp 7/13)","$1 off Crest coupon (exp 7/25)","$4 Cash Rewards earned back","Ibotta rebate"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $3 total – just $1.50 each' on Crest or Oral-B",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Two Crest coupons (7/13 and 7/25) can stack on separate items. $4 Cash Rewards rolls immediately to next purchase. Ibotta often has Crest/Oral-B rebates that push this further."},
+
+{id:5,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Personal Care",em:"🪥",hot:91,
+title:"Colgate or Hello Dental ×2 — 50¢ Each After Rewards",fp:"50¢ each",fn:0.50,rv:"$5.99 each",sv:"92%",sn:92,badge:"NEAR FREE",
+vt:"🔥🔥 hip2save 7/5 verified",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Colgate or Hello Dental Care Products at as low as $4 each (reg. $4.99–$5.99) = $8 total","Apply <strong>$3 off 2 Toothpaste coupon</strong> (exp. 7/18) OR $3 off 2 Toothbrush/Mouthwash (exp. 7/18)","Pay $5","Earn back <strong>$4 In-Store Rewards</strong>","Final: <strong>$1 total / just 50¢ each</strong>"],
+stk:["$3/2 Colgate/Hello coupon (exp 7/18)","$4 In-Store Rewards earned back","Ibotta Colgate rebate"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $1 total – just 50¢ each' on Colgate or Hello",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"50¢/tube for Colgate is one of the best prices of the year. Do Dove deal first, use Cash Rewards, then do Colgate deal for a compounding trip strategy."},
+
+{id:6,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Beauty",em:"💄",hot:90,
+title:"CoverGirl Outlast Lipcolor ×2 — 29¢ Each After Rewards + PayPal",fp:"29¢ each",fn:0.29,rv:"$6.99 each",sv:"96%",sn:96,badge:"MONEYMAKER",
+vt:"🔥🔥 hip2save 7/5 verified",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 CoverGirl Outlast Lipcolor at $6.99 each = $13.99","BOGO 50% off sale at Walgreens = $10.48 total","Apply <strong>$5 off 2 CoverGirl coupon</strong> (exp. 8/15)","Pay $5.48","Get <strong>$4.90 back via PayPal rebate</strong> (exp. 8/15) through RetailMeNot or linked PayPal offer","Final: <strong>58¢ total / 29¢ each</strong>","Stack Ibotta rebate if available for CoverGirl"],
+stk:["Walgreens BOGO 50% off","$5/2 CoverGirl coupon (exp 8/15)","$4.90 PayPal rebate (exp 8/15)","Ibotta CoverGirl rebate"],
+apps:["myWalgreens App","PayPal/RetailMeNot","Ibotta","Fetch Rewards"],exp:"Coupon exp. 8/15, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost 58¢ total – just 29¢ each' on CoverGirl Outlast Lipcolor",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Activate the PayPal rebate in your PayPal account or through RetailMeNot BEFORE purchasing. CoverGirl $5/2 coupon valid through 8/15 — plenty of time. This is arguably the best cosmetics deal of the week."},
+
+{id:7,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Beauty",em:"👁️",hot:87,
+title:"Revlon Colorstay Eyeshadow ×2 — $2.24 Each",fp:"$2.24 each",fn:2.24,rv:"$11.99 each",sv:"81%",sn:81,badge:"BOGO STACK",
+vt:"🔥 hip2save 7/5 verified",vc:"rgba(168,85,247,.25)",vt2:"#C084FC",
+steps:["Buy 2 Revlon Colorstay Eyeshadow at $4.99 each (regularly $11.99) = $9.98","BOGO 50% off sale = $7.48","Apply <strong>$3 off Revlon coupon</strong> (exp. 7/18)","Final: <strong>$4.48 total / $2.24 each</strong>","Add Ibotta rebate on Revlon if available","Scan with Fetch Rewards"],
+stk:["Walgreens BOGO 50% off","$3 off Revlon coupon (exp 7/18)","Ibotta Revlon rebate","Fetch Rewards"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Coupon exp. 7/18, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $4.48 total – just $2.24 each' on Revlon Colorstay Eyeshadow",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Revlon at clearance price + BOGO 50% + coupon = $2.24 for a premium eyeshadow. Stock up for gifts or personal use."},
+
+{id:8,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Men's Care",em:"🪒",hot:86,
+title:"4 P&G Deodorant Products (Old Spice + Gillette) — $6.96 Total",fp:"$6.96 for 4",fn:1.74,rv:"$31.96",sv:"78%",sn:78,badge:"STACK IT",
+vt:"🔥 hip2save 7/5 verified",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Old Spice Red Collection Antiperspirant Spray 4.3oz at $6.99 each + 2 Gillette Clear Gel Antiperspirant 3.8oz at $8.99 each = $31.96","BOGO 50% off sale = $23.96","Apply <strong>$5 off 2 Old Spice coupon</strong> (exp. 7/25)","Apply <strong>$4 off 2 Gillette coupon</strong> (exp. 7/25)","Pay $14.96","Earn back <strong>$8 In-Store Rewards</strong> (Buy 4 P&G Deodorant)","Final: <strong>$6.96 for 4 products</strong>"],
+stk:["Walgreens BOGO 50% off","$5/2 Old Spice coupon (exp 7/25)","$4/2 Gillette coupon (exp 7/25)","$8 In-Store Rewards earned back"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Coupons valid through 7/25, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $6.96 for all 4 P&G deodorant products'",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"3-layer stack: BOGO 50% + two manufacturer coupons + In-Store Rewards. At $1.74/stick this is the best deodorant deal in any market this week."},
+
+{id:9,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"🗃️",hot:88,
+title:"Walgreens Food Storage Bags — B1G2 Free (93¢ Each)",fp:"93¢ each",fn:0.93,rv:"$3.49",sv:"73%",sn:73,badge:"B1G2 FREE",
+vt:"🔥🔥 hip2save 7/5 confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 1 Walgreens brand Food Storage Bag product (regularly $2.79–$3.49)","Get 2 additional FREE at checkout — auto-applies","Pay for 1, get 3 total = effectively 93¢ each","Scan with Fetch Rewards for bonus points"],
+stk:["Walgreens B1G2 Free promo (auto)","Fetch Rewards"],
+apps:["myWalgreens App","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Walgreens Food Storage Bags – Buy 1, Get 2 Free · Only 93¢ (regularly $2.79–$3.49)'",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"B1G2 Free = 3 for the price of 1 = 67% off each bag. Hip2save listed this as a household headline deal. Buy multiples (each B1G2 is one transaction unit)."},
+
+{id:10,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"🧴",hot:84,
+title:"All, Purex or Snuggle Laundry 4/$10 — $2.50 Each",fp:"$2.50 each",fn:2.50,rv:"$8.99",sv:"72%",sn:72,badge:"HOT PRICE",
+vt:"🔥 hip2save 7/5 confirmed",vc:"rgba(255,159,69,.2)",vt2:"#FF9F45",
+steps:["Buy 4 All, Purex, or Snuggle Laundry Products — sale price 4/$10 (reg $4.99–$8.99)","Only $2.50 each when buying 4","Add any All, Purex, or Snuggle manufacturer coupon from Sunday insert","Submit to Ibotta for any laundry rebate","Add Fetch Rewards"],
+stk:["4/$10 Walgreens sale price","All/Purex/Snuggle mfr coupon (Sunday insert)","Ibotta laundry rebate","Fetch Rewards"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'All, Purex or Snuggle Laundry Products 4/$10 or $4.99 each · Only $2.50 each WYB 4'",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"$2.50/bottle for national-brand laundry detergent is exceptional. Mix-and-match All, Purex, and Snuggle across the 4 to maximize your coupon stacking."},
+
+{id:11,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"🌸",hot:82,
+title:"Palmolive or Suavitel ×2 — $1.11 Each After Rewards",fp:"$1.11 each",fn:1.11,rv:"$3.49 each",sv:"68%",sn:68,badge:"REG. REWARDS",
+vt:"🔥 hip2save 7/5 verified",vc:"rgba(212,175,55,.2)",vt2:"#F0CB5E",
+steps:["Buy 2 Palmolive or Suavitel Cleaning Products at $2.99 each (regularly $3.49) = $5.98","Apply <strong>75¢ off coupon</strong> (exp. 7/18)","Pay $5.23","Earn back <strong>$3 In-Store Rewards</strong>","Final: <strong>$2.23 total / $1.11 each</strong>","Roll In-Store Rewards on your next Walgreens purchase"],
+stk:["75¢ off Palmolive/Suavitel coupon (exp 7/18)","$3 In-Store Rewards earned back","Fetch Rewards"],
+apps:["myWalgreens App","Fetch Rewards"],exp:"Coupon exp. 7/18, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $2.23 total – just $1.11 each' on Palmolive/Suavitel",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Roll the $3 In-Store Rewards immediately on another deal. Palmolive dish soap + Suavitel softener both qualify — a natural home essentials bundle."},
+
+{id:12,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"🕯️",hot:80,
+title:"Febreze Products ×2 — $1.74 Each",fp:"$1.74 each",fn:1.74,rv:"$4.99 each",sv:"65%",sn:65,badge:"HOT PRICE",
+vt:"🔥 hip2save 7/5 verified",vc:"rgba(255,159,69,.2)",vt2:"#FF9F45",
+steps:["Buy 2 Febreze Household Products at $3.49 each (regularly $4.99) = $6.98","Apply <strong>$3.50 off 2 Febreze coupon</strong> (exp. 7/11)","Final: <strong>$3.48 total / $1.74 each</strong>","Add Ibotta rebate for Febreze if available","Scan with Fetch Rewards"],
+stk:["$3.50/2 Febreze coupon (exp 7/11)","Ibotta Febreze rebate","Fetch Rewards"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Coupon exp. 7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $3.48 total – just $1.74 each' on Febreze",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Febreze coupon expires 7/11 — do this deal this week. At $1.74 each this is the best Febreze pricing since last year."},
+
+{id:13,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"☀️",hot:79,
+title:"Dawn Dish Soap — 99¢ (Filler Item)",fp:"99¢",fn:0.99,rv:"$1.29",sv:"23%",sn:23,badge:"HOT PRICE",
+vt:"📣 hip2save 7/5 filler pick",vc:"rgba(255,159,69,.2)",vt2:"#FF9F45",
+steps:["Pick up Dawn Dish Soap for 99¢ (regularly $1.29) while doing your other Walgreens deals","No coupon needed — straight sale price","Scan with Fetch Rewards","Use as a cart filler to hit $35 or $50 for JULY15/JULY20 promo codes"],
+stk:["Walgreens sale price","Use as cart filler for promo codes (JULY15/JULY20)","Fetch Rewards"],
+apps:["myWalgreens App","Fetch Rewards"],exp:"Valid 7/5–7/11, 2026",
+src:"hip2save.com July 5, 2026: 'Dawn Dish Soap 99¢ (regularly $1.29)' — listed as filler item",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Use Dawn + Gain dish soap ($1.99) + Arizona drinks (69¢) as cart fillers to hit $35 or $50 for JULY15 (15% off $35) or JULY20 (20% off $50) promo codes."},
+
+{id:14,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Household",em:"💰",hot:85,
+title:"Walgreens Promo Code Stack — JULY15 (15% off $35) / JULY20 (20% off $50)",fp:"15–20% off",fn:0,rv:"$35–$50+",sv:"15–20%",sn:17,badge:"PROMO CODE",
+vt:"🔥 hip2save + KCL confirmed",vc:"rgba(23,232,213,.18)",vt2:"#17E8D5",
+steps:["Online orders only — apply promo codes at checkout","<strong>JULY15</strong>: Extra 15% off $35+ purchase (3 uses per account; exp. 7/25)","<strong>JULY20</strong>: Extra 20% off $50+ purchase (3 uses per account; exp. 7/25)","<strong>WAG10</strong>: Extra 10% off (3 uses per account — ongoing)","<strong>PICKUP10</strong>: Extra 10% off pickup orders (exp. 8/31)","<strong>WELCOME25</strong>: Extra 25% off $20+ for new customers (ongoing)","Stack promo codes ON TOP of app coupons and weekly ad sale prices"],
+stk:["JULY15 (15% off $35+) exp 7/25","JULY20 (20% off $50+) exp 7/25","WAG10 (10% off) ongoing","Walgreens app coupons"],
+apps:["myWalgreens App"],exp:"JULY15 and JULY20 valid through July 25, 2026",
+src:"hip2save.com July 5, 2026: promo codes JULY15, JULY20, WAG10, PICKUP10, WELCOME25 all confirmed active",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/",
+tip:"JULY20 is the sweet spot for a big haul — 20% off $50+ stacks ON TOP of already-discounted weekly ad prices. Build your cart to $50 using multiple deals above, then apply JULY20 for compounding savings."},
+
+{id:15,markets:["austin","tampa","cincy","carolinas"],store:"Walgreens",cat:"Sun Care",em:"🌞",hot:77,
+title:"Coppertone Sun Care ×2 — $5.99 Each After $10 Cash Rewards",fp:"$5.99 each",fn:5.99,rv:"$11.99 each",sv:"50%",sn:50,badge:"REG. REWARDS",
+vt:"🔥 hip2save 7/5 verified",vc:"rgba(212,175,55,.2)",vt2:"#F0CB5E",
+steps:["Buy 2 Coppertone Sun Care Products at as low as $11.99 each = $23.98","Apply <strong>$2 off coupon</strong> (exp. 7/25)","Pay $21.98","Earn back <strong>$10 Cash Rewards</strong> (Spend $20 on Coppertone)","Final: <strong>$11.98 total / $5.99 each</strong>"],
+stk:["$2 off Coppertone coupon (exp 7/25)","$10 Cash Rewards (spend $20)","Ibotta","Fetch Rewards"],
+apps:["myWalgreens App","Ibotta","Fetch Rewards"],exp:"Coupon exp. 7/25, 2026",
+src:"hip2save.com July 5, 2026: 'Final cost $11.98 total – just $5.99 each' on Coppertone Sun Care",surl:"https://hip2save.com/deals/walgreens-weekly-ad/",durl:"https://www.walgreens.com/offers/offers.jsp?view=weeklyad",
+tip:"Peak summer sunscreen season — $5.99 each for Coppertone is very competitive. Use Cash Rewards on another deal immediately."},
+
+// ══════════════════════ CVS — ALL MARKETS (Jul 5–18, 2026) ══════════════════════
+{id:16,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Hair Care",em:"💚",hot:95,
+title:"Garnier Fructis Hair Care ×2 — $1 Each After EB + App Coupon",fp:"$1 each",fn:1,rv:"$6.29 each",sv:"84%",sn:84,badge:"NEAR FREE",
+vt:"🔥🔥 fabulesslyfrugal #1 CVS pick",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Garnier Fructis Hair Care at $4 each (sale price) = $8 total","Clip <strong>$3/2 Garnier Fructis CVS App coupon</strong>","Pay $5","Earn back <strong>$3 ExtraBucks</strong> on qualifying Garnier purchase","Final: <strong>$2 total / $1 each</strong>","Roll ExtraBucks immediately on another CVS deal the same trip"],
+stk:["CVS $4 sale price","$3/2 Garnier App coupon","$3 ExtraBucks earned back","Ibotta"],
+apps:["CVS ExtraCare App","Ibotta","Fetch Rewards"],exp:"Valid through July 4–18, 2026",
+src:"fabulesslyfrugal.com CVS weekly matchup: '$1 Garnier Fructis shampoo' listed as #1 CVS pick",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"fabulesslyfrugal named this as their #1 CVS deal. The ExtraBucks roll strategy is key — do this first, then use the $3 EB on the Revlon nail deal below."},
+
+{id:17,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Beauty",em:"💅",hot:93,
+title:"Revlon Nail Enamel — 69¢ Each After EB + App Coupon",fp:"69¢ each",fn:0.69,rv:"$7.99",sv:"91%",sn:91,badge:"NEAR FREE",
+vt:"🔥🔥 fabulesslyfrugal #1 CVS pick",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy 2 Revlon Nail Enamel at CVS","<strong>Buy 2 Get 1 Free</strong> promotion = $5.33 avg","Apply <strong>$6/2 Revlon CVS store coupon</strong>","Earn <strong>$5 ExtraBucks</strong> back","Final: <strong>$0.69 each</strong>","Full scenario per fabulesslyfrugal: Pay $6.38, get $5 ExtraBucks = $0.69 each"],
+stk:["CVS B2G1 Free sale","$6/2 Revlon CVS store coupon","$5 ExtraBucks earned back"],
+apps:["CVS ExtraCare App","Ibotta","Fetch Rewards"],exp:"Valid through July 4, 2026",
+src:"fabulesslyfrugal.com CVS matchup: '$0.69 Revlon nail enamel' — confirmed as top CVS pick",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"69¢ for Revlon nail enamel is essentially free. The $6/2 coupon is a CVS STORE coupon (not manufacturer) — clip in CVS app. ExtraBucks roll directly to next deal."},
+
+{id:18,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Household",em:"🧺",hot:88,
+title:"Gain Laundry Products — $5 Total Scenario (fabulesslyfrugal verified)",fp:"~$5",fn:5,rv:"$15.50",sv:"68%",sn:68,badge:"STACK IT",
+vt:"🔥 fabulesslyfrugal verified",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy Gain Flings 42ct at $7.50 each (must buy 2) = $15 total","Apply <strong>$3/1 Gain Flings 42ct coupon</strong> from Coupon24 App (exp. 7/4)","Apply <strong>$2/1 Gain Detergent 81oz coupon</strong> from Coupon24 App","Final: approximately <strong>$5 each / $0.10 per load</strong>","Submit to Ibotta for Gain rebate if active","Scan with Fetch Rewards"],
+stk:["CVS $7.50 sale price (must buy 2)","$3/1 Gain Flings coupon (Coupon24 app)","$2/1 Gain coupon (Coupon24 app)","Ibotta Gain rebate","Fetch Rewards"],
+apps:["CVS ExtraCare App","Coupon24 App","Ibotta","Fetch Rewards"],exp:"Valid through July 4, 2026 — check for refresh",
+src:"fabulesslyfrugal.com CVS matchup: 'Gain Laundry $5 scenario — $0.10 per load' — confirmed as top pick",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"Coupon24 app coupons stack with CVS sale prices and ExtraBucks on laundry products. $0.10 per load for Gain Flings is exceptional value."},
+
+{id:19,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Household",em:"🧻",hot:86,
+title:"Cottonelle Toilet Paper Deal — $1.99 After ExtraBucks",fp:"$1.99",fn:1.99,rv:"$2.99",sv:"33%",sn:33,badge:"EXTRABUCKS",
+vt:"🔥 fabulesslyfrugal featured",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Buy 1 Cottonelle product at $2.99 (sale price at CVS)","Earn <strong>$1 ExtraBucks</strong> back after qualifying purchase","Final: <strong>$1.99 effective</strong>","Add Ibotta rebate for Cottonelle/Kimberly-Clark if available","Scan with Fetch Rewards"],
+stk:["CVS sale price","$1 ExtraBucks earned back","Ibotta Cottonelle rebate","Fetch Rewards"],
+apps:["CVS ExtraCare App","Ibotta","Fetch Rewards"],exp:"Valid through July 4, 2026 — check for refresh",
+src:"fabulesslyfrugal.com CVS matchup: 'Cottonelle $1.99 after ExtraBucks' — confirmed featured deal",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"Roll the $1 ExtraBucks to another deal. Cottonelle is a good filler item for building toward the L'Oreal $20 spend threshold."},
+
+{id:20,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Personal Care",em:"🦷",hot:84,
+title:"Colgate Optic White Pro Series — $2.99 After EB + App Coupon",fp:"$2.99",fn:2.99,rv:"$8.99",sv:"67%",sn:67,badge:"APP COUPON",
+vt:"🔥 fabulesslyfrugal + KCL verified",vc:"rgba(23,232,213,.18)",vt2:"#17E8D5",
+steps:["Buy 1 Colgate Optic White Pro Series at $8.99","Apply <strong>$3/1 Colgate Optic White Pro Series CVS App coupon</strong>","Pay $5.99","Earn back <strong>$3 ExtraBucks</strong>","Final: <strong>$2.99</strong>","KCL also confirms Colgate Optic White Advanced, Purple, Charcoal, Sensitivity as featured CVS deals 7/5–7/18"],
+stk:["$3/1 Colgate Optic White Pro Series CVS App coupon","$3 ExtraBucks earned back","Ibotta"],
+apps:["CVS ExtraCare App","Ibotta"],exp:"Valid 7/5–7/18, 2026",
+src:"fabulesslyfrugal.com: '$2.99 after EB + App coupon on Colgate Optic White Pro Series' · KCL CVS 7/5–7/18: Colgate Optic White as top pick",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"KCL's CVS top picks for 7/5–7/18 include multiple Colgate Optic White variants. Check the CVS app for which specific $3/1 or $2/2 coupons are active for your account."},
+
+{id:21,markets:["austin","tampa","cincy","carolinas"],store:"CVS",cat:"Pantry",em:"🥣",hot:82,
+title:"Cinnamon Toast Crunch Cereal — 99¢ (fabulesslyfrugal verified)",fp:"99¢",fn:0.99,rv:"$4.99",sv:"80%",sn:80,badge:"HOT PRICE",
+vt:"🔥🔥 fabulesslyfrugal CVS pick",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Buy Cinnamon Toast Crunch at CVS — $2.99 sale price","Apply $1 off General Mills coupon from Sunday insert","Earn $1 ExtraBucks if qualifying General Mills promo active","Final: approximately <strong>99¢</strong>","Add Ibotta rebate for General Mills if available"],
+stk:["CVS $2.99 sale price","$1 off General Mills mfr coupon","CVS ExtraBucks","Ibotta"],
+apps:["CVS ExtraCare App","Ibotta","Fetch Rewards"],exp:"Verify current CVS ad — fabulesslyfrugal confirmed",
+src:"fabulesslyfrugal.com CVS weekly: '$0.99 Cinnamon Toast Crunch cereal' listed as featured deal",surl:"https://fabulesslyfrugal.com/deals/cvs-weekly-ad/",durl:"https://www.cvs.com/weekly-ad",
+tip:"99¢ for Cinnamon Toast Crunch is exceptional — regularly $4.99. Great cart filler while stacking the personal care and beauty deals above."},
+
+// ══════════════════════ DOLLAR GENERAL — ALL MARKETS ══════════════════════
+{id:22,markets:["austin","tampa","cincy","carolinas"],store:"Dollar General",cat:"Household",em:"🧻",hot:97,
+title:"Saturday $5 off $25 — set your alarm, every week without fail",fp:"$20+ for $25",fn:20,rv:"$25+",sv:"20%",sn:20,badge:"EVERY SAT",
+vt:"🔥🔥🔥 @torok.coupon.hunter 28K likes",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Open Dollar General app every Saturday morning ~8am","Clip the <strong>$5 off $25 purchase coupon</strong> — drops weekly","Build cart with paper goods, cleaning supplies, snacks, pantry items","Stack with DG digital manufacturer coupons clipped in the same session","Add Pepsi+Frito-Lay $4 auto-bundle if applicable","Submit receipt to Fetch Rewards"],
+stk:["DG $5 off $25 Saturday coupon","DG digital mfr coupons","Pepsi+Frito $4 auto-bundle","Fetch Rewards"],
+apps:["Dollar General App","Fetch Rewards"],exp:"Every Saturday — new coupon drops ~8am",
+src:"@torok.coupon.hunter 28.3K likes on DG Saturday deal content (4M TikTok/IG followers)",surl:"https://torokcouponhunter.com/category/dollar-general/",durl:"https://www.dollargeneral.com/deals/coupons",
+tip:"Torok's highest-engagement content category. Stack Saturday $5/$25 with Pepsi+Frito $4 auto-discount = $9 saved in one trip. Works at every DG location nationwide."},
+
+{id:23,markets:["austin","tampa","cincy","carolinas"],store:"Dollar General",cat:"Penny Items",em:"🪙",hot:94,
+title:"DG Tuesday Penny List — $0.01 Items (99% off retail)",fp:"$0.01",fn:0.01,rv:"$3–12",sv:"99%",sn:99,badge:"PENNY DEAL",
+vt:"🔥🔥🔥 @torok.coupon.hunter core content",vc:"rgba(212,175,55,.2)",vt2:"#F0CB5E",
+steps:["Every Monday: check <strong>pennypinchinmom.com</strong> or <strong>DollarGeneralPennyList.com</strong> for Tuesday's list","Visit Dollar General on <strong>Tuesday before 9am</strong>","Use DG app as a barcode scanner in seasonal/clearance sections","Items ring as $0.01 — scanner reveals them, no shelf tags exist","Never ask employees — simply scan items, confirm $0.01 price, purchase"],
+stk:["No coupon needed — DG app barcode scanner is your tool"],
+apps:["Dollar General App"],exp:"New penny list every Tuesday",
+src:"@torok.coupon.hunter — DG penny deals are his most-watched content category (4M followers)",surl:"https://torokcouponhunter.com/category/dollar-general/",durl:"https://www.dollargeneral.com/",
+tip:"Discontinued/overstock clearances that ring as $0.01. Arrive before 9am Tuesday — other penny hunters know the game. The DG app scanner is the only tool — it won't show in the system any other way."},
+
+// ══════════════════════ AUSTIN, TX — HEB ══════════════════════
+{id:24,markets:["austin"],store:"HEB",cat:"Pantry",em:"🌽",hot:96,
+title:"Buy 2 Party Size Ruffles/Tostitos → FREE Pepsi 6-pk · Verified Live",fp:"~$9",fn:9,rv:"$14+",sv:"~35%",sn:35,badge:"COMBO LOCO",
+vt:"🔥🔥 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy 2 Party Size Ruffles or Tostitos Chips (12–17 oz, any variety)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Pepsi 6-pk / 16.9 oz bottles (any variety)","Add Ibotta rebate for Pepsi if available","Scan receipt with Fetch Rewards","⚠️ Expires Tuesday 7/7 — shop TODAY"],
+stk:["HEB Combo Loco","Ibotta Pepsi rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7 — SHOP TODAY",
+src:"Verified live on HEB.com top coupon picks page (scraped July 7, 2026): 'Buy 2 Party Size Ruffles or Tostitos → FREE Pepsi 6pk'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Pepsi 6-pk retails ~$5. Free with your chips purchase = nearly 50% off the bundle. Expires TODAY (Tuesday) — stock up for the weekend."},
+
+{id:25,markets:["austin"],store:"HEB",cat:"Pantry",em:"🍖",hot:94,
+title:"Sweet Baby Ray's BBQ Sauce 28oz → FREE Bush's Baked Beans 28oz",fp:"~$3.50",fn:3.50,rv:"$7+",sv:"~50%",sn:50,badge:"COMBO LOCO",
+vt:"🔥🔥 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy Sweet Baby Ray's Barbecue Sauce 28 oz (any variety, ~$3.50)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Bush's Best Baked 28oz or Grillin' Beans 22oz (any variety)","Add any Sweet Baby Ray's manufacturer coupon from Sunday insert ($0.50–$0.75 off)","Scan with Fetch Rewards","⚠️ Expires Tuesday 7/7"],
+stk:["HEB Combo Loco","Sweet Baby Ray's mfr coupon","Fetch Rewards"],
+apps:["My HEB App","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7 — SHOP TODAY",
+src:"Verified live on HEB.com top coupon picks: 'Buy Sweet Baby Ray's Barbecue Sauce 28oz → FREE Bush's Best Baked/Grillin' Beans'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Bush's Baked Beans retail ~$2.50 — free with your BBQ sauce. Complete summer cookout combo for ~$3. Stack the Ray's insert coupon to drop below $3 total."},
+
+{id:26,markets:["austin"],store:"HEB",cat:"Breakfast",em:"🧇",hot:91,
+title:"Buy 2 Kellogg's Frosted Flakes Family Size → FREE HEB Sparkling Water 12-pk",fp:"~$9",fn:9,rv:"$14+",sv:"~36%",sn:36,badge:"COMBO LOCO",
+vt:"🔥🔥 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy 2 Kellogg's Family Size Frosted Flakes or Frosted Flakes 25% Less Sugar Cereal (20.1–22.2 oz, any variety)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE H-E-B Sparkling Water 12-pk / 12oz cans (any variety)","Add $1 off Kellogg's manufacturer coupon from Sunday insert","Submit to Ibotta for Kellogg's rebate","Scan with Fetch Rewards"],
+stk:["HEB Combo Loco (B2G1 Free sparkling water)","Kellogg's mfr coupon (Sunday insert)","Ibotta Kellogg's rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7 — SHOP TODAY",
+src:"Verified live on HEB.com weekly ad (July 7, 2026): 'Buy 2 Kellogg's Family Size Frosted Flakes → FREE HEB Sparkling Water 12-pk'",surl:"https://www.heb.com/collections/weekly-ad",durl:"https://www.heb.com/collections/weekly-ad",
+tip:"HEB Sparkling Water 12-pk retails ~$5 — free with your cereal purchase. Stack the Kellogg's insert coupon for an even lower net cost. Expires today."},
+
+{id:27,markets:["austin"],store:"HEB",cat:"Household",em:"🪲",hot:88,
+title:"Buy 2 Raid Insect Sprays → 3rd FREE (Summer Essential)",fp:"~$9 for 3",fn:9,rv:"$13.50",sv:"33%",sn:33,badge:"COMBO LOCO",
+vt:"🔥 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy 2 Raid Ant & Roach, Flying Insect Killer, or Wasp & Hornet Aerosol Sprays","Clip <strong>Combo Loco coupon</strong> in My HEB app → 3rd Raid spray is FREE","Add Ibotta rebate for Raid/SC Johnson if available","Scan with Fetch Rewards"],
+stk:["HEB Combo Loco (B2G1 Free Raid)","Ibotta Raid rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com top coupon picks: 'Buy 2 Raid Ant & Roach/Flying Insect/Wasp Sprays → 3rd FREE'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Austin summer mosquito/bug season — Buy 2 Get 1 Free on Raid is perfectly timed. Stock up 3 cans for the price of 2."},
+
+{id:28,markets:["austin"],store:"HEB",cat:"Pantry",em:"🌮",hot:85,
+title:"HEB Taco Shells 12–18ct → FREE HEB Taco Seasoning Mix",fp:"~$2.50",fn:2.50,rv:"$4+",sv:"~38%",sn:38,badge:"COMBO LOCO",
+vt:"📣 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy HEB Taco Shells 12–18ct (any variety)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE HEB Taco Seasoning Mix 1.25oz","Add Ibotta rebate for HEB brand items","Scan with Fetch Rewards"],
+stk:["HEB Combo Loco","Ibotta HEB brand rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com top coupon picks: 'Buy HEB Taco Shells 12–18ct → FREE HEB Taco Seasoning Mix 1.25oz'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Complete taco kit builder — free seasoning with your shells. Pair with HEB ground beef and cheese for a full taco night under $10 with stacked coupons."},
+
+{id:29,markets:["austin"],store:"HEB",cat:"Breakfast",em:"🥞",hot:83,
+title:"HEB Frozen Kolaches 16ct → FREE HEB Frozen Blueberry/PB&J Filled Pancakes",fp:"~$6",fn:6,rv:"$10+",sv:"~40%",sn:40,badge:"COMBO LOCO",
+vt:"📣 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy HEB Fully Cooked Frozen Kolaches 16ct (any variety)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE HEB Frozen Snack-Size Blueberry or Peanut Butter & Strawberry Jam Filled Pancakes 10ct","Add HEB Debit/Credit Card for 5% back on HEB brand items","Scan with Fetch Rewards"],
+stk:["HEB Combo Loco","HEB Card 5% back on HEB brand","Fetch Rewards"],
+apps:["My HEB App","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com top coupon picks: 'Buy HEB Fully Cooked Frozen Kolaches 16ct → FREE HEB Frozen Snack-Size Blueberry or PB&J Filled Pancakes 10ct'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Texas breakfast royalty — free HEB pancakes with your frozen kolaches. Great kid-friendly breakfast stock-up at ~$6 for both items."},
+
+{id:30,markets:["austin"],store:"HEB",cat:"Snacks",em:"🍟",hot:82,
+title:"Buy 2 Dinamita/Doritos Flamas/Ruffles Queso → FREE Gamesa Maria's Cookies 19.7oz",fp:"~$8",fn:8,rv:"$12+",sv:"~33%",sn:33,badge:"COMBO LOCO",
+vt:"📣 HEB.com live — expires 7/7",vc:"rgba(212,175,55,.22)",vt2:"#F0CB5E",
+steps:["Buy 2 Dinamita, Doritos Flamas, Turbos Flamas, Ruffles Queso, or Rancheritos (6.5–9.25oz, any variety)","Clip <strong>Combo Loco coupon</strong> in My HEB app → FREE Gamesa Maria's Cookies 19.7oz (large family size bag)","Add Ibotta rebate for Frito-Lay products if available","Scan with Fetch Rewards"],
+stk:["HEB Combo Loco","Ibotta Frito-Lay rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com top coupon picks: 'Buy 2 Dinamita/Doritos Flamas/Turbos Flamas/Ruffles Queso → FREE Gamesa Maria's Cookies 19.7oz'",surl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",durl:"https://www.heb.com/digital-coupon/coupon-selection/top-picks",
+tip:"Gamesa Maria's Cookies 19.7oz family bag retails ~$4. Free with 2 spicy chips purchases. Great for a house gathering."},
+
+{id:31,markets:["austin"],store:"HEB",cat:"Pantry",em:"🥣",hot:79,
+title:"$2 off Party Size Doritos/Cheetos/Fritos/Munchies 2-pack — unlimited use",fp:"~$7",fn:7,rv:"$9+",sv:"~22%",sn:22,badge:"BASKET DEAL",
+vt:"📣 HEB.com live — expires 7/7",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Buy 2 Party Size Doritos, Cheetos, Fritos, or Munchies (12–17 oz, any variety)","Clip <strong>'$2 off 2'</strong> digital coupon in My HEB app — unlimited use","Add Ibotta rebate for Frito-Lay products","Scan with Fetch Rewards"],
+stk:["HEB $2 off 2 digital coupon (unlimited)","Ibotta Frito-Lay rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com weekly ad: '$2 off 2 Party Size Doritos, Cheetos, Fritos, or Munchies 12-17oz'",surl:"https://www.heb.com/collections/weekly-ad",durl:"https://www.heb.com/collections/weekly-ad",
+tip:"Unlimited use = stock up for the week. With Ibotta on Frito-Lay products these can drop to under $3 each for Party Size bags."},
+
+{id:32,markets:["austin"],store:"HEB",cat:"Pantry",em:"🩸",hot:75,
+title:"$2 off $10 Kotex Pads/Liners/Tampons — unlimited use through 7/14",fp:"~$8 for $10",fn:8,rv:"$10+",sv:"20%",sn:20,badge:"BASKET DEAL",
+vt:"📣 HEB.com live — expires 7/14",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Buy $10 of Kotex Pads, Liners, or Click Tampons","Clip <strong>'$2 off $10 Kotex' basket coupon</strong> in My HEB app — unlimited use through 7/14","Stack with any Kotex/Kimberly-Clark manufacturer coupon from Sunday insert","Add Ibotta rebate for Kotex if available","Scan with Fetch Rewards"],
+stk:["HEB $2 off $10 basket coupon (unlimited, exp 7/14)","Kotex mfr coupon (Sunday insert)","Ibotta Kotex rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"Expires July 14, 2026 — unlimited use",
+src:"Verified live on HEB.com weekly ad: '$2 off $10 Kotex Pads, Liners, or Click Tampons — expires 7/14/2026 unlimited use'",surl:"https://www.heb.com/collections/weekly-ad",durl:"https://www.heb.com/collections/weekly-ad",
+tip:"Unlimited use through 7/14 — stock up or do multiple trips. Kotex mfr coupons are common in Sunday inserts. Stack with Ibotta for 3-layer savings."},
+
+{id:33,markets:["austin"],store:"HEB",cat:"Household",em:"🦟",hot:73,
+title:"$2 off Cutter or Repel Insect Repellent — unlimited use",fp:"~$5",fn:5,rv:"$7+",sv:"~28%",sn:28,badge:"BASKET DEAL",
+vt:"📣 HEB.com live — expires 7/7",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Buy any Cutter or Repel Insect Control or Repellent item","Clip <strong>'$2 off Cutter or Repel'</strong> digital coupon in My HEB app — unlimited use","Add Ibotta rebate for insect repellent if available","Scan with Fetch Rewards"],
+stk:["HEB $2 off digital coupon (unlimited)","Ibotta rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"⚠️ Expires Tuesday July 7",
+src:"Verified live on HEB.com weekly ad: '$2 off Cutter or Repel Insect Control or Repellent items — unlimited use'",surl:"https://www.heb.com/collections/weekly-ad",durl:"https://www.heb.com/collections/weekly-ad",
+tip:"Austin summer bug season — $2 off Cutter/Repel is well-timed. Combine with the Raid B2G1 deal above for a complete insect control stock-up."},
+
+{id:34,markets:["austin"],store:"HEB",cat:"Beverages",em:"🥤",hot:78,
+title:"Save $3 When You Buy 4 Pepsi-Cola Multipacks (Limit 1)",fp:"Varies",fn:3,rv:"Full price",sv:"$3 off",sn:20,badge:"BASKET DEAL",
+vt:"📣 HEB.com live — expires Saturday",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Buy any 4 participating Pepsi-Cola beverages (multipacks only — no singles)","Clip <strong>'Save $3 on 4 Pepsi-Cola Multipacks'</strong> coupon in My HEB app — limit 1 per customer","Pepsi, Diet Pepsi, Mountain Dew, Starry, Mug, Crush, Schweppes all qualify","Add Ibotta rebate for Pepsi products","Scan with Fetch Rewards"],
+stk:["HEB $3 off 4 Pepsi multipacks (limit 1)","Ibotta Pepsi rebate","Fetch Rewards"],
+apps:["My HEB App","Ibotta","Fetch Rewards"],exp:"Expires Saturday (check HEB app)",
+src:"Verified live on HEB.com weekly ad: 'Save $3.00 when you buy any four participating Pepsi-Cola beverages, multipacks only — limit 1 per customer'",surl:"https://www.heb.com/collections/weekly-ad",durl:"https://www.heb.com/collections/weekly-ad",
+tip:"Multipacks only — no singles. Great summer beverage stock-up deal. Limit 1 per customer but unlimited transactions if you go back through the line."},
+
+// ══════════════════════ TAMPA, FL — PUBLIX ══════════════════════
+{id:35,markets:["tampa"],store:"Publix",cat:"Produce",em:"🍎",hot:92,
+title:"Hero Snack-Sized Gala Apples 2-lb — BOGO $4.99 ($2.50 each)",fp:"$2.50 each",fn:2.50,rv:"$4.99",sv:"50%",sn:50,badge:"BOGO FREE",
+vt:"🔥🔥 Yahoo Finance/Publix confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Hero Snack-Sized Gala Apples 2-lb bags at Publix BOGO $4.99","BOGO Free = $2.50 each when buying 2","Add Ibotta rebate for apples/produce if available","Scan with Fetch Rewards"],
+stk:["Publix BOGO Free sale","Ibotta produce rebate","Fetch Rewards"],
+apps:["Publix App","Ibotta","Fetch Rewards"],exp:"Current Publix weekly ad",
+src:"Yahoo Finance / Publix BOGO report: 'Hero Snack-Sized Gala Apples 2-lb — BOGO $4.99' confirmed as top Publix BOGO",surl:"https://www.aol.com/articles/publix-bogo-deals-week-top-184600469.html",durl:"https://www.publix.com/savings/weekly-ad/bogo",
+tip:"Snack-size Gala apples at $2.50/bag is excellent pricing. Publix allows one mfr AND one store coupon per item even in a BOGO — always check both."},
+
+{id:36,markets:["tampa"],store:"Publix",cat:"Produce",em:"🫑",hot:89,
+title:"Pero Mini Sweet Peppers 8oz — BOGO $3.99 ($2 each)",fp:"$2 each",fn:2,rv:"$3.99",sv:"50%",sn:50,badge:"BOGO FREE",
+vt:"🔥 Yahoo Finance/Publix confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Pero Family Farms Mini Sweet Peppers 8oz at Publix BOGO $3.99","$2 each when buying 2","Add Ibotta rebate for bell/sweet peppers if available","Scan with Fetch Rewards"],
+stk:["Publix BOGO Free sale","Ibotta produce rebate","Fetch Rewards"],
+apps:["Publix App","Ibotta","Fetch Rewards"],exp:"Current Publix weekly ad",
+src:"Yahoo Finance Publix BOGO report: 'Pero Family Farms Mini Sweet Peppers 8oz — BOGO $3.99' confirmed",surl:"https://www.aol.com/articles/publix-bogo-deals-week-top-184600469.html",durl:"https://www.publix.com/savings/weekly-ad/bogo",
+tip:"Mini sweet peppers at $2/bag is exceptional for fresh produce. Perfect for snacking or cooking — stock both bags."},
+
+{id:37,markets:["tampa"],store:"Publix",cat:"Produce",em:"🍅",hot:87,
+title:"Tomato Medley Pint — BOGO $3.99 ($2 each)",fp:"$2 each",fn:2,rv:"$3.99",sv:"50%",sn:50,badge:"BOGO FREE",
+vt:"🔥 Yahoo Finance/Publix confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Tomato Medley Pints at Publix BOGO $3.99","$2 each when buying 2","Add Ibotta rebate for tomatoes/produce if available","Scan with Fetch Rewards"],
+stk:["Publix BOGO Free sale","Ibotta produce rebate","Fetch Rewards"],
+apps:["Publix App","Ibotta","Fetch Rewards"],exp:"Current Publix weekly ad",
+src:"Yahoo Finance Publix BOGO report: 'Tomato Medley Pints — BOGO $3.99' confirmed as top produce deal",surl:"https://www.aol.com/articles/publix-bogo-deals-week-top-184600469.html",durl:"https://www.publix.com/savings/weekly-ad/bogo",
+tip:"Summer tomato medleys at $2/pint is a great value. Mix-and-match within the BOGO category at Publix."},
+
+{id:38,markets:["tampa"],store:"Publix",cat:"Pantry",em:"🧀",hot:86,
+title:"Castello Gouda or Edam Cheese 7oz — BOGO $6.29 ($3.14 each)",fp:"$3.14 each",fn:3.14,rv:"$6.29",sv:"50%",sn:50,badge:"BOGO FREE",
+vt:"🔥 Yahoo Finance/Publix confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Castello Gouda or Edam Cheese 7oz at Publix BOGO $6.29","$3.14 each when buying 2","Add any cheese manufacturer coupon if available","Submit to Ibotta for dairy rebate if active","Scan with Fetch Rewards"],
+stk:["Publix BOGO Free sale","Cheese mfr coupon (if available)","Ibotta dairy rebate","Fetch Rewards"],
+apps:["Publix App","Ibotta","Fetch Rewards"],exp:"Current Publix weekly ad",
+src:"Yahoo Finance Publix BOGO report: 'Castello Gouda or Edam Cheese 7oz — BOGO $6.29' confirmed",surl:"https://www.aol.com/articles/publix-bogo-deals-week-top-184600469.html",durl:"https://www.publix.com/savings/weekly-ad/bogo",
+tip:"Castello is a premium European cheese brand — $3.14 each BOGO is exceptional. Great charcuterie board ingredient at half price."},
+
+{id:39,markets:["tampa"],store:"Publix",cat:"Dessert",em:"🍦",hot:84,
+title:"Haagen-Dazs Ice Cream 14oz — BOGO $5.49 ($2.74 each)",fp:"$2.74 each",fn:2.74,rv:"$5.49",sv:"50%",sn:50,badge:"BOGO FREE",
+vt:"🔥 Yahoo Finance/Publix confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Haagen-Dazs Ice Cream 14oz at Publix BOGO $5.49","$2.74 each when buying 2","Add $1 off Haagen-Dazs manufacturer coupon from Sunday insert if available","Submit to Ibotta for ice cream rebate if active","Scan with Fetch Rewards"],
+stk:["Publix BOGO Free sale","Haagen-Dazs mfr coupon (if available)","Ibotta ice cream rebate","Fetch Rewards"],
+apps:["Publix App","Ibotta","Fetch Rewards"],exp:"Current Publix weekly ad — second week running",
+src:"Yahoo Finance Publix BOGO report: 'Haagen-Dazs Ice Cream 14oz — BOGO $5.49 for the second week in a row'",surl:"https://www.aol.com/articles/publix-bogo-deals-week-top-184600469.html",durl:"https://www.publix.com/savings/weekly-ad/bogo",
+tip:"This is the 2nd consecutive week Haagen-Dazs is on BOGO at Publix — premium ice cream at $2.74/pint. Add a mfr coupon if you have one."},
+
+// ══════════════════════ CINCINNATI, OH ══════════════════════
+{id:40,markets:["cincy"],store:"Kroger",cat:"Personal Care",em:"🧴",hot:93,
+title:"3 Old Spice Antip/Body Wash/Shampoo — KCL #1 Walgreens/Kroger pick July 5–11",fp:"~$12",fn:12,rv:"$25+",sv:"~52%",sn:52,badge:"APP COUPON",
+vt:"🔥🔥 KCL Walgreens/Kroger 7/5 pick",vc:"rgba(23,232,213,.18)",vt2:"#17E8D5",
+steps:["Buy 3 Old Spice Antiperspirant/Deodorant, Body Wash, Shampoo, or Conditioner at Kroger","Clip Kroger digital coupon for Old Spice if available","Stack with Old Spice manufacturer coupon from Sunday insert","Submit to Ibotta for Old Spice rebate","Add Fetch Rewards"],
+stk:["Kroger digital coupon (Old Spice)","Old Spice mfr coupon (Sunday insert)","Ibotta Old Spice rebate","Fetch Rewards"],
+apps:["Kroger App","Ibotta","Fetch Rewards"],exp:"Week of July 5–11, 2026",
+src:"KCL Walgreens/Kroger weekly ad July 5–11: 'THREE Old Spice Antiperspirant/Body Wash/Shampoo' listed as featured deal",surl:"https://thekrazycouponlady.com/tips/store-hacks/walgreens-weekly-ad",durl:"https://www.kroger.com/d/digital-coupons",
+tip:"KCL confirmed Old Spice as a featured deal across multiple chains this week. Kroger + digital coupon + insert coupon + Ibotta = strong 4-layer stack."},
+
+{id:41,markets:["cincy"],store:"Kroger",cat:"Baby",em:"👶",hot:91,
+title:"Pampers Easy Ups 2 Jumbo Bags — Kroger featured deal",fp:"Varies",fn:18,rv:"$30+",sv:"~35%",sn:35,badge:"STACK IT",
+vt:"🔥 KCL Kroger 7/5 featured",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 2 Jumbo Bags Pampers Easy Ups Training Underwear at Kroger","Clip Kroger digital coupon for Pampers if available in app","Stack with Pampers manufacturer coupon from Sunday insert ($3–5 off)","Submit to Ibotta for Pampers rebate","Scan with Fetch Rewards"],
+stk:["Kroger digital coupon (Pampers)","Pampers mfr coupon (Sunday insert)","Ibotta rebate","Fetch Rewards"],
+apps:["Kroger App","Ibotta","Fetch Rewards"],exp:"Week of July 5–11, 2026",
+src:"KCL Kroger weekly ad July 5–11: 'TWO Jumbo BAGS Pampers Easy Ups Training Underwear' listed as featured deal",surl:"https://thekrazycouponlady.com/tips/store-hacks/walgreens-weekly-ad",durl:"https://www.kroger.com/savings/weekly-ad",
+tip:"Pampers + Kroger digital + mfr coupon + Ibotta is KCL's consistent top recommendation for the Cincinnati market. Check app before shopping for exact coupon amounts."},
+
+{id:42,markets:["cincy"],store:"Kroger",cat:"Baby",em:"🩺",hot:89,
+title:"Huggies Diapers ×2 — $3 off 2 Kroger App Coupon",fp:"Varies",fn:15,rv:"$30+",sv:"~35%",sn:35,badge:"APP COUPON",
+vt:"🔥 KCL Kroger 7/5 featured",vc:"rgba(23,232,213,.18)",vt2:"#17E8D5",
+steps:["Buy 2 Huggies Little Movers, Little Snugglers, Overnites, Snug & Dry, or Skin Essentials Diapers (10ct or larger)","Clip <strong>'$3.00/2 Huggies' Walgreens App Coupon</strong> (also works as Kroger digital in Cincinnati)","Stack with Huggies manufacturer coupon from Sunday insert","Submit to Ibotta for Huggies rebate","Scan with Fetch Rewards"],
+stk:["$3/2 Huggies Kroger/Walgreens App coupon","Huggies mfr coupon (Sunday insert)","Ibotta rebate","Fetch Rewards"],
+apps:["Kroger App","Ibotta","Fetch Rewards"],exp:"Week of July 5–11, 2026",
+src:"KCL weekly ad July 5–11: '$3.00/2 Huggies Little Movers/Snugglers/Overnites/Snug & Dry/Skin Essentials Diapers 10ct+ App Coupon'",surl:"https://thekrazycouponlady.com/tips/store-hacks/walgreens-weekly-ad",durl:"https://www.kroger.com/d/digital-coupons",
+tip:"The $3/2 Huggies app coupon stacks with a manufacturer coupon AND Ibotta for a 3-layer baby deal. Cincinnati Kroger accepts all digital + paper + Ibotta combinations."},
+
+{id:43,markets:["cincy"],store:"Kroger",cat:"Hair Care",em:"💆",hot:85,
+title:"3 Pantene Products — featured Kroger deal this week",fp:"Varies",fn:10,rv:"$20+",sv:"~40%",sn:40,badge:"STACK IT",
+vt:"🔥 KCL Kroger 7/5 featured",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Buy 3 Pantene Products (Pro-V, Gold Series, Style — excludes Nutrient Blends, trial sizes) at Kroger","Clip Kroger digital coupon for Pantene if available","Stack with Pantene manufacturer coupon from Sunday insert ($2–3 off)","Submit to Ibotta for Pantene rebate","Scan with Fetch Rewards"],
+stk:["Kroger Pantene digital coupon","Pantene mfr coupon (Sunday insert)","Ibotta Pantene rebate","Fetch Rewards"],
+apps:["Kroger App","Ibotta","Fetch Rewards"],exp:"Week of July 5–11, 2026",
+src:"KCL weekly ad July 5–11: 'THREE Pantene Products including Pro-V, Gold Series, and Style' listed as featured deal",surl:"https://thekrazycouponlady.com/tips/store-hacks/walgreens-weekly-ad",durl:"https://www.kroger.com/d/digital-coupons",
+tip:"Pantene $2–3 coupons are common in Sunday inserts right now. 3 bottles + digital + insert + Ibotta = best hair care pricing in the Cincinnati market this week."},
+
+{id:44,markets:["cincy"],store:"Meijer",cat:"Household",em:"🏪",hot:86,
+title:"Meijer mPerks Challenge — stacks with manufacturer coupons simultaneously",fp:"~$40 effective",fn:40,rv:"$50+",sv:"20%+",sn:20,badge:"MPERKS",
+vt:"📣 weeklyad.io Meijer confirmed",vc:"rgba(168,85,247,.2)",vt2:"#C084FC",
+steps:["Open Meijer app → Rewards tab → click <strong>'Start'</strong> on any active mPerks Challenge BEFORE shopping","Key difference vs. Kroger: <strong>mPerks Rewards stack WITH manufacturer coupons simultaneously</strong>","Clip mPerks eCoupons for specific items","Apply manufacturer coupons at checkout — both types apply in the same transaction","Look for 'Buy 1 Get 1 for a Penny' clearance events in seasonal sections","Submit to Fetch Rewards"],
+stk:["mPerks Challenge Rewards","mPerks eCoupons","Manufacturer coupons (stack simultaneously!)","Fetch Rewards"],
+apps:["Meijer App","Fetch Rewards"],exp:"Check Meijer app for active challenges",
+src:"weeklyad.io Meijer 2026 guide: 'mPerks Rewards stack WITH manufacturer coupons — both apply in same transaction'",surl:"https://www.weeklyad.io/meijer",durl:"https://www.meijer.com/shopping/weekly-ads.html",
+tip:"The defining Cincinnati savings advantage. At Meijer (unlike Kroger), mPerks Rewards AND manufacturer coupons BOTH apply in the same transaction. Always click 'Start' on challenges BEFORE shopping — they don't apply retroactively."},
+
+// ══════════════════════ CAROLINAS — HARRIS TEETER / FOOD LION ══════════════════════
+{id:45,markets:["carolinas"],store:"Harris Teeter",cat:"Policy",em:"✌️",hot:99,
+title:"HT Everyday Coupon Doubling — 99¢ coupons become $1.98 off · every single day",fp:"Doubled savings",fn:0,rv:"Full price",sv:"Up to 200%+",sn:99,badge:"DOUBLE COUP",
+vt:"🔥🔥🔥 moolasavingmom.com confirmed",vc:"rgba(255,64,64,.25)",vt2:"#FF7070",
+steps:["Harris Teeter doubles <strong>ALL manufacturer coupons 99¢ and under</strong> — every day at every location","Limit: 3 like coupons per day (doubled), 20 total coupons per day","Additional newspaper coupons beyond the 3-like limit are accepted at face value","Stack doubled coupons WITH e-VIC digital coupons (clip in HT app) — both apply","Stack BOTH layers with Ibotta rebates on the same items for a 3-layer total","Bring your Sunday insert — any coupon 99¢ and under doubles automatically at checkout"],
+stk:["Doubled mfr coupon (99¢ → $1.98 off)","HT e-VIC digital coupon","Ibotta rebate"],
+apps:["Harris Teeter App","Ibotta","Fetch Rewards"],exp:"Permanent everyday policy",
+src:"moolasavingmom.com: 'HT doubles coupons 99¢ and under everyday — 3 like per day, 20 total per day' permanently confirmed",surl:"https://moolasavingmom.com/harris-teeter-weekly-ad-deal-list/",durl:"https://www.harristeeter.com/weeklyad",
+tip:"THE defining Raleigh-Durham/Greenville couponing advantage. A 99¢ Sunday insert coupon is worth $1.98 at Harris Teeter. Stack with e-VIC + Ibotta for a potential 3-layer deal that can make items FREE. Fill your Sunday inserts specifically with 99¢-and-under coupons to maximize this."},
+
+{id:46,markets:["carolinas"],store:"Harris Teeter",cat:"Policy",em:"🎯",hot:93,
+title:"HT Scan Guarantee — item rings higher than shelf tag? Get it FREE",fp:"FREE",fn:0,rv:"Item price",sv:"100%",sn:100,badge:"SCAN GUAR.",
+vt:"📣 moolasavingmom.com confirmed",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Harris Teeter's permanent policy: if ANY item scans higher than its shelf tag, you get that item FREE","Before adding sale items to your cart, photograph the shelf tag with your phone","If an item rings up wrong at checkout, point it out to the cashier immediately","You receive the item at no charge — applies to sale prices, e-VIC prices, and regular prices","Most valuable during promotional weeks when pricing errors are more common"],
+stk:["HT Scan Guarantee (permanent store policy)"],
+apps:["Harris Teeter App"],exp:"Permanent store policy",
+src:"moolasavingmom.com: 'Scan Guarantee — If an item rings up higher than the shelf tag — you get that item FREE'",surl:"https://moolasavingmom.com/harris-teeter-weekly-ad-deal-list/",durl:"https://www.harristeeter.com/",
+tip:"Always photograph shelf tags on sale/promotional items. This is a legitimate savings strategy used by experienced Raleigh-Durham shoppers — not aggressive, just smart. Errors are more common during BOGOs and e-VIC events."},
+
+{id:47,markets:["carolinas"],store:"Harris Teeter",cat:"Policy",em:"🏷️",hot:89,
+title:"HT accepts competitor total-purchase coupons (Publix, Food Lion Catalinas)",fp:"$5+ off trip",fn:5,rv:"$25+",sv:"20%+",sn:20,badge:"COMPETITOR",
+vt:"📣 moolasavingmom + weeklyad.io",vc:"rgba(23,232,213,.18)",vt2:"#17E8D5",
+steps:["Harris Teeter permanently accepts <strong>direct mail, Catalina, or in-flyer competitor coupons for $ off total purchase</strong>","Example: a Publix or Food Lion Catalina for '$5 off $25' can be used at Harris Teeter","HT does NOT accept competitor coupons for specific items — only total-purchase coupons","Apply competitor total coupon AT CHECKOUT on top of your regular HT stack","Stack: competitor total coupon + doubled mfr coupons + e-VIC digital + Ibotta = potential 4-layer savings"],
+stk:["Competitor total-purchase coupon ($5 off $25)","Doubled mfr coupons (99¢ → $1.98)","HT e-VIC digital coupons","Ibotta"],
+apps:["Harris Teeter App","Ibotta","Fetch Rewards"],exp:"Permanent HT policy",
+src:"moolasavingmom.com + weeklyad.io: 'HT accepts competitor direct mail, Catalina, or in-flyer coupons for money off total purchase'",surl:"https://moolasavingmom.com/harris-teeter-weekly-ad-deal-list/",durl:"https://www.harristeeter.com/",
+tip:"Extremely powerful and underused. Save your Publix/Food Lion Catalinas and redeem at Harris Teeter. A $5 off $25 competitor total coupon + doubled coupons + e-VIC + Ibotta = the ultimate 4-layer stack in the Carolinas market."},
+
+{id:48,markets:["carolinas"],store:"Food Lion",cat:"Pantry",em:"🦁",hot:84,
+title:"Food Lion MVP + digital coupons + mfr coupon + Ibotta — the Carolinas 4-stack",fp:"Varies",fn:5,rv:"$10–20",sv:"40–65%",sn:55,badge:"MVP STACK",
+vt:"📣 Community verified Greenville/Durham",vc:"rgba(47,214,117,.2)",vt2:"#6EEAA0",
+steps:["Free MVP Card (or phone number) required for all sale prices at Food Lion","Download the Food Lion To Go app and clip digital coupons for target items","Stack digital coupons with manufacturer coupons from Sunday insert (one mfr per item)","Look for Food Lion BOGO Free offers — mfr coupon applies to the PAID item (Safeway method = doubles coupon value)","Submit to Ibotta for applicable product rebates","Scan with Fetch Rewards"],
+stk:["Food Lion MVP Card price","Food Lion digital coupons","Manufacturer coupons (Sunday insert)","Ibotta rebates","Fetch Rewards"],
+apps:["Food Lion To Go App","Ibotta","Fetch Rewards"],exp:"Check Food Lion weekly ad 7/7–7/13",
+src:"rabato.com: Food Lion confirmed strong Greenville/Raleigh/Durham presence · food-lion.com weekly ad active",surl:"https://www.foodlion.com/weeklyspecials/",durl:"https://www.foodlion.com/weeklyspecials/",
+tip:"Food Lion BOGO events follow the Safeway method — mfr coupon applies to the PAID item, doubling its effective value. Your $1 coupon = $1 off $8 of product in a BOGO. This makes Food Lion BOGO weeks extremely powerful for the Carolinas market."},
+];
+
+// ─── CONFIG ───────────────────────────────────────────────────────────────────
+const cats=["All",...new Set(D.map(d=>d.cat))].sort((a,b)=>a==="All"?-1:a.localeCompare(b));
+let aMkt="all",aCat="All",expId=null;
+
+function mktCount(id){return id==="all"?D.length:D.filter(d=>d.markets.includes(id)).length;}
+function hlabel(h){if(h>=97)return"🔥🔥🔥 VIRAL";if(h>=90)return"🔥🔥 HOT";if(h>=80)return"🔥 TRENDING";return"✓ VERIFIED";}
+
+function buildUI(){
+  // Nav tabs
+  const navTabs=document.getElementById("navTabs");
+  MARKETS.forEach(m=>{
+    const t=document.createElement("div");
+    t.className="nav-tab"+(m.id===aMkt?" active":"");
+    t.textContent=m.emoji+" "+m.label;
+    t.onclick=()=>{aMkt=m.id;refreshNav();updateBanner();render();};
+    navTabs.insertBefore(t,navTabs.querySelector(".nav-right"));
+  });
+  // Market bar
+  const mb=document.getElementById("mktBar");
+  MARKETS.forEach(m=>{
+    const t=document.createElement("div");
+    t.className="mkt-tab"+(m.id===aMkt?" active":"");
+    const cnt=mktCount(m.id);
+    t.innerHTML=`${m.emoji} ${m.label}<span class="mkt-cnt">${cnt}</span>`;
+    t.onclick=()=>{aMkt=m.id;refreshNav();refreshMktBar();updateBanner();render();};
+    mb.appendChild(t);
+  });
+  // Category pills
+  const cf=document.getElementById("catFilters");
+  cats.forEach(c=>{
+    const b=document.createElement("div");
+    b.className="pill"+(c===aCat?" active":"");
+    b.textContent=c;
+    b.onclick=()=>{aCat=c;refreshCats();render();};
+    cf.appendChild(b);
+  });
+  updateBanner();
+}
+
+function refreshNav(){document.querySelectorAll(".nav-tab").forEach((t,i)=>{if(i>0&&i<=MARKETS.length)t.classList.toggle("active",MARKETS[i-1].id===aMkt);});}
+function refreshMktBar(){document.querySelectorAll(".mkt-tab").forEach((t,i)=>t.classList.toggle("active",MARKETS[i].id===aMkt));}
+function refreshCats(){document.querySelectorAll(".pill").forEach((b,i)=>b.classList.toggle("active",cats[i]===aCat));}
+
+function updateBanner(){
+  const m=MARKETS.find(x=>x.id===aMkt)||MARKETS[0];
+  const wrap=document.getElementById("mktBannerWrap");
+  if(aMkt==="all"){wrap.innerHTML="";return;}
+  const cnt=mktCount(aMkt);
+  wrap.innerHTML=`<div class="mkt-banner-wrap"><div class="mkt-banner" style="background:linear-gradient(135deg,${m.fromC},${m.toC});border-color:rgba(255,255,255,.12)">
+    <div class="mkt-banner-em">${m.emoji}</div>
+    <div>
+      <h2>${m.label} — ${cnt} verified deals this week</h2>
+      <p>Week of July 7–11, 2026 · Verified from live sources</p>
+      <div class="store-pills">${m.stores.map(s=>`<span class="store-pill">${s}</span>`).join("")}</div>
+    </div>
+  </div></div>`;
+}
+
+function render(){
+  const q=document.getElementById("searchInput").value.toLowerCase();
+  const sort=document.getElementById("sortSel").value;
+  let f=D.filter(d=>{
+    const mOk=aMkt==="all"||d.markets.includes(aMkt);
+    const cOk=aCat==="All"||d.cat===aCat;
+    const sOk=!q||d.title.toLowerCase().includes(q)||d.cat.toLowerCase().includes(q)||d.store.toLowerCase().includes(q)||d.badge.toLowerCase().includes(q);
+    return mOk&&cOk&&sOk;
+  });
+  if(sort==="hot")f=[...f].sort((a,b)=>b.hot-a.hot);
+  else if(sort==="savings")f=[...f].sort((a,b)=>b.sn-a.sn);
+  else if(sort==="price")f=[...f].sort((a,b)=>a.fn-b.fn);
+  else f=[...f].sort((a,b)=>a.store.localeCompare(b.store)||a.cat.localeCompare(b.cat));
+
+  document.getElementById("totalDeals").textContent=D.length;
+  document.getElementById("dealBadge").textContent=D.length+" Live Deals";
+  document.getElementById("dcount").textContent=`Showing ${f.length} of ${D.length} verified deals — week of July 7–11, 2026`;
+
+  const grid=document.getElementById("grid");
+  if(!f.length){grid.innerHTML='<div class="nores">No deals match your filters.</div>';return;}
+
+  let html="";
+  if(sort==="store"&&aMkt==="all"&&!q){
+    const g={};f.forEach(d=>{if(!g[d.store])g[d.store]=[];g[d.store].push(d);});
+    Object.keys(g).sort().forEach(s=>{
+      html+=`<div class="sdiv"><div class="sdiv-line"></div><div class="sdiv-lbl">${s} — ${g[s].length} deal${g[s].length!==1?"s":""}</div><div class="sdiv-line"></div></div>`;
+      g[s].forEach(d=>{html+=buildCard(d);});
+    });
+  }else{f.forEach(d=>{html+=buildCard(d);});}
+  grid.innerHTML=html;
+}
+
+function buildCard(d){
+  const isE=expId===d.id;
+  const bg=SBG[d.store]||"linear-gradient(135deg,#1a2340,#0a1020)";
+  const steps=d.steps.map(s=>`<li>${s}</li>`).join("");
+  const stacks=d.stk.map(s=>`<span class="stack-tag">+ ${s}</span>`).join("");
+  const apps=d.apps.map(a=>`<span class="app-tag">${a}</span>`).join("");
+  const mktLbl=d.markets.length>=4?`<span class="mkt-chip">🌎 all markets</span>`
+    :d.markets.length>1?`<span class="mkt-chip">${d.markets.length} markets</span>`
+    :aMkt==="all"?`<span class="mkt-chip">${MARKETS.find(m=>m.id===d.markets[0])?.emoji} ${d.markets[0]}</span>`:"";
+  return `<div class="card${isE?" expanded":""}">
+    <div class="card-banner" style="background:${bg}">
+      <span class="card-store">${d.store}</span>
+      <span class="card-badge" style="${badgeStyle(d.badge)}">${d.badge}</span>
+    </div>
+    <div class="card-body" onclick="toggleCard(${d.id})">
+      <div class="card-cat">
+        <span>${d.em} ${d.cat}${mktLbl}</span>
+        <span class="vtag" style="background:${d.vc||"rgba(255,255,255,.08)"};color:${d.vt2||"#9daec6"}">${d.vt}</span>
+      </div>
+      <div class="card-title">${d.title}</div>
+      <div class="price-row">
+        <div class="price-tag" style="${priceColor(d.badge)}">${d.fp}</div>
+        <div class="price-meta">
+          <div class="retail">Retail: ${d.rv}</div>
+          <div class="savings">Save ${d.sv}</div>
+          <div class="score">${hlabel(d.hot)} · ${d.hot}/100</div>
+        </div>
+      </div>
+      <div class="stacks">${stacks}</div>
+      <div class="card-foot">
+        <span>⏱ ${d.exp}</span>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <a class="deal-link" href="${d.durl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔗 View Deal</a>
+          <span class="toggle-btn">${isE?"▲ Hide":"▼ How To"}</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-howto">
+      <div class="ht-title">📋 Expert Stack Instructions</div>
+      <ol class="ht-list">${steps}</ol>
+      <div class="tip-box">💡 ${d.tip}</div>
+      <div class="src-box">📰 ${d.src} — <a href="${d.surl}" target="_blank" rel="noopener">View source →</a></div>
+      <div class="apps-row">${apps}</div>
+    </div>
+  </div>`;
+}
+
+function toggleCard(id){expId=(expId===id?null:id);render();}
+buildUI();render();
+</script>
+</body>
+</html>

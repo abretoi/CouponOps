@@ -4,7 +4,9 @@ Durable, dated facts an agent (or future you) needs that aren't obvious from the
 
 ## Project state (2026-07-20)
 
-- **v1.1 built and browser-verified** on Jul 20 2026. **108 seed deals** · 21 markets · 38 retailers · 25 sources · 42-store link registry. Server on port **4747**. Pushed to GitHub.
+- **v1.2 built and browser-verified** on Jul 20 2026 — AA contrast in both themes, top-right theme toggle, coupon-source links, in-market store filter.
+- v1.1 (Jul 20): blue palette, link registry, staples expansion.
+- v1.1 detail: **108 seed deals** · 21 markets · 38 retailers · 25 sources · 42-store link registry. Server on port **4747**. Pushed to GitHub.
 - v1.0 (Jul 19): initial build, 83 deals.
 - Seed snapshot covers **week of Jul 13–19, 2026**. The 48 core deals (extracted from `~/Desktop/coupon-dashboard-july2026.html`) are hip2save/KCL-verified for the week of Jul 5–11; expansion deals are chain-mechanic templates. The **Refresh pill exists precisely because seed data ages** — each market refresh replaces its deals via the active AI model.
 - Original dashboard's `carolinas` market was split into `rdu` + `charlotte`; national-chain deals scoped to the old 4 markets were remapped to `"all"`.
@@ -26,6 +28,10 @@ Durable, dated facts an agent (or future you) needs that aren't obvious from the
 - Doc suite modeled on Alexecutive Career Ops (CLAUDE.md + OMNISCIENT CLAUDE.md + README + SETUP + printable Setup Guide).
 
 ## Gotchas already hit (don't rediscover)
+
+- **Contrast measurement in-browser is a trap.** `getComputedStyle` reports `color-mix()` as `oklab(...)` and puts gradients in `background-image`, so a naive `rgb()` parser mis-reads both and reports nonsense. It also returns **mid-transition** values for ~300ms after a theme flip. Always: disable transitions, resolve colors through a canvas pixel, and composite ancestor backgrounds. Three separate "failures" during R3 were all measurement artifacts, not CSS bugs.
+- **Translucent pills have no fixed contrast.** Anything on `transparent` inherits whatever is behind it (card gradient, hero glow). Small text pills must mix into an opaque surface (`--bg-2`).
+- **Colors baked into `deals.json` can't follow the theme.** Emit `var()`/`color-mix()` strings from `build-data.js` instead of hex, or light mode silently breaks.
 
 - Meijer's bot wall is *inconsistent* — it returns 404 for some scripted requests and 403 for others, including for its own homepage. Verify Meijer URLs in a real browser, never by curl alone.
 - `livingrichwithcoupons.com/shoprite-coupon-deals` returns 200 but redirects to a **2012** post — a 200 is not proof a link is good. Same trap with `walmart.com/store/finder`, which 200s into a bot-block page.

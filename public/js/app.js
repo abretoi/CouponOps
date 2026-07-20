@@ -11,6 +11,7 @@ export const state = {
   view: 'deals',
   market: localStorage.getItem('couponops-market') || 'all',
   cat: 'All',
+  store: 'All',
   query: '',
   sort: 'hot',
   data: null,        // /api/deals payload
@@ -42,8 +43,11 @@ export async function loadData(force = false) {
   return state.data;
 }
 
+const TITLES = { deals: 'Grocery Deals', sources: 'Sources', settings: 'Settings' };
+
 export async function navigate(view) {
   state.view = view;
+  document.getElementById('pageTitle').textContent = TITLES[view] || view;
   document.querySelectorAll('.nav-item').forEach(n =>
     n.classList.toggle('active', n.dataset.view === view));
   content.innerHTML = '<div style="padding:64px 0;color:var(--text-3)">Loading…</div>';

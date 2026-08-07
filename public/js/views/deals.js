@@ -181,7 +181,8 @@ export default async function renderDeals(el, state) {
       }
       toast(msg, 5000);
       state.data = await api.deals.all();
-      renderDeals(el, state); // re-render with fresh data
+      await renderDeals(el, state); // re-render with fresh data
+      el.querySelectorAll('[data-reveal]').forEach(c => c.classList.add('in'));
     } catch (err) {
       toast(`Refresh failed: ${err.message}`, 6000);
     } finally {

@@ -3,12 +3,16 @@
 // The prompt names the trusted source ecosystem (blogs, IG accounts, FB groups)
 // so models with web access ground on them, and models without web access
 // clearly label output as unverified projections.
+//
+// Prompt is sized to stay within Groq free-tier limits (12K tokens/min):
+//   ~1200 tok input + 4000 tok max output = ~5200 tok per call,
+//   with 3s inter-request delay → ≤ 2 calls/6s well under 12K/min.
 
 import { callModel, parseJson } from './aiAdapter.js';
 import { getMarkets, getSources, saveRefresh } from './dealStore.js';
 
-const DEAL_SCHEMA = `Each deal object MUST have exactly these keys:
-id (number), markets (array of market ids), store (string), cat (one of: Pantry, Produce, Snacks, Beverages, Breakfast, Dessert, Household, Personal Care, Hair Care, Beauty, Men's Care, Baby, Sun Care, Penny Items, Policy), em (one emoji), hot (0-100 heat score), title (string ending with final price), fp (final price display string), fn (final price number, negative if moneymaker), rv (regular value string), sv (savings % display), sn (savings number 0-100), badge (short uppercase label like MONEYMAKER, STACK IT, BOGO STACK, NEAR FREE, HOT PRICE, PENNY DEAL), vt (verification tag string), vc (badge rgba background), vt2 (badge text hex color), steps (array of 3-7 strings, each one stacking step, <strong> allowed), stk (array of stack components), apps (array of app names like Ibotta, Fetch Rewards, store app), exp (expiration string), src (citation: source name + date + quote), surl (source URL), durl (store deals URL), tip (1-3 sentence insider tip)`;
+const DEAL_SCHEMA = `Each deal JSON object MUST have these keys:
+id (number), markets (string[]), store (string), cat (Pantry|Produce|Snacks|Beverages|Breakfast|Dessert|Household|Personal Care|Hair Care|Beauty|Men's Care|Baby|Sun Care|Penny Items|Policy), em (emoji), hot (0-100), title (string with final price), fp (string), fn (number, negative=moneymaker), rv (string), sv (string), sn (0-100), badge (MONEYMAKER|STACK IT|BOGO STACK|NEAR FREE|HOT PRICE|PENNY DEAL), vt (string), vc (rgba string), vt2 (hex string), steps (string[] 3-7 items, <strong> OK), stk (string[]), apps (string[]), exp (string), src (string), surl (url), durl (url), tip (string)`;
 
 export async function refreshMarket(marketId) {
   const markets = getMarkets();
@@ -16,29 +20,31 @@ export async function refreshMarket(marketId) {
   if (!market) throw new Error(`Unknown market: ${marketId}`);
 
   const { sources } = getSources();
-  const sourceList = sources
-    .map(s => `- ${s.name} (${s.type}): ${s.url}`)
+  // Only include essential/core sources to keep the prompt compact.
+  const essentialSources = sources
+    .filter(s => s.tier === 'essential')
+    .slice(0, 8)
+    .map(s => `- ${s.name} (${s.type})`)
     .join('\n');
 
   const today = new Date().toISOString().slice(0, 10);
-  const system = `You are an expert extreme-couponing analyst. You find VERIFIED stackable grocery coupon deals — store sale + manufacturer coupon + digital coupon + rebate app + store rewards, layered. You only report deals with realistic, current mechanics for each retailer (e.g. Walgreens Cash Rewards, CVS ExtraBucks, Kroger digital + Mega Event, Publix BOGO + stacking, H-E-B Combo Loco, Harris Teeter e-VIC/Super Doubles, Safeway/Albertsons for U, Meijer mPerks, Ibotta/Fetch stacking). Cite the deal-source ecosystem you are drawing from. If you cannot verify current-week ads, mark vt as "projected — verify in store" and lower hot by 15.`;
+  const system = `You are an expert extreme-couponing analyst. Find VERIFIED stackable grocery coupon deals — store sale + manufacturer coupon + digital coupon + rebate app + store rewards, layered. Cite your sources. If unverified, set vt to "projected — verify in store" and lower hot by 15.`;
 
-  const user = `Today is ${today}. Produce this week's TOP 12 stackable coupon deals for the ${market.label} market.
-Retailers available in this market: ${market.stores.join(', ')}.
-Market id to use in the markets array: "${marketId}".
+  const user = `Today: ${today}. Produce this week's TOP 5 stackable coupon deals for the ${market.label} market.
+Retailers: ${market.stores.join(', ')}.
+Market id: "${marketId}".
 
-Ground your deals in (or model them on) the current weekly ads and these trusted deal sources:
-${sourceList}
+Key deal sources: ${essentialSources}
 
 ${DEAL_SCHEMA}
 
 Rules:
-- Prioritize moneymakers, near-free after-rewards deals, and 3+ layer stacks.
-- Real mechanics only for each chain. Include at least one deal each from a drugstore, a mass retailer, a dollar store, and the market's dominant regional grocer.
+- Prioritize moneymakers, near-free, and 3+ layer stacks.
+- Include at least one deal each from a drugstore, mass retailer, and the market's regional grocer.
 - ids: use ${Date.now() % 100000} + index.
-- Return ONLY a JSON array of 12 deal objects. No prose, no markdown.`;
+- Return ONLY a JSON array of 5 deal objects. No prose, no markdown.`;
 
-  const raw = await callModel(system, user, 8000);
+  const raw = await callModel(system, user, 2500);
   const deals = parseJson(raw);
   if (!Array.isArray(deals) || !deals.length) throw new Error('Model returned no deals');
 

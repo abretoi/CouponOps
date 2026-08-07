@@ -3,6 +3,7 @@
 async function req(path, opts = {}) {
   const res = await fetch(path, {
     headers: { 'content-type': 'application/json' },
+    cache: 'no-store',
     ...opts,
     body: opts.body ? JSON.stringify(opts.body) : undefined,
   });

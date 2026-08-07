@@ -14,9 +14,15 @@ export default async function renderDeals(el, state) {
   const visibleFor = mkt => data.deals.filter(d =>
     mkt === 'all' || d.markets.includes('all') || d.markets.includes(mkt));
 
+  const allRefreshes = Object.values(data.refreshes || {}).sort().reverse();
+  const latestRefresh = allRefreshes.length > 0 ? allRefreshes[0] : null;
+  const eyebrowText = latestRefresh
+    ? `AI-Refreshed ${new Date(latestRefresh).toLocaleDateString()} · ${data.deals.length} deals live`
+    : `${esc(data.week || 'Weekly deals')} (Seed snapshot — use Refresh for the live week) · ${data.deals.length} deals live`;
+
   el.innerHTML = `
   <section class="hero" data-reveal>
-    <div class="eyebrow"><span class="pulse"></span>${esc(data.week || 'Weekly deals')} · ${data.deals.length} deals live</div>
+    <div class="eyebrow"><span class="pulse"></span>${eyebrowText}</div>
     <h1 class="hero-h">Every stack. <em>Every market. Maximum savings.</em></h1>
     <p class="lede">Verified stackable coupon deals across ${markets.length - 1} US markets and ${new Set(data.deals.map(d => d.store)).size} retailers — store sale + manufacturer coupon + digital + rebate apps, layered the way the pros on KCL, Hip2Save, and Southern Savers run it.</p>
   </section>
@@ -118,7 +124,9 @@ export default async function renderDeals(el, state) {
   function renderGrid() {
     const f = filtered();
     el.querySelector('#gridCount').textContent = String(f.length).padStart(2, '0');
-    const refreshedAt = data.refreshes?.[state.market];
+    const refreshedAt = state.market === 'all'
+      ? (Object.values(data.refreshes || {}).sort().reverse()[0] || null)
+      : data.refreshes?.[state.market];
     el.querySelector('#gridTitle').textContent = refreshedAt
       ? `Deals — AI-refreshed ${new Date(refreshedAt).toLocaleDateString()}`
       : "This week's deals";
@@ -158,20 +166,28 @@ export default async function renderDeals(el, state) {
     if (card) card.classList.toggle('open');
   });
 
-  // Refresh pill — one market per call; requires a configured model.
   const refreshBtn = el.querySelector('#refreshBtn');
   refreshBtn.addEventListener('click', async () => {
-    if (state.market === 'all') { toast('Pick a specific market first, then Refresh.'); return; }
     refreshBtn.disabled = true; refreshBtn.classList.add('busy');
     try {
+      const isAll = state.market === 'all';
+      const label = isAll ? 'All Markets' : marketLookup[state.market] || state.market;
+      toast(`Refreshing ${label} — this may take ${isAll ? 'a few minutes' : 'a moment'}...`);
       const r = await api.deals.refresh(state.market);
-      toast(`Refreshed ${marketLookup[state.market]} — ${r.count} deals from your AI model.`);
+      const dateStr = r.refreshedAt ? new Date(r.refreshedAt).toLocaleDateString() : 'today';
+      let msg = `✓ Refreshed ${label} — ${r.count} deals (${dateStr})`;
+      if (r.errors?.length) {
+        msg += ` · ${r.errors.length} market(s) had errors`;
+      }
+      toast(msg, 5000);
       state.data = await api.deals.all();
       renderDeals(el, state); // re-render with fresh data
     } catch (err) {
       toast(`Refresh failed: ${err.message}`, 6000);
     } finally {
-      refreshBtn.disabled = false; refreshBtn.classList.remove('busy');
+      if (document.body.contains(refreshBtn)) {
+        refreshBtn.disabled = false; refreshBtn.classList.remove('busy');
+      }
     }
   });
 
